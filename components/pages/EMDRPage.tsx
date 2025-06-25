@@ -22,8 +22,7 @@ const service = {
     "EMDR is an evidence-based psychotherapy that helps people heal from trauma and distressing life experiences using bilateral stimulation (eye movements, taps, or sounds).",
   fullDescription:
     "EMDR stands for Eye Movement Desensitization and Reprocessing. It's a psychotherapy approach that was developed by Francine Shapiro in the late 1980s. It's primarily used to help individuals who have experienced trauma or distressing life events. During an EMDR session, the therapist guides the client to recall distressing memories while simultaneously engaging in bilateral stimulation, which can involve following the therapist's hand movements with their eyes, listening to alternating sounds, or experiencing tactile sensations such as tapping. The bilateral stimulation is believed to facilitate the processing of traumatic memories, leading to desensitization and reprocessing, ultimately reducing the emotional distress associated with those memories. EMDR is widely used and has been shown to be effective in treating conditions such as post-traumatic stress disorder (PTSD), anxiety, depression, and other trauma-related disorders. However, like any therapeutic approach, its effectiveness can vary depending on the individual and the nature of their specific issues.",
-  heroImage:
-    "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop&q=80&ixlib=rb-4.1.0",
+  heroImage: "/EMDR_.jpeg",
   icon: Eye,
   iconColor: colours.blue.fg,
   iconBg: colours.blue.bg,

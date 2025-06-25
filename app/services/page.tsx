@@ -1,4 +1,4 @@
-import { Heart, Brain, Users, Sparkles, Puzzle, Frown } from "lucide-react"
+import { Heart, Brain, Users, Sparkles, Puzzle, Frown, Shield } from "lucide-react"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -11,67 +11,94 @@ export const metadata = {
 export default function ServicesPage() {
   const services = [
     {
-      title: "Relationship Counselling",
-      description: "Strengthen connections, improve communication, and resolve conflicts in all types of relationships",
+      title: "Addictions",
+      description: "Comprehensive addiction recovery and support services for substance and behavioral addictions.",
       icon: Heart,
-      iconColor: "#D95E61",
-      iconBg: "#F8E6E7",
-      href: "/services/relationship-counselling",
-      image:
-        "https://images.unsplash.com/photo-1735571548003-4f84697e7b61?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      iconColor: "#059669",
+      iconBg: "#D1FAE5",
+      href: "/services/addictions",
+      image: "https://images.unsplash.com/photo-1593371137609-7c1335bcf3c5?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Trauma Counselling",
-      description:
-        "Healing from past trauma through evidence-based approaches including EMDR and trauma-informed therapy",
-      icon: Sparkles,
-      iconColor: "#7e22ce",
-      iconBg: "#f3e8ff",
-      href: "/services/trauma-counselling",
-      image:
-        "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "ADHD Diagnosis and Support",
+      description: "Comprehensive assessment and personalized strategies for managing ADHD symptoms and enhancing focus.",
+      icon: Brain,
+      iconColor: "#3b82f6",
+      iconBg: "#dbeafe",
+      href: "/services/adhd-diagnosis-and-support",
+      image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&auto=format&fit=crop&q=80&ixlib=rb-4.1.0",
     },
     {
       title: "Anxiety Support",
-      description:
-        "Effective strategies to manage anxiety, panic, and worry through evidence-based therapeutic approaches",
+      description: "Effective strategies to manage anxiety, panic, and worry through evidence-based therapeutic approaches.",
       icon: Users,
       iconColor: "#189799",
       iconBg: "#E6F7F7",
       href: "/services/anxiety-support",
-      image:
-        "https://images.unsplash.com/photo-1474418397713-7ede21d49118?q=80&w=2853&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1569292567777-e5d61a759322?q=80&w=2334&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Autism Diagnosis and Support",
+      description: "Specialized assessment and supportive therapy for individuals on the autism spectrum.",
+      icon: Puzzle,
+      iconColor: "#6366f1",
+      iconBg: "#e0e7ff",
+      href: "/services/autism-diagnosis-and-support",
+      image: "https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?w=800&auto=format&fit=crop&q=80&ixlib=rb-4.1.0",
     },
     {
       title: "Depression Support",
-      description: "Compassionate care for managing depression, finding meaning, and rebuilding motivation and joy",
+      description: "Compassionate care for managing depression, finding meaning, and rebuilding motivation and joy.",
       icon: Frown,
       iconColor: "#f59e0b",
       iconBg: "#fef3c7",
       href: "/services/depression-support",
-      image:
-        "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1588979355313-6711a095465f?q=80&w=972&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "ADHD Diagnosis and Support",
-      description:
-        "Comprehensive assessment and personalized strategies for managing ADHD symptoms and enhancing focus",
-      icon: Brain,
-      iconColor: "#16a34a",
-      iconBg: "#dcfce7",
-      href: "/services/adhd-support",
-      image:
-        "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
+      title: "EMDR Therapy",
+      description: "Eye Movement Desensitization & Reprocessing for trauma and distressing life experiences.",
+      icon: Sparkles,
+      iconColor: "#2563EB",
+      iconBg: "#DBEAFE",
+      href: "/services/emdr",
+      image: "/EMDR_.jpeg",
     },
     {
-      title: "Autism Diagnosis and Support",
-      description: "Specialized assessment and supportive therapy for individuals on the autism spectrum",
-      icon: Puzzle,
-      iconColor: "#6366f1",
-      iconBg: "#e0e7ff",
-      href: "/services/autism-support",
-      image:
-        "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
+      title: "Inner Child Work",
+      description: "Reconnect with and nurture your inner child to heal unresolved childhood wounds.",
+      icon: Heart,
+      iconColor: "#EC4899",
+      iconBg: "#FCE7F3",
+      href: "/services/inner-child-work",
+      image: "https://images.unsplash.com/photo-1531983412531-1f49a365ffed?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8A%3D%3D",
+    },
+    {
+      title: "Narcissistic Abuse Recovery",
+      description: "Specialized support for survivors of narcissistic abuse to reclaim self-worth and rebuild life.",
+      icon: Heart,
+      iconColor: "#D95E61",
+      iconBg: "#F8E6E7",
+      href: "/services/narcissistic-abuse-recovery",
+      image: "https://images.unsplash.com/photo-1601802455383-a56d602d43c0?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHxoYXBweXxlbnwwfHwwfHx8MA%3D%3D",
+    },
+    {
+      title: "Relationship Counselling",
+      description: "Strengthen connections, improve communication, and resolve conflicts in all types of relationships.",
+      icon: Heart,
+      iconColor: "#D95E61",
+      iconBg: "#F8E6E7",
+      href: "/services/relationship-counselling",
+      image: "https://images.unsplash.com/photo-1617376431454-8195cf1fd668?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Trauma Counselling",
+      description: "Healing from past trauma through evidence-based approaches including EMDR and trauma-informed therapy.",
+      icon: Shield,
+      iconColor: "#7C3AED",
+      iconBg: "#EDE9FE",
+      href: "/services/trauma-counselling",
+      image: "https://images.unsplash.com/photo-1539141086657-b9cc8d93ad3c?q=80&w=2154&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ]
 

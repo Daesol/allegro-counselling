@@ -377,6 +377,25 @@ export default function ServicePageTemplate({ service }: ServicePageProps) {
         </section>
       )}
 
+      {/* --- Acknowledging Pain Section --- */}
+      <section className="py-16 bg-gradient-to-br from-rose-50 via-pink-50 to-orange-50 relative overflow-hidden">
+        <div className="absolute top-10 left-10 w-32 h-32 bg-rose-200/20 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-20 right-20 w-40 h-40 bg-pink-200/25 rounded-full blur-3xl"></div>
+        <div className="container mx-auto px-4 max-w-3xl relative z-10 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">We See Your Pain</h2>
+          <p className="text-lg text-gray-700 mb-8">
+            Healing begins with being seen and heard. We understand that reaching out for help can be difficult, and that your pain is real and valid. Our team is here to walk alongside you, offering compassion, expertise, and a safe space for your healing journey. You are not alone.
+          </p>
+          <Button
+            size="lg"
+            className="rounded-full text-white bg-pink-600 hover:bg-pink-700 px-8 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg"
+            onClick={() => window.open("https://calendly.com/allegroadmin", "_blank")}
+          >
+            Book Your Session Now
+          </Button>
+        </div>
+      </section>
+
       {/* Specific Services Section */}
       {service.specificServices && (
         <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
