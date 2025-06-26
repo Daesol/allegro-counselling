@@ -10,26 +10,19 @@ import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, Clock, Shield, Award, Heart, Send, AlertTriangle } from "lucide-react"
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-    preferredContact: "email",
-  })
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    // You can integrate with your preferred form handling service
-  }
+  const servicesList = [
+    "Addictions",
+    "ADHD Diagnosis and Support",
+    "Anxiety Support",
+    "Autism Diagnosis and Support",
+    "Depression Support",
+    "EMDR Therapy",
+    "Inner Child Work",
+    "Narcissistic Abuse Recovery",
+    "Relationship Counselling",
+    "Trauma Counselling",
+  ];
+  const [showOtherService, setShowOtherService] = useState(false);
 
   const FAQAccordion = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(null)
@@ -141,12 +134,12 @@ export default function ContactPage() {
         <div className="absolute top-1/2 right-1/4 w-20 h-20 bg-orange-200 rounded-full opacity-20 animate-pulse delay-500"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid lg:grid-cols-3 gap-12">
               {/* Contact Form */}
-              <div id="contact-form">
+              <div id="contact-form" className="lg:col-span-2">
                 <div className="transform hover:scale-[1.02] transition-transform duration-300">
-                  <Card className="p-8 bg-gradient-to-br from-white via-red-50 to-orange-50 border-2 border-red-200 shadow-2xl">
-                    <CardContent className="pt-0">
+                  <Card className="px-4 py-8 sm:px-6 md:px-8 lg:px-10 bg-gradient-to-br from-white via-red-50 to-orange-50 border-2 border-red-200 shadow-2xl">
+                    <CardContent className="pt-0 px-2 sm:px-4 md:px-6 lg:px-8">
                       <div className="text-center mb-8">
                         <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                           <Send className="h-8 w-8 text-white" />
@@ -156,123 +149,97 @@ export default function ContactPage() {
                           We'd love to hear from you. Fill out the form below and we'll get back to you within 24 hours.
                         </p>
                       </div>
-                      <form onSubmit={handleSubmit} className="space-y-6">
+                      <form
+                        method="POST"
+                        action="https://forms.mailmunch.co/form/1038275/1163105/submit?resource_type=widget"
+                        className="space-y-6"
+                      >
+                        {/* Hidden fields for MailMunch tracking */}
+                        <input type="hidden" name="referrer" value="https://allegrocounselling.com/?page_id=2602&preview=true" />
+                        <input type="hidden" name="visitor_id" value="20e79a24-8eae-4031-9c09-224ac5ef9702" />
                         <div className="grid md:grid-cols-2 gap-4">
                           <div>
-                            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                              Full Name *
-                            </label>
                             <Input
                               id="name"
-                              name="name"
+                              name="contact[name][value]"
                               type="text"
                               required
-                              value={formData.name}
-                              onChange={handleInputChange}
-                              className="w-full"
-                              placeholder="Your full name"
+                              className="w-full max-w-full"
+                              placeholder="Full Name *"
                             />
                           </div>
                           <div>
-                            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                              Email Address *
-                            </label>
-                            <Input
-                              id="email"
-                              name="email"
-                              type="email"
-                              required
-                              value={formData.email}
-                              onChange={handleInputChange}
-                              className="w-full"
-                              placeholder="your.email@example.com"
-                            />
-                          </div>
-                        </div>
-
-                        <div className="grid md:grid-cols-2 gap-4">
-                          <div>
-                            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                              Phone Number
-                            </label>
                             <Input
                               id="phone"
-                              name="phone"
+                              name="contact[phone_number][value]"
                               type="tel"
-                              value={formData.phone}
-                              onChange={handleInputChange}
-                              className="w-full"
-                              placeholder="(000) 000-0000"
+                              className="w-full max-w-full"
+                              placeholder="Phone Number"
                             />
                           </div>
-                          <div>
-                            <label htmlFor="preferredContact" className="block text-sm font-medium text-gray-700 mb-2">
-                              Preferred Contact Method
-                            </label>
-                            <select
-                              id="preferredContact"
-                              name="preferredContact"
-                              value={formData.preferredContact}
-                              onChange={handleInputChange}
-                              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                            >
-                              <option value="email">Email</option>
-                              <option value="phone">Phone</option>
-                              <option value="text">Text Message</option>
-                            </select>
-                          </div>
                         </div>
-
                         <div>
-                          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                            Subject
-                          </label>
                           <Input
-                            id="subject"
-                            name="subject"
-                            type="text"
-                            value={formData.subject}
-                            onChange={handleInputChange}
-                            className="w-full"
-                            placeholder="What can we help you with?"
+                            id="email"
+                            name="email_address"
+                            type="email"
+                            required
+                            pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+                            className="w-full max-w-full"
+                            placeholder="Email Address *"
                           />
                         </div>
-
                         <div>
-                          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                            Message *
+                          <label className="block text-sm font-medium text-gray-700 mb-2">
+                            Interested Services
                           </label>
+                          <p className="text-xs text-gray-500 mb-2">You can select multiple services</p>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
+                            {servicesList.map((service) => (
+                              <label key={service} className="inline-flex items-center text-sm" style={{ fontSize: '0.95rem' }}>
+                                <input
+                                  type="checkbox"
+                                  name="contact[interested_services][value][]"
+                                  value={service}
+                                  className="form-checkbox h-4 w-4 text-red-600 border-gray-300 rounded min-w-[1rem] min-h-[1rem]"
+                                  style={{ width: '1rem', height: '1rem' }}
+                                />
+                                <span className="ml-2 text-gray-700">{service}</span>
+                              </label>
+                            ))}
+                            <label className="inline-flex items-center text-sm" style={{ fontSize: '0.95rem' }}>
+                              <input
+                                type="checkbox"
+                                name="contact[interested_services][value][]"
+                                value="Other"
+                                className="form-checkbox h-4 w-4 text-red-600 border-gray-300 rounded min-w-[1rem] min-h-[1rem]"
+                                style={{ width: '1rem', height: '1rem' }}
+                                onChange={e => setShowOtherService(e.target.checked)}
+                              />
+                              <span className="ml-2 text-gray-700">Other</span>
+                            </label>
+                            {showOtherService && (
+                              <input
+                                type="text"
+                                name="contact[interested_services][value][]"
+                                placeholder="Please specify other service"
+                                className="mt-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent col-span-2 w-full max-w-full"
+                              />
+                            )}
+                          </div>
+                        </div>
+                        <div>
                           <Textarea
                             id="message"
-                            name="message"
+                            name="contact[message][value]"
                             required
-                            value={formData.message}
-                            onChange={handleInputChange}
-                            rows={6}
-                            className="w-full"
-                            placeholder="Tell us about what you're looking for or any questions you have..."
+                            className="w-full max-w-full"
+                            placeholder="How can we help you? Please share a bit about your inquiry or what you're looking for."
+                            rows={5}
                           />
                         </div>
-
-                        <div className="bg-blue-50 p-4 rounded-lg">
-                          <div className="flex items-start">
-                            <Shield className="h-5 w-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" />
-                            <div className="text-sm text-blue-800">
-                              <p className="font-medium mb-1">Your Privacy is Protected</p>
-                              <p>
-                                All communications are confidential and secure. We follow strict privacy protocols to
-                                protect your personal information.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <Button
-                          type="submit"
-                          className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                        >
-                          <Send className="h-5 w-5 mr-2" />
-                          Send Message Now
+                        <Button type="submit" className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-full font-semibold text-lg transition-all duration-300">
+                          Send Message
                         </Button>
                       </form>
                     </CardContent>
