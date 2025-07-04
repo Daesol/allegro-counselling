@@ -156,7 +156,7 @@ export default function Header() {
           <Button
             className="hidden sm:flex rounded-full text-white hover:bg-red-700 text-sm px-4 py-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-red-500/30"
             style={{ backgroundColor: "#D95E61" }}
-            onClick={() => window.open("https://calendly.com/allegroadmin", "_blank")}
+            onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
           >
             Book Consultation
           </Button>
@@ -215,7 +215,7 @@ export default function Header() {
             <Button
               className="rounded-full text-white hover:bg-red-700 w-full mt-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-red-500/30"
               style={{ backgroundColor: "#D95E61" }}
-              onClick={() => window.open("https://calendly.com/allegroadmin", "_blank")}
+              onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
             >
               Book Consultation
             </Button>
