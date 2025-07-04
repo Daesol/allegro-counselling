@@ -22,8 +22,8 @@ export default function InfoBar() {
         {/* Right side - Phone */}
         <div className="flex items-center order-3">
           <Phone className="h-2.5 w-2.5 sm:h-3 sm:w-3 mr-0.5 sm:mr-1 flex-shrink-0" />
-          <Link href="tel:5878824196" className="hover:underline text-[10px] sm:text-xs">
-            587-882-4196
+          <Link href="tel:8256054453" className="hover:underline text-[10px] sm:text-xs">
+            (825) 605-4453
           </Link>
         </div>
       </div>

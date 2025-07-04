@@ -77,11 +77,11 @@ export default function ServicePageTemplate({ service }: ServicePageProps) {
       case "tianna":
         return "https://calendly.com/tianna-allegrocounselling"
       case "ava":
-        return "https://calendly.com/allegroadmin"
+        return "https://calendly.com/allegroadmin/30min"
       case "katey":
         return "https://calendly.com/katey-allegrocounselling/1-hour-session?month=2025-06"
       default:
-        return "https://calendly.com/allegroadmin"
+        return "https://calendly.com/allegroadmin/30min"
     }
   }
 
@@ -128,7 +128,7 @@ export default function ServicePageTemplate({ service }: ServicePageProps) {
                   size="lg"
                   className="rounded-full text-white hover:bg-red-700 px-8 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-red-500/30 text-lg mr-[30%]"
                   style={{ backgroundColor: "#D95E61" }}
-                  onClick={() => window.open("https://calendly.com/allegroadmin", "_blank")}
+                  onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
                 >
                   Book Free Consultation
                 </Button>
@@ -335,7 +335,7 @@ export default function ServicePageTemplate({ service }: ServicePageProps) {
                       </div>
                       <Button
                         className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white rounded-full px-6 py-3 transition-all duration-300 transform hover:scale-105"
-                        onClick={() => window.open("https://calendly.com/allegroadmin", "_blank")}
+                        onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
                       >
                         Get Started
                       </Button>
@@ -389,7 +389,7 @@ export default function ServicePageTemplate({ service }: ServicePageProps) {
           <Button
             size="lg"
             className="rounded-full text-white bg-pink-600 hover:bg-pink-700 px-8 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg"
-            onClick={() => window.open("https://calendly.com/allegroadmin", "_blank")}
+            onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
           >
             Book Your Session Now
           </Button>
@@ -476,7 +476,7 @@ export default function ServicePageTemplate({ service }: ServicePageProps) {
                           size="sm"
                           className="w-full rounded-full text-white transition-all duration-300 transform hover:scale-105 h-auto py-3 px-4 whitespace-normal text-center leading-tight"
                           style={{ backgroundColor: specificService.iconColor }}
-                          onClick={() => window.open("https://calendly.com/allegroadmin", "_blank")}
+                          onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
                         >
                           Learn More About {specificService.title}
                         </Button>
@@ -616,7 +616,7 @@ export default function ServicePageTemplate({ service }: ServicePageProps) {
               <Button
                 size="lg"
                 className="rounded-full bg-white text-red-600 hover:bg-red-50 text-lg font-semibold px-8 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-                onClick={() => window.open("https://calendly.com/allegroadmin", "_blank")}
+                onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
               >
                 Book Free Consultation
               </Button>
