@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -23,6 +23,54 @@ export default function ContactPage() {
     "Trauma Counselling",
   ];
   const [showOtherService, setShowOtherService] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = formRef.current;
+    if (!form) return;
+    const formData = new FormData(form);
+    // Gather interested services (checkboxes)
+    const interestedServices = Array.from(form.querySelectorAll('input[name="contact[interested_services][value][]"]:checked')).map(
+      (el: any) => el.value
+    );
+    // Handle "Other" service specifically
+    const otherCheckbox = form.querySelector('input[value="Other"]') as HTMLInputElement;
+    const otherTextInput = form.querySelector('input[placeholder="Please specify other service"]') as HTMLInputElement;
+    
+    let finalInterestedServices = interestedServices.filter(service => service !== 'Other');
+    
+    if (otherCheckbox?.checked) {
+      if (otherTextInput?.value?.trim()) {
+        finalInterestedServices.push(`Other: ${otherTextInput.value.trim()}`);
+      } else {
+        finalInterestedServices.push('Other');
+      }
+    }
+    
+    // Build payload
+    const payload: Record<string, any> = {
+      name: (form.elements.namedItem('contact[name][value]') as HTMLInputElement)?.value,
+      email: (form.elements.namedItem('email_address') as HTMLInputElement)?.value,
+      phone: (form.elements.namedItem('contact[phone_number][value]') as HTMLInputElement)?.value,
+      message: (form.elements.namedItem('contact[message][value]') as HTMLInputElement)?.value,
+      interested_services: finalInterestedServices,
+    };
+    // Send to webhook
+    await fetch('https://hook.us2.make.com/635et7mppc4h5y2fq1dmpumkewe8d5f2', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    setSubmitted(true);
+    form.reset();
+    setShowOtherService(false);
+  };
+
+  const handleShowFormAgain = () => {
+    setSubmitted(false);
+  };
 
   const FAQAccordion = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(null)
@@ -149,99 +197,105 @@ export default function ContactPage() {
                           We'd love to hear from you. Fill out the form below and we'll get back to you within 24 hours.
                         </p>
                       </div>
-                      <form
-                        method="POST"
-                        action="https://forms.mailmunch.co/form/1038275/1163105/submit?resource_type=widget"
-                        className="space-y-6"
-                      >
-                        {/* Hidden fields for MailMunch tracking */}
-                        <input type="hidden" name="referrer" value="https://allegrocounselling.com/?page_id=2602&preview=true" />
-                        <input type="hidden" name="visitor_id" value="20e79a24-8eae-4031-9c09-224ac5ef9702" />
-                        <div className="grid md:grid-cols-2 gap-4">
+                      {!submitted ? (
+                        <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                          <div className="grid md:grid-cols-2 gap-4">
+                            <div>
+                              <Input
+                                id="name"
+                                name="contact[name][value]"
+                                type="text"
+                                required
+                                className="w-full max-w-full"
+                                placeholder="Full Name *"
+                              />
+                            </div>
+                            <div>
+                              <Input
+                                id="phone"
+                                name="contact[phone_number][value]"
+                                type="tel"
+                                className="w-full max-w-full"
+                                placeholder="Phone Number"
+                              />
+                            </div>
+                          </div>
                           <div>
                             <Input
-                              id="name"
-                              name="contact[name][value]"
-                              type="text"
+                              id="email"
+                              name="email_address"
+                              type="email"
                               required
+                              pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
                               className="w-full max-w-full"
-                              placeholder="Full Name *"
+                              placeholder="Email Address *"
                             />
                           </div>
                           <div>
-                            <Input
-                              id="phone"
-                              name="contact[phone_number][value]"
-                              type="tel"
-                              className="w-full max-w-full"
-                              placeholder="Phone Number"
-                            />
-                          </div>
-                        </div>
-                        <div>
-                          <Input
-                            id="email"
-                            name="email_address"
-                            type="email"
-                            required
-                            pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
-                            className="w-full max-w-full"
-                            placeholder="Email Address *"
-                          />
-                        </div>
-                        <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-2">
-                            Interested Services
-                          </label>
-                          <p className="text-xs text-gray-500 mb-2">You can select multiple services</p>
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
-                            {servicesList.map((service) => (
-                              <label key={service} className="inline-flex items-center text-sm" style={{ fontSize: '0.95rem' }}>
+                            <label className="block text-sm font-medium text-gray-700 mb-2">
+                              Interested Services
+                            </label>
+                            <p className="text-xs text-gray-500 mb-2">You can select multiple services</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
+                              {servicesList.map((service) => (
+                                <label key={service} className="inline-flex items-center text-sm" style={{ fontSize: '0.95rem' }}>
+                                  <input
+                                    type="checkbox"
+                                    name="contact[interested_services][value][]"
+                                    value={service}
+                                    className="form-checkbox h-4 w-4 text-red-600 border-gray-300 rounded min-w-[1rem] min-h-[1rem]"
+                                    style={{ width: '1rem', height: '1rem' }}
+                                  />
+                                  <span className="ml-2 text-gray-700">{service}</span>
+                                </label>
+                              ))}
+                              <label className="inline-flex items-center text-sm" style={{ fontSize: '0.95rem' }}>
                                 <input
                                   type="checkbox"
                                   name="contact[interested_services][value][]"
-                                  value={service}
+                                  value="Other"
                                   className="form-checkbox h-4 w-4 text-red-600 border-gray-300 rounded min-w-[1rem] min-h-[1rem]"
                                   style={{ width: '1rem', height: '1rem' }}
+                                  onChange={e => setShowOtherService(e.target.checked)}
                                 />
-                                <span className="ml-2 text-gray-700">{service}</span>
+                                <span className="ml-2 text-gray-700">Other</span>
                               </label>
-                            ))}
-                            <label className="inline-flex items-center text-sm" style={{ fontSize: '0.95rem' }}>
-                              <input
-                                type="checkbox"
-                                name="contact[interested_services][value][]"
-                                value="Other"
-                                className="form-checkbox h-4 w-4 text-red-600 border-gray-300 rounded min-w-[1rem] min-h-[1rem]"
-                                style={{ width: '1rem', height: '1rem' }}
-                                onChange={e => setShowOtherService(e.target.checked)}
-                              />
-                              <span className="ml-2 text-gray-700">Other</span>
-                            </label>
-                            {showOtherService && (
-                              <input
-                                type="text"
-                                name="contact[interested_services][value][]"
-                                placeholder="Please specify other service"
-                                className="mt-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent col-span-2 w-full max-w-full"
-                              />
-                            )}
+                              {showOtherService && (
+                                <input
+                                  type="text"
+                                  name="contact[interested_services][value][]"
+                                  placeholder="Please specify other service"
+                                  className="mt-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent col-span-2 w-full max-w-full"
+                                />
+                              )}
+                            </div>
                           </div>
+                          <div>
+                            <Textarea
+                              id="message"
+                              name="contact[message][value]"
+                              required
+                              className="w-full max-w-full"
+                              placeholder="How can we help you? Please share a bit about your inquiry or what you're looking for."
+                              rows={5}
+                            />
+                          </div>
+                          <Button type="submit" className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-full font-semibold text-lg transition-all duration-300">
+                            Send Message
+                          </Button>
+                        </form>
+                      ) : (
+                        <div className="text-center py-12">
+                          <h2 className="text-2xl font-bold mb-4 text-green-700">Thank you for contacting us!</h2>
+                          <p className="text-lg text-gray-700 mb-2">
+                            A confirmation email will be sent from <span className="font-semibold">info@allegrocounselling.com</span> shortly. If you don't see it, please check your spam or junk folder.
+                          </p>
+                          <p className="text-lg text-gray-700 mb-6">Our receptionist will contact you soon.</p>
+                          <Button onClick={handleShowFormAgain} className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold px-6 py-2 rounded-full">
+                            Send Another Message
+                          </Button>
                         </div>
-                        <div>
-                          <Textarea
-                            id="message"
-                            name="contact[message][value]"
-                            required
-                            className="w-full max-w-full"
-                            placeholder="How can we help you? Please share a bit about your inquiry or what you're looking for."
-                            rows={5}
-                          />
-                        </div>
-                        <Button type="submit" className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-full font-semibold text-lg transition-all duration-300">
-                          Send Message
-                        </Button>
-                      </form>
+                      )}
                     </CardContent>
                   </Card>
                 </div>
