@@ -31,33 +31,41 @@ export default function ContactPage() {
     const form = formRef.current;
     if (!form) return;
     const formData = new FormData(form);
-    // Gather interested services (checkboxes)
-    const interestedServices = Array.from(form.querySelectorAll('input[name="contact[interested_services][value][]"]:checked')).map(
-      (el: any) => el.value
-    );
-    // Handle "Other" service specifically
-    const otherCheckbox = form.querySelector('input[value="Other"]') as HTMLInputElement;
-    const otherTextInput = form.querySelector('input[placeholder="Please specify other service"]') as HTMLInputElement;
-    
-    let finalInterestedServices = interestedServices.filter(service => service !== 'Other');
-    
-    if (otherCheckbox?.checked) {
-      if (otherTextInput?.value?.trim()) {
-        finalInterestedServices.push(`Other: ${otherTextInput.value.trim()}`);
-      } else {
-        finalInterestedServices.push('Other');
-      }
-    }
-    
+
+    // Helper to get all values for a checkbox group
+    const getCheckedValues = (name: string) => {
+      return Array.from(form.querySelectorAll(`input[name='${name}']:checked`)).map((el: any) => el.value);
+    };
+    // Helper to get value for radio group
+    const getRadioValue = (name: string) => {
+      const checked = form.querySelector(`input[name='${name}']:checked`) as HTMLInputElement;
+      return checked ? checked.value : null;
+    };
+    // Helper to get value for single input
+    const getValue = (name: string) => {
+      return (form.elements.namedItem(name) as HTMLInputElement | HTMLTextAreaElement)?.value || '';
+    };
+
     // Build payload
     const payload: Record<string, any> = {
-      name: (form.elements.namedItem('contact[name][value]') as HTMLInputElement)?.value,
-      email: (form.elements.namedItem('email_address') as HTMLInputElement)?.value,
-      phone: (form.elements.namedItem('contact[phone_number][value]') as HTMLInputElement)?.value,
-      message: (form.elements.namedItem('contact[message][value]') as HTMLInputElement)?.value,
-      interested_services: finalInterestedServices,
+      session_type_online: formData.get('session_type_online') ? true : false,
+      counselling_type: getCheckedValues('counselling_type[]'),
+      reason_for_services: getValue('reason_for_services'),
+      referral_source: getValue('referral_source'),
+      first_name: getValue('first_name'),
+      last_name: getValue('last_name'),
+      email: getValue('email'),
+      phone: getValue('phone'),
+      consent_messages: formData.get('consent_messages') ? true : false,
+      counselling_approach: getCheckedValues('counselling_approach[]'),
+      gender_preference: getCheckedValues('gender_preference[]'),
+      novice_counsellor: getRadioValue('novice_counsellor'),
+      student_counsellor: getRadioValue('student_counsellor'),
+      specific_counsellor_preference: getRadioValue('specific_counsellor_preference'),
+      preferred_appointment_times: getValue('preferred_appointment_times'),
+      client_relationship_disclosure: getRadioValue('client_relationship_disclosure'),
     };
-    // Send to webhook
+
     await fetch('https://hook.us2.make.com/635et7mppc4h5y2fq1dmpumkewe8d5f2', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -65,7 +73,6 @@ export default function ContactPage() {
     });
     setSubmitted(true);
     form.reset();
-    setShowOtherService(false);
   };
 
   const handleShowFormAgain = () => {
@@ -199,89 +206,153 @@ export default function ContactPage() {
                       </div>
                       {!submitted ? (
                         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                          {/* Intake Form Instructions */}
+                          <div className="mb-6 text-sm text-gray-600">
+                            <p><span className="text-red-600 font-bold">*</span> indicates required fields</p>
+                            <p className="mt-2">The information you provide here is important for selecting the most suitable counsellor. Please note that we cannot promise the fulfillment of all your preferences, as numerous factors are considered when matching counsellors with clients. However, we will align the chosen counsellor as closely as possible to your preferences.</p>
+                          </div>
+
+                          {/* Session Type */}
+                          <div>
+                            <label className="block font-medium mb-2">Session Type <span className="text-red-600">*</span></label>
+                            <p className="text-sm mb-2">We are a digital counselling agency and do not provide in person sessions. Are you able to attend sessions online?</p>
+                            <div className="flex items-center space-x-4">
+                              <input type="checkbox" id="sessionTypeOnline" name="session_type_online" required className="mr-2" />
+                              <label htmlFor="sessionTypeOnline">Yes</label>
+                            </div>
+                          </div>
+
+                          {/* Type of Counselling */}
+                          <div>
+                            <label className="block font-medium mb-2">Type of Counselling <span className="text-red-600">*</span></label>
+                            <p className="text-sm mb-2">Please let us know what type of counselling you're seeking, and for whom you are seeking that counselling.</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                              <label className="flex items-center"><input type="checkbox" name="counselling_type[]" value="Individual for myself" required className="mr-2" />Individual for myself</label>
+                              <label className="flex items-center"><input type="checkbox" name="counselling_type[]" value="Individual for someone else" className="mr-2" />Individual for someone else</label>
+                              <label className="flex items-center"><input type="checkbox" name="counselling_type[]" value="Couples Counselling" className="mr-2" />Couples Counselling</label>
+                              <label className="flex items-center"><input type="checkbox" name="counselling_type[]" value="Family Counselling" className="mr-2" />Family Counselling</label>
+                            </div>
+                          </div>
+
+                          {/* Reason for Seeking Services */}
+                          <div>
+                            <label className="block font-medium mb-2">Reason for Seeking Services <span className="text-red-600">*</span></label>
+                            <Textarea name="reason_for_services" required placeholder="Please describe your reason for seeking services..." rows={4} />
+                          </div>
+
+                          {/* Where Did You Hear About Us? */}
+                          <div>
+                            <label className="block font-medium mb-2">Where Did You Hear About Us? <span className="text-red-600">*</span></label>
+                            <select name="referral_source" required className="w-full border rounded-md px-3 py-2">
+                              <option value="">Select an option</option>
+                              <option value="Counselling Professional">Counselling Professional (Counsellor, Social Worker, Support Worker etc.)</option>
+                              <option value="Insurance">Insurance (Blue Cross, Sun Life, Telus Health etc.)</option>
+                              <option value="Legal Professional">Legal Professional (Lawyer, Probation Officer etc.)</option>
+                              <option value="Medical Professional">Medical Professional (Doctor, Nurse etc.)</option>
+                              <option value="Psychology Today Website">Psychology Today Website</option>
+                              <option value="Social Media">Social Media (Facebook, Instagram, TikTok, YouTube)</option>
+                              <option value="Strength Counselling Staff">Strength Counselling Staff</option>
+                              <option value="Strength Counselling Website">Strength Counselling Website</option>
+                              <option value="Trans Care BC">Trans Care BC</option>
+                              <option value="Treatment Centre">Treatment Centre (Addiction/Mental Health)</option>
+                              <option value="Victim Services">Victim Services</option>
+                              <option value="Word of Mouth">Word of Mouth (friends/family etc.)</option>
+                              <option value="Other">Other</option>
+                            </select>
+                          </div>
+
+                          {/* Contact Information */}
                           <div className="grid md:grid-cols-2 gap-4">
                             <div>
-                              <Input
-                                id="name"
-                                name="contact[name][value]"
-                                type="text"
-                                required
-                                className="w-full max-w-full"
-                                placeholder="Full Name *"
-                              />
+                              <label className="block font-medium mb-2">First Name <span className="text-red-600">*</span></label>
+                              <Input name="first_name" required placeholder="First Name" />
                             </div>
                             <div>
-                              <Input
-                                id="phone"
-                                name="contact[phone_number][value]"
-                                type="tel"
-                                className="w-full max-w-full"
-                                placeholder="Phone Number"
-                              />
+                              <label className="block font-medium mb-2">Last Name or Initial <span className="text-red-600">*</span></label>
+                              <Input name="last_name" required placeholder="Last Name or Initial" />
+                            </div>
+                            <div>
+                              <label className="block font-medium mb-2">Email Address <span className="text-red-600">*</span></label>
+                              <Input name="email" type="email" required placeholder="Email Address" />
+                            </div>
+                            <div>
+                              <label className="block font-medium mb-2">Phone Number <span className="text-red-600">*</span></label>
+                              <Input name="phone" type="tel" required placeholder="Phone Number" />
                             </div>
                           </div>
+
+                          {/* Consent to Receive Messages */}
                           <div>
-                            <Input
-                              id="email"
-                              name="email_address"
-                              type="email"
-                              required
-                              pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
-                              className="w-full max-w-full"
-                              placeholder="Email Address *"
-                            />
+                            <label className="block font-medium mb-2">Consent to Receive Messages <span className="text-red-600">*</span></label>
+                            <p className="text-sm mb-2">The messages you will receive via email and text will be specific to your client file with us and will contain only relevant information. We will not send any advertising or promotional material. You can unsubscribe at any time.</p>
+                            <label className="flex items-center"><input type="checkbox" name="consent_messages" required className="mr-2" />Yes, I agree</label>
                           </div>
+
+                          {/* Preferred Counselling Approach */}
                           <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-2">
-                              Interested Services
-                            </label>
-                            <p className="text-xs text-gray-500 mb-2">You can select multiple services</p>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
-                              {servicesList.map((service) => (
-                                <label key={service} className="inline-flex items-center text-sm" style={{ fontSize: '0.95rem' }}>
-                                  <input
-                                    type="checkbox"
-                                    name="contact[interested_services][value][]"
-                                    value={service}
-                                    className="form-checkbox h-4 w-4 text-red-600 border-gray-300 rounded min-w-[1rem] min-h-[1rem]"
-                                    style={{ width: '1rem', height: '1rem' }}
-                                  />
-                                  <span className="ml-2 text-gray-700">{service}</span>
-                                </label>
-                              ))}
-                              <label className="inline-flex items-center text-sm" style={{ fontSize: '0.95rem' }}>
-                                <input
-                                  type="checkbox"
-                                  name="contact[interested_services][value][]"
-                                  value="Other"
-                                  className="form-checkbox h-4 w-4 text-red-600 border-gray-300 rounded min-w-[1rem] min-h-[1rem]"
-                                  style={{ width: '1rem', height: '1rem' }}
-                                  onChange={e => setShowOtherService(e.target.checked)}
-                                />
-                                <span className="ml-2 text-gray-700">Other</span>
-                              </label>
-                              {showOtherService && (
-                                <input
-                                  type="text"
-                                  name="contact[interested_services][value][]"
-                                  placeholder="Please specify other service"
-                                  className="mt-2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent col-span-2 w-full max-w-full"
-                                />
-                              )}
+                            <label className="block font-medium mb-2">Preferred Counselling Approach <span className="text-red-600">*</span></label>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                              <label className="flex items-center"><input type="checkbox" name="counselling_approach[]" value="Softer approach" required className="mr-2" />Softer approach</label>
+                              <label className="flex items-center"><input type="checkbox" name="counselling_approach[]" value="Firmer approach" className="mr-2" />Firmer approach</label>
+                              <label className="flex items-center"><input type="checkbox" name="counselling_approach[]" value="Somewhere in between" className="mr-2" />Somewhere in between</label>
+                              <label className="flex items-center"><input type="checkbox" name="counselling_approach[]" value="No Preference" className="mr-2" />No Preference</label>
                             </div>
                           </div>
+
+                          {/* Gender Preference */}
                           <div>
-                            <Textarea
-                              id="message"
-                              name="contact[message][value]"
-                              required
-                              className="w-full max-w-full"
-                              placeholder="How can we help you? Please share a bit about your inquiry or what you're looking for."
-                              rows={5}
-                            />
+                            <label className="block font-medium mb-2">Gender Preference <span className="text-red-600">*</span></label>
+                            <p className="text-sm mb-2">Please select the gender(s) you are comfortable working with (check all that apply):</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                              <label className="flex items-center"><input type="checkbox" name="gender_preference[]" value="Male" required className="mr-2" />Male</label>
+                              <label className="flex items-center"><input type="checkbox" name="gender_preference[]" value="Female" className="mr-2" />Female</label>
+                              <label className="flex items-center"><input type="checkbox" name="gender_preference[]" value="Non-Binary" className="mr-2" />Non-Binary</label>
+                              <label className="flex items-center"><input type="checkbox" name="gender_preference[]" value="Transgender" className="mr-2" />Transgender</label>
+                              <label className="flex items-center"><input type="checkbox" name="gender_preference[]" value="No Preference" className="mr-2" />No Preference</label>
+                            </div>
                           </div>
+
+                          {/* Willingness to Work with Specific Counsellor Types */}
+                          <div>
+                            <label className="block font-medium mb-2">Are you willing to work with a novice counsellor for a decreased fee? <span className="text-red-600">*</span></label>
+                            <div className="flex items-center space-x-4 mb-2">
+                              <label className="flex items-center"><input type="radio" name="novice_counsellor" value="Yes" required className="mr-2" />Yes</label>
+                              <label className="flex items-center"><input type="radio" name="novice_counsellor" value="No" className="mr-2" />No</label>
+                            </div>
+                            <label className="block font-medium mb-2 mt-4">Are you willing to work with a student counsellor? <span className="text-red-600">*</span></label>
+                            <div className="flex items-center space-x-4">
+                              <label className="flex items-center"><input type="radio" name="student_counsellor" value="Yes" required className="mr-2" />Yes</label>
+                              <label className="flex items-center"><input type="radio" name="student_counsellor" value="No" className="mr-2" />No</label>
+                            </div>
+                          </div>
+
+                          {/* Specific Counsellor Preference */}
+                          <div>
+                            <label className="block font-medium mb-2">Do you have a preference of which counsellor on the team you would like to work with? <span className="text-red-600">*</span></label>
+                            <p className="text-sm mb-2">You can find our counsellor profiles at <a href="https://strengthcounselling.ca/about/our-team/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Our Team</a>.</p>
+                            <div className="flex items-center space-x-4">
+                              <label className="flex items-center"><input type="radio" name="specific_counsellor_preference" value="Yes" required className="mr-2" />Yes</label>
+                              <label className="flex items-center"><input type="radio" name="specific_counsellor_preference" value="No" className="mr-2" />No</label>
+                            </div>
+                          </div>
+
+                          {/* Preferred Appointment Day(s) and Time(s) */}
+                          <div>
+                            <label className="block font-medium mb-2">Preferred Appointment Day(s) and Time(s) <span className="text-red-600">*</span></label>
+                            <Textarea name="preferred_appointment_times" required placeholder="Please specify your preferred days and times for appointments..." rows={3} />
+                          </div>
+
+                          {/* Client Relationship Disclosure */}
+                          <div>
+                            <label className="block font-medium mb-2">Do you know anyone who is a current, or was a past, client of ours? <span className="text-red-600">*</span></label>
+                            <div className="flex items-center space-x-4">
+                              <label className="flex items-center"><input type="radio" name="client_relationship_disclosure" value="Yes" required className="mr-2" />Yes</label>
+                              <label className="flex items-center"><input type="radio" name="client_relationship_disclosure" value="No" className="mr-2" />No</label>
+                            </div>
+                          </div>
+
                           <Button type="submit" className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-full font-semibold text-lg transition-all duration-300">
-                            Send Message
+                            Submit Intake Form
                           </Button>
                         </form>
                       ) : (
@@ -480,7 +551,8 @@ export default function ContactPage() {
             </a>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   )
 }
+ 
