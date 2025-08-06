@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
-import NarcissisticAbuseRecoveryPage from "@/components/pages/NarcissisticAbuseRecoveryPage"
+import ServicePageTemplateV2 from "@/components/pages/ServicePageTemplateV2"
+import narcissisticAbuseRecoveryData from "@/data/services/narcissistic-abuse-recovery.json"
 
 export const metadata: Metadata = {
   title: "Narcissistic Abuse Recovery | Allegro Counselling",
@@ -10,5 +11,12 @@ export const metadata: Metadata = {
 }
 
 export default function NarcissisticAbuseRecoveryPageRoute() {
-  return <NarcissisticAbuseRecoveryPage />
+  return (
+    <ServicePageTemplateV2
+      serviceData={narcissisticAbuseRecoveryData}
+      iconName="Shield"
+      iconColor={narcissisticAbuseRecoveryData.iconColor}
+      iconBg={narcissisticAbuseRecoveryData.iconBg}
+    />
+  )
 }

@@ -1,6 +1,7 @@
 "use client"
 
 import { Brain, Heart, Shield, Users, Sparkles } from "lucide-react"
+import sharedContent from "@/data/shared-content.json"
 
 export default function AboutSection() {
   return (
@@ -203,19 +204,9 @@ export default function AboutSection() {
               <div className="pt-4">
                 <button
                   className="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-red-500/30"
-                  onClick={() => {
-                    const targetElement = document.getElementById("contact")
-                    if (targetElement) {
-                      const headerHeight = 80
-                      const targetPosition = targetElement.offsetTop - headerHeight
-                      window.scrollTo({
-                        top: targetPosition,
-                        behavior: "smooth",
-                      })
-                    }
-                  }}
+                  onClick={() => window.open(sharedContent.hero.ctaUrl, "_blank")}
                 >
-                  Book Your Free Consultation
+                  {sharedContent.hero.ctaButton}
                 </button>
               </div>
             </div>

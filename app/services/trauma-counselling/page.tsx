@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
-import TraumaCounsellingPage from "@/components/pages/TraumaCounsellingPage"
+import ServicePageTemplateV2 from "@/components/pages/ServicePageTemplateV2"
+import traumaCounsellingData from "@/data/services/trauma-counselling.json"
 
 export const metadata: Metadata = {
   title: "Trauma Counselling | Allegro Counselling",
@@ -10,5 +11,12 @@ export const metadata: Metadata = {
 }
 
 export default function TraumaCounsellingPageRoute() {
-  return <TraumaCounsellingPage />
+  return (
+    <ServicePageTemplateV2
+      serviceData={traumaCounsellingData}
+      iconName="Shield"
+      iconColor={traumaCounsellingData.iconColor}
+      iconBg={traumaCounsellingData.iconBg}
+    />
+  )
 }

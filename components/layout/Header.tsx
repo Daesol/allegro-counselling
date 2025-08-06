@@ -158,7 +158,7 @@ export default function Header() {
             style={{ backgroundColor: "#D95E61" }}
             onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
           >
-            Book Consultation
+            Book A Free Consultation
           </Button>
         </div>
 
@@ -217,7 +217,7 @@ export default function Header() {
               style={{ backgroundColor: "#D95E61" }}
               onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
             >
-              Book Consultation
+              Book A Free Consultation
             </Button>
           </nav>
         </div>

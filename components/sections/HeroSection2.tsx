@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Star, Heart, Shield, Users } from "lucide-react"
 import Image from "next/image"
+import sharedContent from "@/data/shared-content.json"
 
 export default function HeroSection2() {
   return (
@@ -18,7 +19,7 @@ export default function HeroSection2() {
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center max-w-5xl mx-auto space-y-8">
             <Badge className="bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-sm">
-              ✨ Embrace Your Healing Journey
+              ✨ {sharedContent.hero.badge}
             </Badge>
 
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight">
@@ -29,8 +30,7 @@ export default function HeroSection2() {
             </h1>
 
             <p className="text-xl sm:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-              Professional therapy services in Edmonton helping individuals, couples, and families find healing, growth,
-              and lasting positive change.
+              {sharedContent.hero.subtitle}
             </p>
 
             {/* CTA Buttons */}
@@ -38,8 +38,9 @@ export default function HeroSection2() {
               <Button
                 size="lg"
                 className="rounded-full text-lg px-8 py-4 bg-white text-red-600 hover:bg-gray-100 shadow-xl w-full sm:w-auto font-semibold"
+                onClick={() => window.open(sharedContent.hero.ctaUrl, "_blank")}
               >
-                Start Your Free Consultation
+                {sharedContent.hero.ctaButton}
               </Button>
               <Button
                 variant="outline"

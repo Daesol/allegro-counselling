@@ -1,0 +1,173 @@
+{
+  "title": "Anxiety Support",
+  "subtitle": "Find Peace, Build Resilience, and Regain Control of Your Life",
+  "description": "Anxiety can feel overwhelming and all-consuming, but you don't have to face it alone. Our compassionate team of anxiety specialists understand the complex nature of anxiety disorders and are here to provide you with evidence-based support and practical tools to manage your symptoms.",
+  "fullDescription": "Anxiety affects millions of people worldwide, manifesting in various forms from generalized anxiety disorder to panic attacks, social anxiety, and specific phobias. At Allegro Counselling, we recognize that anxiety is not just about feeling worried – it's a complex interplay of thoughts, emotions, and physical sensations that can significantly impact your daily life.\n\nOur anxiety support services are designed to help you understand the root causes of your anxiety, develop effective coping strategies, and build resilience for long-term mental health. We work with you to identify triggers, challenge negative thought patterns, and create a personalized treatment plan that addresses your unique needs and goals.\n\nThrough a combination of cognitive-behavioral therapy, mindfulness techniques, and other evidence-based approaches, we help you develop the skills and confidence to manage anxiety symptoms and live a more fulfilling life. You deserve to feel calm, confident, and in control of your thoughts and emotions.",
+  "icon": "Brain",
+  "iconColor": "#189799",
+  "iconBg": "#E6F7F7",
+  "heroImage": "https://images.unsplash.com/photo-1569292567777-e5d61a759322?q=80&w=2334&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "benefits": [
+    "Learn effective anxiety management techniques",
+    "Identify and challenge negative thought patterns",
+    "Develop healthy coping mechanisms",
+    "Build resilience and emotional strength",
+    "Improve sleep quality and overall well-being",
+    "Gain confidence in social situations",
+    "Reduce panic attacks and physical symptoms",
+    "Create a personalized anxiety management plan"
+  ],
+  "specificServices": [
+    {
+      "title": "Generalized Anxiety Disorder (GAD)",
+      "description": "Comprehensive support for persistent worry and anxiety.",
+      "details": [
+        "Understanding the cycle of worry and anxiety",
+        "Developing worry management strategies",
+        "Learning to tolerate uncertainty"
+      ],
+      "icon": "Brain",
+      "iconColor": "#189799",
+      "iconBg": "#E6F7F7",
+      "imageUri": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Panic Disorder Treatment",
+      "description": "Specialized help for panic attacks and agoraphobia.",
+      "details": [
+        "Understanding panic attack triggers and symptoms",
+        "Learning breathing and relaxation techniques",
+        "Gradual exposure to feared situations"
+      ],
+      "icon": "Brain",
+      "iconColor": "#189799",
+      "iconBg": "#E6F7F7",
+      "imageUri": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Social Anxiety Support",
+      "description": "Overcome social fears and build confidence.",
+      "details": [
+        "Addressing social fears and self-consciousness",
+        "Building social skills and confidence",
+        "Managing performance anxiety"
+      ],
+      "icon": "Brain",
+      "iconColor": "#189799",
+      "iconBg": "#E6F7F7",
+      "imageUri": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "whatToExpected": {
+    "description": "Our structured approach helps you understand your anxiety, develop coping skills, and build lasting resilience for a calmer, more confident life.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Assessment & Understanding",
+        "description": "We'll explore your anxiety symptoms, triggers, and impact on daily life to develop a comprehensive understanding of your unique experience."
+      },
+      {
+        "step": 2,
+        "title": "Skill Building",
+        "description": "Learn practical anxiety management techniques including breathing exercises, cognitive restructuring, and mindfulness practices."
+      },
+      {
+        "step": 3,
+        "title": "Application & Growth",
+        "description": "Practice new skills in real-life situations, build confidence, and develop long-term strategies for managing anxiety."
+      }
+    ]
+  },
+  "approaches": [
+    {
+      "name": "Cognitive Behavioral Therapy (CBT)",
+      "description": "Identifies and challenges negative thought patterns that contribute to anxiety while developing healthier thinking habits."
+    },
+    {
+      "name": "Mindfulness-Based Approaches",
+      "description": "Teaches present-moment awareness and acceptance to reduce anxiety and improve emotional regulation."
+    },
+    {
+      "name": "Exposure Therapy",
+      "description": "Gradually and safely confronts feared situations to reduce anxiety responses and build confidence."
+    },
+    {
+      "name": "Relaxation Techniques",
+      "description": "Provides practical tools for managing physical symptoms of anxiety through breathing and muscle relaxation."
+    },
+    {
+      "name": "Acceptance and Commitment Therapy",
+      "description": "Helps you accept difficult thoughts and feelings while committing to actions that align with your values."
+    },
+    {
+      "name": "Lifestyle and Wellness Coaching",
+      "description": "Addresses sleep, nutrition, exercise, and other lifestyle factors that impact anxiety levels."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How long does anxiety treatment typically take?",
+      "answer": "The duration varies depending on the severity and type of anxiety. Many people see significant improvements within 8-16 sessions, though some may benefit from longer-term support. We'll work with you to create a personalized treatment plan."
+    },
+    {
+      "question": "What if I have a panic attack during a session?",
+      "answer": "Our therapists are trained to help you through panic attacks safely. We can teach you immediate coping techniques and work together to understand what triggered the attack to prevent future occurrences."
+    },
+    {
+      "question": "Do you offer medication management?",
+      "answer": "While we don't prescribe medication, we can work collaboratively with your doctor or psychiatrist if medication is part of your treatment plan. We focus on therapy and lifestyle approaches."
+    },
+    {
+      "question": "Can anxiety therapy help with physical symptoms?",
+      "answer": "Yes! Anxiety often manifests as physical symptoms like rapid heartbeat, sweating, or stomach issues. We teach techniques to manage these symptoms and address the underlying anxiety."
+    },
+    {
+      "question": "What if I'm too anxious to leave my house?",
+      "answer": "We offer online therapy sessions, so you can receive support from the comfort of your home. We can also work on gradual exposure to help you feel more comfortable going out."
+    },
+    {
+      "question": "How do I know if I need anxiety treatment?",
+      "answer": "If anxiety is interfering with your daily life, relationships, work, or overall well-being, it's worth seeking help. You don't need to wait until it becomes severe – early intervention is often more effective."
+    }
+  ],
+  "relatedServices": ["Depression Support", "Stress Management", "Mindfulness Training", "Individual Therapy"],
+  "therapists": [
+    {
+      "name": "Sasha Campbell",
+      "image": "https://lh3.googleusercontent.com/a-/ALV-UjXZXlLBf5VB42HWHjPCG-bwmLyeoE0aKcpZCa2s2qaotFMWoy0_=s558-p-k-rw-no",
+      "specialization": "Anxiety & Mood Disorders",
+      "experience": "15+ years specializing in anxiety disorders and cognitive behavioral therapy"
+    },
+    {
+      "name": "Tianna Steel",
+      "image": "https://i0.wp.com/allegrocounselling.com/wp-content/uploads/2024/09/Tianna1-2.jpg?resize=1462%2C1536&ssl=1",
+      "specialization": "Anxiety & Stress Management",
+      "experience": "8+ years in anxiety treatment and mindfulness-based approaches"
+    }
+  ],
+  "philosophy": {
+    "title": "Our Anxiety Support Philosophy & Approach",
+    "sections": [
+      {
+        "title": "Understanding Anxiety as a Natural Response",
+        "description": "We believe that anxiety, while distressing, is often a natural response to life's challenges and uncertainties. Our approach focuses on understanding the root causes of your anxiety while developing practical strategies to manage symptoms and build resilience."
+      },
+      {
+        "title": "Holistic Mind-Body Connection",
+        "description": "We recognize that anxiety affects both your mind and body. Our therapeutic approach addresses this mind-body connection, helping you develop awareness of how anxiety manifests physically and emotionally, and teaching you techniques to regulate both aspects."
+      },
+      {
+        "title": "Evidence-Based Coping Strategies",
+        "description": "We combine proven therapeutic techniques with personalized coping strategies. From cognitive-behavioral therapy to mindfulness practices, we equip you with practical tools that you can use in your daily life to manage anxiety and build confidence."
+      },
+      {
+        "title": "Building Long-Term Resilience",
+        "description": "Our goal is not just to help you manage anxiety in the moment, but to build lasting resilience and coping skills. We work with you to develop a sustainable approach to anxiety management that supports your long-term well-being and personal growth."
+      }
+    ]
+  },
+  "pricing": {
+    "individual": "$180 per 50-minute session",
+    "couples": "$200 per 50-minute session"
+  }
+} 

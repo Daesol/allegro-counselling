@@ -1,0 +1,217 @@
+{
+  "title": "Trauma Counselling",
+  "subtitle": "Healing from Trauma with Compassionate, Evidence-Based Care",
+  "description": "Professional trauma counselling services in Calgary. Our trauma-informed therapists provide specialized support for healing from complex trauma, PTSD, childhood trauma, and more.",
+  "fullDescription": "Our trauma counselling program offers comprehensive support for individuals who have experienced various forms of trauma, including childhood trauma, sexual assault, domestic violence, accidents, and other traumatic events. We use evidence-based approaches to help you process trauma, reduce symptoms, and reclaim your life with safety and dignity.",
+  "icon": "Shield",
+  "iconColor": "#7C3AED",
+  "iconBg": "#F3E8FF",
+  "heroImage": "https://images.unsplash.com/photo-1539141086657-b9cc8d93ad3c?q=80&w=2154&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  
+  "benefits": [
+    "Process and heal from traumatic experiences",
+    "Reduce PTSD symptoms and flashbacks",
+    "Develop healthy coping mechanisms",
+    "Rebuild trust and safety in relationships",
+    "Improve emotional regulation and stability",
+    "Create a trauma-informed recovery plan"
+  ],
+  "specificServices": [
+    {
+      "title": "PTSD Treatment",
+      "description": "Specialized therapy for Post-Traumatic Stress Disorder using evidence-based approaches to reduce symptoms and improve quality of life.",
+      "details": [
+        "Reduce flashbacks and intrusive thoughts",
+        "Address hypervigilance and anxiety",
+        "Process traumatic memories safely",
+        "Develop grounding and coping skills"
+      ],
+      "icon": "Brain",
+      "iconColor": "#7C3AED",
+      "iconBg": "#F3E8FF",
+      "imageUri": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Childhood Trauma Therapy",
+      "description": "Comprehensive support for healing from childhood trauma, including abuse, neglect, and adverse childhood experiences (ACEs).",
+      "details": [
+        "Process childhood trauma safely",
+        "Address attachment issues",
+        "Heal inner child wounds",
+        "Develop healthy adult relationships"
+      ],
+      "icon": "Heart",
+      "iconColor": "#7C3AED",
+      "iconBg": "#F3E8FF",
+      "imageUri": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Complex Trauma Treatment",
+      "description": "Specialized therapy for complex trauma resulting from repeated or prolonged traumatic experiences.",
+      "details": [
+        "Address complex PTSD symptoms",
+        "Process multiple traumatic events",
+        "Develop emotional regulation skills",
+        "Build healthy identity and self-worth"
+      ],
+      "icon": "Shield",
+      "iconColor": "#7C3AED",
+      "iconBg": "#F3E8FF",
+      "imageUri": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Sexual Assault Counselling",
+      "description": "Trauma-informed support for survivors of sexual assault, providing a safe space for healing and recovery.",
+      "details": [
+        "Process sexual trauma safely",
+        "Address shame and guilt",
+        "Rebuild trust and safety",
+        "Develop healthy boundaries"
+      ],
+      "icon": "Shield",
+      "iconColor": "#7C3AED",
+      "iconBg": "#F3E8FF",
+      "imageUri": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "whatToExpected": {
+    "title": "What to Expect in Trauma Counselling",
+    "description": "A safe, trauma-informed approach to healing with ongoing support and evidence-based therapeutic techniques.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Safety Assessment",
+        "description": "Comprehensive evaluation of your current safety, symptoms, and readiness for trauma processing."
+      },
+      {
+        "step": 2,
+        "title": "Stabilization",
+        "description": "Learn grounding techniques, emotional regulation skills, and safety planning before processing trauma."
+      },
+      {
+        "step": 3,
+        "title": "Trauma Processing",
+        "description": "Use evidence-based techniques to safely process traumatic memories and reduce their impact."
+      },
+      {
+        "step": 4,
+        "title": "Integration",
+        "description": "Integrate healing into daily life and develop long-term strategies for maintaining recovery."
+      },
+      {
+        "step": 5,
+        "title": "Growth & Resilience",
+        "description": "Build resilience, develop healthy relationships, and create a meaningful life beyond trauma."
+      },
+      {
+        "step": 6,
+        "title": "Ongoing Support",
+        "description": "Continued support and maintenance strategies to ensure lasting healing and growth."
+      }
+    ]
+  },
+  "approaches": [
+    {
+      "name": "EMDR Therapy",
+      "description": "Eye Movement Desensitization and Reprocessing to process traumatic memories and reduce their emotional impact.",
+      "icon": "Brain"
+    },
+    {
+      "name": "Trauma-Focused CBT",
+      "description": "Cognitive Behavioral Therapy specifically adapted for trauma processing and symptom reduction.",
+      "icon": "Brain"
+    },
+    {
+      "name": "Somatic Therapy",
+      "description": "Body-centered approaches to address trauma stored in the body and nervous system.",
+      "icon": "Heart"
+    },
+    {
+      "name": "Internal Family Systems (IFS)",
+      "description": "Work with different parts of yourself to heal internal conflicts and develop self-leadership.",
+      "icon": "Users"
+    },
+    {
+      "name": "Narrative Therapy",
+      "description": "Help you rewrite your story and create new meaning from traumatic experiences.",
+      "icon": "Brain"
+    },
+    {
+      "name": "Mindfulness-Based Approaches",
+      "description": "Develop present-moment awareness and self-compassion to support trauma healing.",
+      "icon": "Heart"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How long does trauma counselling take?",
+      "answer": "The duration varies depending on the type and severity of trauma, individual circumstances, and personal factors. Some people see significant progress in 3-6 months, while others may need 1-2 years or longer. We work at your pace and prioritize your safety and comfort throughout the process."
+    },
+    {
+      "question": "Will talking about trauma make it worse?",
+      "answer": "We use a phased approach that prioritizes your safety and stability. We won't process trauma until you're ready and have the necessary coping skills. Our trauma-informed approach ensures that therapy is always conducted at your pace and comfort level."
+    },
+    {
+      "question": "What if I don't remember all the details of my trauma?",
+      "answer": "That's completely normal and common. You don't need to remember every detail to heal from trauma. We focus on how trauma affects you now and work with what you do remember. The goal is to reduce current symptoms and improve your quality of life."
+    },
+    {
+      "question": "Can trauma counselling help with other mental health issues?",
+      "answer": "Yes. Trauma often underlies or contributes to other mental health conditions like depression, anxiety, substance use, and relationship problems. Addressing trauma can significantly improve these other conditions and overall mental health."
+    },
+    {
+      "question": "What if I'm not sure if what I experienced was trauma?",
+      "answer": "If something is affecting your life negatively, it's worth exploring in therapy. Trauma can result from many different experiences, and what's traumatic for one person may not be for another. We can help you understand how your experiences have impacted you."
+    },
+    {
+      "question": "Is it normal to feel worse before feeling better?",
+      "answer": "Sometimes, yes. As you begin to process trauma, you might temporarily experience increased symptoms. This is often a sign that healing is beginning. We'll work together to manage these symptoms and ensure you have the support you need during this process."
+    }
+  ],
+  "relatedServices": [
+    "EMDR Therapy",
+    "Narcissistic Abuse Recovery",
+    "Anxiety Support",
+    "Depression Support",
+    "Inner Child Work"
+  ],
+  "therapists": [
+    {
+      "name": "Sasha Campbell",
+      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "specialization": "Trauma Therapy & EMDR",
+      "experience": "15+ years specializing in trauma and PTSD treatment"
+    },
+    {
+      "name": "Tianna Smith",
+      "image": "https://images.unsplash.com/photo-1594824475545-9d0c7c4951c1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "specialization": "Trauma-Informed Counselling",
+      "experience": "10+ years working with trauma survivors"
+    }
+  ],
+  "philosophy": {
+    "title": "Our Trauma Counselling Philosophy & Approach",
+    "sections": [
+      {
+        "title": "Understanding Trauma's Impact on the Brain and Body",
+        "description": "We understand that trauma affects both the brain and body, creating patterns that can persist long after the traumatic event. Our approach focuses on helping you understand how trauma has shaped your responses and developing strategies for healing and recovery."
+      },
+      {
+        "title": "Safety-First Trauma-Informed Care",
+        "description": "We prioritize your safety and comfort throughout the healing process. Our trauma-informed approach ensures that you always feel in control, respected, and supported. We work at your pace, creating a safe space where healing can occur naturally."
+      },
+      {
+        "title": "Evidence-Based Trauma Processing",
+        "description": "We use proven therapeutic approaches including trauma-focused cognitive behavioral therapy, somatic experiencing, and other trauma-specific modalities. Our goal is to help you process traumatic memories safely while building resilience and coping skills."
+      },
+      {
+        "title": "Holistic Recovery and Post-Traumatic Growth",
+        "description": "We support your journey toward not just recovery, but post-traumatic growth. We help you integrate your experiences, develop new meaning, and build a stronger, more resilient sense of self that honors both your past and your future."
+      }
+    ]
+  },
+  "pricing": {
+    "individual": "$180 per 50-minute session",
+    "couples": "$200 per 50-minute session"
+  }
+} 

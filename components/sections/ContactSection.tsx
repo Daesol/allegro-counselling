@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Clock, Mail, MapPin, Phone, Star, Heart, Shield, CheckCircle } from "lucide-react"
+import sharedContent from "@/data/shared-content.json"
 import Image from "next/image"
 
 export default function ContactSection() {
@@ -149,8 +150,9 @@ export default function ContactSection() {
                   <Button
                     size="lg"
                     className="rounded-full w-full bg-white text-red-600 hover:bg-red-50 text-lg font-semibold py-4 shadow-lg"
+                    onClick={() => window.open(sharedContent.hero.ctaUrl, "_blank")}
                   >
-                    Book Free 30-Min Consultation
+                    {sharedContent.hero.ctaButton}
                   </Button>
                   <Button
                     variant="outline"

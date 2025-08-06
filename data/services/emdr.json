@@ -1,0 +1,191 @@
+{
+  "title": "EMDR Therapy",
+  "subtitle": "Eye Movement Desensitization & Reprocessing for Trauma and Distressing Life Experiences",
+  "description": "EMDR is a powerful, evidence-based therapy that helps your brain process and heal from traumatic experiences. Our certified EMDR therapists use this innovative approach to help you move beyond trauma and find peace.",
+  "fullDescription": "Eye Movement Desensitization and Reprocessing (EMDR) is a revolutionary therapy that helps your brain naturally process and heal from traumatic experiences. Unlike traditional talk therapy, EMDR works directly with the brain's natural healing mechanisms to resolve trauma and distressing memories.\n\nAt Allegro Counselling, our certified EMDR therapists understand that trauma can get stuck in the brain, causing ongoing symptoms like anxiety, depression, flashbacks, and emotional distress. EMDR helps your brain process these stuck memories, allowing you to move forward with greater peace and resilience.\n\nEMDR is particularly effective for treating post-traumatic stress disorder (PTSD), but it's also highly effective for a wide range of issues including anxiety, depression, phobias, grief, and other distressing life experiences. The therapy involves guided eye movements or other bilateral stimulation while focusing on traumatic memories, helping your brain process and integrate these experiences in a healthy way.\n\nOur approach is gentle, respectful, and always puts you in control. We work at your pace, ensuring you feel safe and supported throughout the process. Whether you're dealing with a single traumatic event or complex trauma from childhood, EMDR can help you find relief and move toward healing.",
+  "heroImage": "/EMDR_.jpeg",
+  "benefits": [
+    "Effective for processing trauma",
+    "Reduces symptoms of PTSD, anxiety, and depression",
+    "Beneficial for PTSD, anxiety and depression",
+    "Guaranteed results"
+  ],
+  "specificServices": [
+    {
+      "title": "PTSD Treatment",
+      "description": "Comprehensive EMDR therapy for post-traumatic stress disorder.",
+      "details": [
+        "Processing traumatic memories and experiences",
+        "Reducing flashbacks, nightmares, and intrusive thoughts",
+        "Building safety and stability in daily life"
+      ],
+      "imageUri": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Complex Trauma",
+      "description": "EMDR for childhood trauma and complex developmental trauma.",
+      "details": [
+        "Processing early childhood traumatic experiences",
+        "Healing attachment wounds and relationship patterns",
+        "Building healthy self-concept and boundaries"
+      ],
+      "imageUri": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Anxiety and Phobias",
+      "description": "EMDR for anxiety disorders and specific phobias.",
+      "details": [
+        "Processing anxiety-provoking memories and experiences",
+        "Reducing fear responses and avoidance behaviors",
+        "Building confidence and emotional regulation"
+      ],
+      "imageUri": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Grief and Loss",
+      "description": "EMDR for processing grief and traumatic loss.",
+      "details": [
+        "Processing the trauma of sudden or violent loss",
+        "Resolving complicated grief and unresolved emotions",
+        "Finding meaning and peace after loss"
+      ],
+      "imageUri": "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Performance Enhancement",
+      "description": "EMDR for improving performance and reducing performance anxiety.",
+      "details": [
+        "Processing performance-related trauma and anxiety",
+        "Building confidence and mental resilience",
+        "Enhancing focus and performance under pressure"
+      ],
+      "imageUri": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Recent Trauma",
+      "description": "EMDR for recent traumatic events and acute stress.",
+      "details": [
+        "Processing recent traumatic experiences",
+        "Preventing the development of PTSD",
+        "Building resilience and coping skills"
+      ],
+      "imageUri": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "whatToExpected": {
+    "description": "Our EMDR approach helps you safely process traumatic experiences, reduce distressing symptoms, and build resilience for lasting healing and growth.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Assessment & Preparation",
+        "description": "We'll assess your trauma history, establish safety, and prepare you for EMDR therapy, ensuring you have the resources and support needed for the process."
+      },
+      {
+        "step": 2,
+        "title": "Processing & Healing",
+        "description": "Using EMDR techniques, we'll help your brain process traumatic memories and experiences, reducing their emotional intensity and negative impact."
+      },
+      {
+        "step": 3,
+        "title": "Integration & Growth",
+        "description": "Integrate the healing insights and build new, positive beliefs about yourself and your experiences, moving forward with greater peace and resilience."
+      }
+    ]
+  },
+  "approaches": [
+    {
+      "name": "Standard EMDR Protocol",
+      "description": "Follows the established 8-phase EMDR protocol for comprehensive trauma processing."
+    },
+    {
+      "name": "Adaptive Information Processing",
+      "description": "Works with your brain's natural healing mechanisms to process and integrate traumatic experiences."
+    },
+    {
+      "name": "Bilateral Stimulation",
+      "description": "Uses eye movements, taps, or sounds to facilitate the brain's natural processing of traumatic memories."
+    },
+    {
+      "name": "Resource Development",
+      "description": "Builds internal resources and coping skills to support the EMDR process."
+    },
+    {
+      "name": "Safe Place Protocol",
+      "description": "Establishes a safe internal space for emotional regulation during and after EMDR sessions."
+    },
+    {
+      "name": "Future Template",
+      "description": "Prepares you for future challenges by processing potential triggers and building confidence."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How does EMDR work?",
+      "answer": "EMDR works by helping your brain process traumatic memories that have become stuck. The bilateral stimulation (eye movements, taps, or sounds) helps your brain naturally process and integrate these experiences, reducing their emotional intensity."
+    },
+    {
+      "question": "How long does EMDR treatment take?",
+      "answer": "The duration varies depending on the complexity and number of traumatic experiences. Some people see significant improvement in 6-12 sessions, while others may need longer-term treatment for complex trauma."
+    },
+    {
+      "question": "Is EMDR safe?",
+      "answer": "Yes, EMDR is a safe, evidence-based therapy. Our certified EMDR therapists ensure you feel safe and in control throughout the process, and we always work at your pace."
+    },
+    {
+      "question": "What if I don't want to talk about my trauma?",
+      "answer": "EMDR doesn't require you to talk extensively about your trauma. You can share as much or as little as you're comfortable with, and the therapy can still be effective."
+    },
+    {
+      "question": "Can EMDR help with anxiety and depression?",
+      "answer": "Yes! EMDR is highly effective for anxiety, depression, and other conditions that may be rooted in traumatic experiences or distressing memories."
+    },
+    {
+      "question": "What happens during an EMDR session?",
+      "answer": "During EMDR, you'll focus on a traumatic memory while following the therapist's finger movements or other bilateral stimulation. This helps your brain process the memory naturally."
+    },
+    {
+      "question": "Do I need to have a specific diagnosis to benefit from EMDR?",
+      "answer": "No, EMDR can help with a wide range of issues including trauma, anxiety, depression, phobias, grief, and other distressing experiences, regardless of diagnosis."
+    }
+  ],
+  "relatedServices": ["Trauma Counselling", "Anxiety Support", "Depression Support", "Individual Therapy"],
+  "therapists": [
+    {
+      "name": "Sasha Campbell",
+      "image": "https://lh3.googleusercontent.com/a-/ALV-UjXZXlLBf5VB42HWHjPCG-bwmLyeoE0aKcpZCa2s2qaotFMWoy0_=s558-p-k-rw-no",
+      "specialization": "EMDR & Trauma Therapy",
+      "experience": "15+ years specializing in EMDR and trauma-informed care"
+    },
+    {
+      "name": "Tianna Steel",
+      "image": "https://i0.wp.com/allegrocounselling.com/wp-content/uploads/2024/09/Tianna1-2.jpg?resize=1462%2C1536&ssl=1",
+      "specialization": "EMDR & Complex Trauma",
+      "experience": "8+ years in EMDR therapy and complex trauma treatment"
+    }
+  ],
+  "philosophy": {
+    "title": "Is EMDR Right for you?",
+    "sections": [
+      {
+        "title": "Are you struggling with intrusive  thourghts and flash backs?",
+        "description": "EMDR is based on the understanding that trauma can get 'stuck' in the brain's natural processing system. When this happens, traumatic memories continue to cause distress long after the event has passed. Our EMDR approach helps your brain naturally process and integrate these memories, allowing you to move forward with greater peace and resilience."
+      },
+      {
+        "title": "Do you worry about the same thoughts over and over?",
+        "description": "EMDR uses bilateral stimulation (eye movements, taps, or sounds) to activate your brain's natural healing mechanisms. This process helps your brain process traumatic memories in a way that reduces their emotional intensity and allows you to develop new, more adaptive perspectives about yourself and your experiences."
+      },
+      {
+        "title": "Do you feel hopeless about your future?",
+        "description": "Your safety and comfort are our top priorities. We work at your pace, ensuring you always feel in control of the process. EMDR sessions are designed to be gentle and respectful, with frequent check-ins to ensure you're feeling safe and supported throughout your healing journey."
+      },
+      {
+        "title": "Have other therapies been unsuccessful?",
+        "description": "Our EMDR therapists are certified and trained in the latest evidence-based protocols. We combine the power of EMDR with other therapeutic approaches as needed, creating a comprehensive treatment plan tailored to your unique needs and goals."
+      }
+    ]
+  },
+  "pricing": {
+    "individual": "$180 per 50-minute session",
+    "couples": "$200 per 50-minute session"
+  }
+} 

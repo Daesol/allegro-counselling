@@ -1,0 +1,216 @@
+{
+  "title": "Narcissistic Abuse Recovery",
+  "subtitle": "Reclaim Your Self-Worth and Rebuild Your Life",
+  "description": "Specialized support for narcissistic abuse recovery. Trauma-informed care to help you reclaim your self-worth and rebuild a life free from manipulation and control.",
+  "fullDescription": "Our narcissistic abuse recovery program provides comprehensive support for individuals who have experienced emotional, psychological, and sometimes physical abuse from narcissistic individuals. We understand the complex dynamics of narcissistic relationships and provide evidence-based therapeutic approaches to help you heal, rebuild your self-esteem, and establish healthy boundaries.",
+  "icon": "Shield",
+  "iconColor": "#DC2626",
+  "iconBg": "#FEE2E2",
+  "heroImage": "https://images.unsplash.com/photo-1601802455383-a56d602d43c0?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHxoYXBweXxlbnwwfHwwfHx8MA%3D%3D",
+  "benefits": [
+    "Reclaim your self-worth and identity",
+    "Establish healthy boundaries and self-protection",
+    "Heal from gaslighting and emotional manipulation",
+    "Develop healthy relationship patterns",
+    "Rebuild trust in yourself and others",
+    "Process complex trauma and PTSD symptoms"
+  ],
+  "specificServices": [
+    {
+      "title": "Gaslighting Recovery",
+      "description": "Specialized therapy to help you recognize and recover from gaslighting tactics, rebuild your reality, and trust your own perceptions.",
+      "details": [
+        "Identify gaslighting patterns and tactics",
+        "Rebuild trust in your own perceptions",
+        "Develop critical thinking skills",
+        "Process the psychological impact"
+      ],
+      "icon": "Brain",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2",
+      "imageUri": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Boundary Setting",
+      "description": "Learn to establish and maintain healthy boundaries to protect yourself from future manipulation and abuse.",
+      "details": [
+        "Identify your personal boundaries",
+        "Practice assertive communication",
+        "Learn to say no without guilt",
+        "Protect your emotional well-being"
+      ],
+      "icon": "Shield",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2",
+      "imageUri": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Self-Esteem Rebuilding",
+      "description": "Comprehensive support to rebuild your self-esteem, self-worth, and confidence after narcissistic abuse.",
+      "details": [
+        "Identify and challenge negative self-beliefs",
+        "Develop self-compassion and self-care",
+        "Build authentic self-confidence",
+        "Rediscover your strengths and values"
+      ],
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2",
+      "imageUri": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Trauma Processing",
+      "description": "Specialized trauma therapy to process the complex trauma and PTSD symptoms resulting from narcissistic abuse.",
+      "details": [
+        "Process complex trauma symptoms",
+        "Address PTSD and anxiety",
+        "Develop healthy coping mechanisms",
+        "Create a trauma-informed recovery plan"
+      ],
+      "icon": "Brain",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2",
+      "imageUri": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "whatToExpected": {
+    "title": "What to Expect in Narcissistic Abuse Recovery",
+    "description": "A comprehensive, trauma-informed approach to healing from narcissistic abuse with ongoing support and guidance.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Initial Assessment",
+        "description": "Comprehensive evaluation of your experiences, symptoms, and recovery goals to create a personalized treatment plan."
+      },
+      {
+        "step": 2,
+        "title": "Safety Planning",
+        "description": "Develop safety strategies and support systems to ensure your physical and emotional safety during recovery."
+      },
+      {
+        "step": 3,
+        "title": "Trauma Processing",
+        "description": "Use evidence-based techniques to process trauma, reduce symptoms, and develop healthy coping mechanisms."
+      },
+      {
+        "step": 4,
+        "title": "Skill Building",
+        "description": "Learn boundary setting, assertive communication, and self-protection skills to prevent future abuse."
+      },
+      {
+        "step": 5,
+        "title": "Identity Rebuilding",
+        "description": "Rediscover your authentic self, rebuild self-esteem, and develop healthy relationship patterns."
+      },
+      {
+        "step": 6,
+        "title": "Integration & Growth",
+        "description": "Integrate your healing into daily life and develop long-term strategies for maintaining your recovery."
+      }
+    ]
+  },
+  "approaches": [
+    {
+      "name": "Trauma-Informed Therapy",
+      "description": "Evidence-based approaches that recognize the impact of trauma and prioritize safety, trust, and empowerment in the healing process.",
+      "icon": "Shield"
+    },
+    {
+      "name": "EMDR Therapy",
+      "description": "Eye Movement Desensitization and Reprocessing to process traumatic memories and reduce their emotional impact.",
+      "icon": "Brain"
+    },
+    {
+      "name": "Cognitive Behavioral Therapy (CBT)",
+      "description": "Identify and challenge negative thought patterns and develop healthier cognitive and behavioral responses.",
+      "icon": "Brain"
+    },
+    {
+      "name": "Dialectical Behavior Therapy (DBT)",
+      "description": "Develop mindfulness, emotional regulation, interpersonal effectiveness, and distress tolerance skills.",
+      "icon": "Heart"
+    },
+    {
+      "name": "Internal Family Systems (IFS)",
+      "description": "Work with different parts of yourself to heal internal conflicts and develop self-leadership.",
+      "icon": "Users"
+    },
+    {
+      "name": "Somatic Therapy",
+      "description": "Address trauma stored in the body through body-centered therapeutic approaches.",
+      "icon": "Heart"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How long does narcissistic abuse recovery take?",
+      "answer": "Recovery time varies depending on the severity and duration of abuse, individual circumstances, and personal factors. Some people see significant progress in 6-12 months, while others may need 1-2 years or longer for complete healing. We work at your pace and provide ongoing support throughout your journey."
+    },
+    {
+      "question": "Will I ever trust people again after narcissistic abuse?",
+      "answer": "Yes, it's possible to rebuild trust, but it takes time and work. We help you develop healthy boundaries, recognize red flags, and build trust gradually with safe people. You'll learn to trust your own judgment and intuition again."
+    },
+    {
+      "question": "What if I'm still in contact with the narcissistic person?",
+      "answer": "We can work with you regardless of your current situation. If you're still in contact, we'll focus on safety planning, boundary setting, and developing strategies to protect yourself. If you've gone no-contact, we'll support your healing and help you maintain healthy boundaries."
+    },
+    {
+      "question": "Is it normal to feel guilty or doubt myself during recovery?",
+      "answer": "Absolutely. These feelings are common and often result from the gaslighting and manipulation you experienced. Part of recovery involves recognizing these feelings as symptoms of abuse, not reality. We help you develop self-compassion and trust in your own perceptions."
+    },
+    {
+      "question": "Can narcissistic abuse recovery help with other mental health issues?",
+      "answer": "Yes. Narcissistic abuse often co-occurs with depression, anxiety, PTSD, and other mental health conditions. Our trauma-informed approach addresses the root causes and helps improve overall mental health and well-being."
+    },
+    {
+      "question": "What if I'm worried about the cost of therapy?",
+      "answer": "We offer flexible payment options and can work with your budget. Many insurance plans cover therapy for trauma and mental health conditions. We also offer sliding scale fees for those who qualify. Your healing is important, and we're committed to making therapy accessible."
+    }
+  ],
+  "relatedServices": [
+    "Trauma Counselling",
+    "EMDR Therapy",
+    "Anxiety Support",
+    "Depression Support",
+    "Relationship Counselling"
+  ],
+  "therapists": [
+    {
+      "name": "Sasha Campbell",
+      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "specialization": "Trauma Therapy & Narcissistic Abuse Recovery",
+      "experience": "15+ years specializing in complex trauma and abuse recovery"
+    },
+    {
+      "name": "Tianna Smith",
+      "image": "https://images.unsplash.com/photo-1594824475545-9d0c7c4951c1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "specialization": "Trauma-Informed Counselling",
+      "experience": "10+ years working with survivors of abuse and trauma"
+    }
+  ],
+  "philosophy": {
+    "title": "Our Narcissistic Abuse Recovery Philosophy & Approach",
+    "sections": [
+      {
+        "title": "Understanding Narcissistic Abuse as Complex Trauma",
+        "description": "We recognize that narcissistic abuse is a form of complex trauma that can deeply affect your sense of self, trust, and reality. Our approach focuses on helping you understand the dynamics of narcissistic relationships and validating your experiences."
+      },
+      {
+        "title": "Reclaiming Your Reality and Self-Worth",
+        "description": "We help you rebuild your sense of reality and self-worth that may have been systematically undermined. Our approach supports you in trusting your own perceptions, rebuilding confidence, and developing healthy boundaries."
+      },
+      {
+        "title": "Evidence-Based Recovery from Complex Trauma",
+        "description": "We use trauma-informed therapeutic approaches specifically designed for survivors of narcissistic abuse. Our goal is to help you process the trauma, develop healthy coping mechanisms, and create a life free from toxic relationships."
+      },
+      {
+        "title": "Building Healthy Relationships and Boundaries",
+        "description": "We support you in developing strong boundaries, recognizing red flags, and building healthy relationships. We help you create a new normal that prioritizes your well-being and protects you from future toxic dynamics."
+      }
+    ]
+  },
+  "pricing": {
+    "individual": "$180 per 50-minute session",
+    "couples": "$200 per 50-minute session"
+  }
+} 
