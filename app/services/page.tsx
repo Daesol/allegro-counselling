@@ -100,6 +100,15 @@ export default function ServicesPage() {
       href: "/services/trauma-counselling",
       image: "https://images.unsplash.com/photo-1539141086657-b9cc8d93ad3c?q=80&w=2154&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
+    {
+      title: "Grief and Bereavement",
+      description: "Compassionate support for navigating loss, processing emotions, and finding meaning in your healing journey.",
+      icon: Heart,
+      iconColor: "#DC2626",
+      iconBg: "#FEF2F2",
+      href: "/services/grief-and-bereavement",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
   ]
 
   return (

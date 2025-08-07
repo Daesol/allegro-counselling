@@ -72,7 +72,7 @@ export default function Header() {
         { label: "ADHD Diagnosis and Support", href: "/services/adhd-diagnosis-and-support" },
         { label: "Autism Diagnosis and Support", href: "/services/autism-diagnosis-and-support" },
         { label: "Addictions", href: "/services/addictions" },
-        { label: "Grief and Bereavement", href: "https://allegrocounselling.com/services/grief-bereavement/" },
+        { label: "Grief and Bereavement", href: "/services/grief-and-bereavement" },
         { label: "Inner Child Work", href: "/services/inner-child-work" },
         {
           label: "Eye Movement Desensitization and Reprocessing",
