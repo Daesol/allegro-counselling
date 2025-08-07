@@ -1,0 +1,108 @@
+{
+  "hero": {
+    "badge": "Professional Therapy Services",
+    "subtitle": "Professional Therapy Services Online in Alberta",
+    "ctaButton": "Book A Free Consultation",
+    "ctaUrl": "https://calendly.com/allegroadmin/30min"
+  },
+
+  "acknowledgingPain": {
+    "title": "We See Your Pain",
+    "description": "Healing begins with being seen and heard. We understand that reaching out for help can be difficult, and that your pain is real and valid. Our team is here to walk alongside you, offering compassion, expertise, and a safe space for your healing journey. You are not alone.",
+    "ctaButton": "Select A Therapist",
+    "ctaUrl": "https://allegrocounselling.com/meettheteam/"
+  },
+  "specificServices": {
+    "title": "Our",
+    "highlightedTitle": "Specialized Services",
+    "subtitle": "Comprehensive therapy services tailored to your unique needs.",
+    "ctaButton": "Learn More About"
+  },
+  "whatToExpected": {
+    "title": "What to",
+    "highlightedTitle": "Expect"
+  },
+  "approaches": {
+    "title": "Our",
+    "highlightedTitle": "Approach",
+    "subtitle": "Evidence-based therapeutic methods tailored to your unique needs and goals"
+  },
+  "faq": {
+    "title": "Frequently Asked",
+    "highlightedTitle": "Questions"
+  },
+  "finalCta": {
+    "title": "Ready to Begin Your Healing Journey?",
+    "description": "Take the first step towards better mental health. Book your free consultation today and discover how",
+    "ctaButton": "Book A Free Consultation",
+    "phoneButton": "Call (587) 882-4196",
+    "phoneNumber": "(587) 882-4196",
+    "email": "info@allegrocounselling.com"
+  },
+  "features": [
+    {
+      "title": "Confidential & Secure",
+      "description": "Your privacy is our priority with complete confidentiality guaranteed"
+    },
+    {
+      "title": "Expert Guidance",
+      "description": "Registered Licensed professionals with specialized training and experience"
+    },
+    {
+      "title": "Compassionate Care",
+      "description": "Warm, empathetic support throughout your healing journey"
+    }
+  ],
+  "serviceIcons": {
+    "emdr": {
+      "icon": "Brain",
+      "iconColor": "#7C3AED",
+      "iconBg": "#EDE9FE"
+    },
+    "adhd-diagnosis-and-support": {
+      "icon": "Brain",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5"
+    },
+    "autism-diagnosis-and-support": {
+      "icon": "Brain",
+      "iconColor": "#6366F1",
+      "iconBg": "#E0E7FF"
+    },
+    "inner-child-work": {
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2"
+    },
+    "depression-support": {
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2"
+    },
+    "addictions": {
+      "icon": "Shield",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5"
+    },
+    "relationship-counselling": {
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2"
+    },
+    "anxiety-support": {
+      "icon": "Brain",
+      "iconColor": "#189799",
+      "iconBg": "#E6F7F7"
+    },
+    "trauma-counselling": {
+      "icon": "Shield",
+      "iconColor": "#7C3AED",
+      "iconBg": "#EDE9FE"
+    },
+    "narcissistic-abuse-recovery": {
+      "icon": "Shield",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2"
+    }
+  }
+} 

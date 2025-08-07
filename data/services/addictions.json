@@ -1,0 +1,251 @@
+{
+  "title": "Addictions",
+  "subtitle": "Break Free from Addiction and Reclaim Your Life",
+  "description": "Addiction can feel like an impossible cycle to break, but recovery is possible. Our compassionate team of addiction specialists understand the complex nature of substance and behavioral addictions, and we're here to provide evidence-based support to help you break free and build a healthier, more fulfilling life.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive addiction recovery approach can transform your life and break the cycle of addiction",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our Addiction Recovery Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based Recovery Methods",
+            "description": "Proven therapeutic techniques specifically designed for addiction treatment"
+          },
+          {
+            "title": "Personalized Recovery Care",
+            "description": "Tailored treatment plans for your unique addiction and recovery journey"
+          },
+          {
+            "title": "Safe Recovery Environment",
+            "description": "Non-judgmental space for healing and breaking free from addiction"
+          },
+          {
+            "title": "Experienced Addiction Team",
+            "description": "Registered Licensed professionals with years of addiction recovery expertise"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our Recovery Impact",
+        "stats": [
+          { "value": "500+", "label": "Recovery Successes" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.8", "label": "Recovery Rating" }
+        ]
+      }
+    }
+  },
+  "icon": "Shield",
+  "iconColor": "#059669",
+  "iconBg": "#D1FAE5",
+  "heroImage": "https://images.unsplash.com/photo-1593371137609-7c1335bcf3c5?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "benefits": [
+    "Understand the root causes of your addiction",
+    "Develop healthy coping mechanisms and relapse prevention strategies",
+    "Address underlying mental health issues that contribute to addiction",
+    "Build a strong support network for long-term recovery",
+    "Learn to manage triggers and cravings effectively",
+    "Improve relationships damaged by addiction",
+    "Create a meaningful life beyond addiction",
+    "Develop self-compassion and rebuild self-worth"
+  ],
+  "specificServices": [
+    {
+      "title": "Substance Addiction Recovery",
+      "description": "Comprehensive treatment for alcohol, drug, and prescription medication addictions.",
+      "details": [
+        "Individual and group therapy for substance use disorders",
+        "Medication-assisted treatment support and coordination",
+        "Relapse prevention planning and strategies"
+      ],
+      "icon": "Shield",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Behavioral Addiction Treatment",
+      "description": "Support for gambling, gaming, shopping, food, and other behavioral addictions.",
+      "details": [
+        "Identifying triggers and patterns in behavioral addictions",
+        "Developing healthy alternatives and coping strategies",
+        "Addressing the underlying emotional needs driving addictive behaviors"
+      ],
+      "icon": "Shield",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Dual Diagnosis Treatment",
+      "description": "Integrated treatment for addiction and co-occurring mental health conditions.",
+      "details": [
+        "Addressing depression, anxiety, trauma, and other mental health issues",
+        "Coordinated care between addiction and mental health treatment",
+        "Understanding the relationship between mental health and addiction"
+      ],
+      "icon": "Shield",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Family Support and Education",
+      "description": "Support for families affected by addiction and codependency issues.",
+      "details": [
+        "Understanding addiction and its impact on family dynamics",
+        "Setting healthy boundaries and practicing self-care",
+        "Supporting recovery while maintaining your own well-being"
+      ],
+      "icon": "Shield",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Relapse Prevention",
+      "description": "Strategies and tools to maintain long-term recovery and prevent relapse.",
+      "details": [
+        "Identifying high-risk situations and triggers",
+        "Developing effective coping strategies and emergency plans",
+        "Building resilience and maintaining motivation for recovery"
+      ],
+      "icon": "Shield",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Recovery Maintenance",
+      "description": "Ongoing support for maintaining sobriety and building a fulfilling life.",
+      "details": [
+        "Building a meaningful life beyond addiction",
+        "Developing healthy relationships and social connections",
+        "Creating purpose and direction in recovery"
+      ],
+      "icon": "Shield",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "whatToExpected": {
+    "description": "Our comprehensive approach helps you understand your addiction, develop recovery skills, and build a strong foundation for lasting sobriety and personal growth.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Assessment & Understanding",
+        "description": "We'll explore your addiction history, triggers, and underlying issues to develop a comprehensive understanding of your unique situation and recovery needs."
+      },
+      {
+        "step": 2,
+        "title": "Recovery Planning",
+        "description": "Create a personalized recovery plan that addresses your specific addiction, co-occurring issues, and personal goals for lasting change."
+      },
+      {
+        "step": 3,
+        "title": "Skill Building & Maintenance",
+        "description": "Learn practical skills for managing cravings, preventing relapse, and building a fulfilling life that supports your recovery journey."
+      }
+    ]
+  },
+  "approaches": [
+    {
+      "name": "Cognitive Behavioral Therapy (CBT)",
+      "description": "Identifies and changes negative thought patterns and behaviors that contribute to addiction while developing healthier coping strategies."
+    },
+    {
+      "name": "Motivational Interviewing",
+      "description": "Helps you explore and resolve ambivalence about change while building motivation for recovery."
+    },
+    {
+      "name": "Mindfulness-Based Approaches",
+      "description": "Teaches present-moment awareness and acceptance to manage cravings and reduce stress without turning to addictive behaviors."
+    },
+    {
+      "name": "12-Step Facilitation",
+      "description": "Supports engagement with 12-step programs and recovery communities for ongoing support and accountability."
+    },
+    {
+      "name": "Relapse Prevention Therapy",
+      "description": "Develops specific strategies to identify triggers, manage high-risk situations, and prevent relapse."
+    },
+    {
+      "name": "Family Systems Therapy",
+      "description": "Addresses family dynamics and relationships affected by addiction while supporting healthy boundaries and communication."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How long does addiction treatment typically take?",
+      "answer": "The duration varies depending on the type and severity of addiction, as well as individual needs. Many people benefit from 12-16 weeks of intensive treatment, followed by ongoing support. Recovery is a lifelong journey, and we're here to support you at every stage."
+    },
+    {
+      "question": "Do you work with both substance and behavioral addictions?",
+      "answer": "Yes, we treat both substance addictions (alcohol, drugs, prescription medications) and behavioral addictions (gambling, gaming, shopping, food, etc.). The underlying principles of addiction treatment apply to both types."
+    },
+    {
+      "question": "What if I've tried treatment before and relapsed?",
+      "answer": "Relapse is a common part of the recovery process and doesn't mean treatment failed. We work with you to understand what led to the relapse and develop stronger strategies for maintaining sobriety."
+    },
+    {
+      "question": "Do you offer medication-assisted treatment?",
+      "answer": "While we don't prescribe medication, we can work collaboratively with your doctor or addiction specialist if medication-assisted treatment is part of your recovery plan."
+    },
+    {
+      "question": "Can you help with family members affected by addiction?",
+      "answer": "Absolutely. We provide support for families dealing with addiction, including education about addiction, setting healthy boundaries, and addressing codependency issues."
+    },
+    {
+      "question": "What if I'm not sure I'm ready to quit completely?",
+      "answer": "We meet you where you are in your readiness for change. We can help you explore your relationship with the addictive behavior and work toward harm reduction or complete abstinence, depending on your goals."
+    },
+    {
+      "question": "Do you offer group therapy for addiction recovery?",
+      "answer": "Yes, we offer both individual and group therapy for addiction recovery. Group therapy provides valuable peer support and helps you realize you're not alone in your struggles."
+    }
+  ],
+  "relatedServices": ["Trauma Counselling", "Depression Support", "Anxiety Support", "Individual Therapy"],
+  "therapists": [
+    {
+      "name": "Sasha Campbell",
+      "image": "https://lh3.googleusercontent.com/a-/ALV-UjXZXlLBf5VB42HWHjPCG-bwmLyeoE0aKcpZCa2s2qaotFMWoy0_=s558-p-k-rw-no",
+      "specialization": "Addiction Recovery & Trauma Therapy",
+      "experience": "15+ years specializing in addiction treatment and trauma-informed care"
+    },
+    {
+      "name": "Tianna Steel",
+      "image": "https://i0.wp.com/allegrocounselling.com/wp-content/uploads/2024/09/Tianna1-2.jpg?resize=1462%2C1536&ssl=1",
+      "specialization": "Addiction & Mental Health",
+      "experience": "8+ years in addiction counseling and dual diagnosis treatment"
+    }
+  ],
+  "philosophy": {
+    "title": "Is Addiction Recovery Right For You?",
+    "sections": [
+      {
+        "title": "Understanding Addiction as a Complex Condition",
+        "description": "We view addiction as a complex condition that affects the brain, body, and spirit. Our approach recognizes that addiction often stems from underlying trauma, mental health issues, or unmet emotional needs. We work to address these root causes while supporting your recovery journey."
+      },
+      {
+        "title": "Non-Judgmental, Compassionate Support",
+        "description": "We provide a safe, non-judgmental environment where you can be honest about your struggles without fear of shame or criticism. Recovery is a courageous journey, and we honor your strength in seeking help. Our compassionate approach helps you rebuild self-worth and hope."
+      },
+      {
+        "title": "Evidence-Based Recovery Methods",
+        "description": "We combine proven therapeutic approaches including motivational interviewing, cognitive-behavioral therapy, and trauma-informed care. Our goal is to help you develop healthy coping mechanisms, build resilience, and create a sustainable recovery plan that works for your unique situation."
+      },
+      {
+        "title": "Holistic Healing and Relapse Prevention",
+        "description": "We take a holistic approach to recovery, addressing physical, emotional, and spiritual well-being. We work with you to develop comprehensive relapse prevention strategies, build a strong support network, and create a meaningful life in recovery that supports your long-term sobriety."
+      }
+    ]
+  },
+  "pricing": {
+    "individual": "$180 per 50-minute session",
+    "couples": "$200 per 50-minute session"
+  }
+} 

@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Star } from "lucide-react"
 import Image from "next/image"
+import sharedContent from "@/data/shared-content.json"
 
 export default function HeroSection() {
   return (
@@ -10,21 +11,22 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6 text-center lg:text-left order-2 lg:order-1">
             <Badge className="hover:bg-red-100 inline-flex" style={{ backgroundColor: "#F8E6E7", color: "#A83E41" }}>
-              Embrace Your Healing Journey
+              {sharedContent.hero.badge}
             </Badge>
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Begin Your Path to Healing with <span style={{ color: "#D95E61" }}>Allegro Counselling</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-              Compassionate, Personalized Therapy for Individuals, Couples, and Families in Edmonton
+              {sharedContent.hero.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 size="lg"
                 className="rounded-full text-base sm:text-lg px-6 sm:px-8 py-3 text-white hover:bg-red-700 w-full sm:w-auto"
                 style={{ backgroundColor: "#D95E61" }}
+                onClick={() => window.open(sharedContent.hero.ctaUrl, "_blank")}
               >
-                Book Your Free 30-Minute Consultation
+                {sharedContent.hero.ctaButton}
               </Button>
               <Button
                 variant="outline"

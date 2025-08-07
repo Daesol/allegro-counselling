@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Heart, Users, CheckCircle, Star, Phone, Mail, Brain, Shield, Sparkles } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
+import sharedContent from "@/data/shared-content.json"
 
 interface ServicePageProps {
   service: {
@@ -102,14 +103,14 @@ export default function ServicePageTemplate({ service }: ServicePageProps) {
                 className="inline-flex backdrop-blur-md border border-white/30"
                 style={{ backgroundColor: "rgba(248, 230, 231, 0.7)", color: "#A83E41" }}
               >
-                Professional Therapy Services
+                {sharedContent.hero.badge}
               </Badge>
 
               <div className="space-y-4">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   {service.title}
                 </h1>
-                <p className="text-xl sm:text-2xl text-gray-600 leading-relaxed">{service.subtitle}</p>
+                <p className="text-xl sm:text-2xl text-gray-600 leading-relaxed">{sharedContent.hero.subtitle}</p>
               </div>
 
               {/* Key Benefits */}
@@ -128,9 +129,9 @@ export default function ServicePageTemplate({ service }: ServicePageProps) {
                   size="lg"
                   className="rounded-full text-white hover:bg-red-700 px-8 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-red-500/30 text-lg mr-[30%]"
                   style={{ backgroundColor: "#D95E61" }}
-                  onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
+                  onClick={() => window.open(sharedContent.hero.ctaUrl, "_blank")}
                 >
-                  Book Free Consultation
+                  {sharedContent.hero.ctaButton}
                 </Button>
               </div>
 
@@ -605,10 +606,9 @@ export default function ServicePageTemplate({ service }: ServicePageProps) {
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Heart className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Ready to Begin Your Healing Journey?</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">{sharedContent.finalCta.title}</h2>
             <p className="text-xl text-red-100 max-w-2xl mx-auto leading-relaxed mb-8">
-              Take the first step towards better mental health. Book your free consultation today and discover how{" "}
-              {service.title.toLowerCase()} can help you harmonize your relationships and create more fulfilling
+              {sharedContent.finalCta.description} {service.title.toLowerCase()} can help you harmonize your relationships and create more fulfilling
               connections.
             </p>
 
@@ -616,28 +616,28 @@ export default function ServicePageTemplate({ service }: ServicePageProps) {
               <Button
                 size="lg"
                 className="rounded-full bg-white text-red-600 hover:bg-red-50 text-lg font-semibold px-8 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-                onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
+                onClick={() => window.open(sharedContent.hero.ctaUrl, "_blank")}
               >
-                Book Free Consultation
+                {sharedContent.finalCta.ctaButton}
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 className="rounded-full border-white/30 hover:bg-white/10 backdrop-blur-sm text-lg px-8 py-4 transition-all duration-300 text-black bg-amber-400"
-                onClick={() => window.open("tel:5878824196", "_self")}
+                onClick={() => window.open(`tel:${sharedContent.finalCta.phoneNumber}`, "_self")}
               >
-                Call (587) 882-4196
+                {sharedContent.finalCta.phoneButton}
               </Button>
             </div>
 
             <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-red-100">
               <div className="flex items-center space-x-2">
                 <Phone className="h-5 w-5" />
-                <span>(587) 882-4196</span>
+                <span>{sharedContent.finalCta.phoneNumber}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5" />
-                <span>info@allegrocounselling.com</span>
+                <span>{sharedContent.finalCta.email}</span>
               </div>
             </div>
           </div>

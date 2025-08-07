@@ -1,0 +1,251 @@
+{
+  "title": "Depression Support",
+  "subtitle": "Find Hope, Rebuild Joy, and Rediscover Your Light",
+  "description": "Depression can feel like a heavy cloud that never lifts, but you don't have to face it alone. Our compassionate team of depression specialists understand the deep pain of depression and are here to provide evidence-based support to help you find hope and rebuild a life worth living.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive depression support approach can transform your life and help you find hope and rediscover joy",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our Depression Support Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based Depression Methods",
+            "description": "Proven therapeutic techniques specifically designed for depression treatment"
+          },
+          {
+            "title": "Personalized Depression Care",
+            "description": "Tailored treatment plans for your unique depression experience and needs"
+          },
+          {
+            "title": "Safe Depression Environment",
+            "description": "Compassionate space for healing and rediscovering hope and joy"
+          },
+          {
+            "title": "Experienced Depression Team",
+            "description": "Registered Licensed professionals with years of depression treatment expertise"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our Depression Support Impact",
+        "stats": [
+          { "value": "600+", "label": "Depression Clients Helped" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.8", "label": "Client Rating" }
+        ]
+      }
+    }
+  },
+  "icon": "Heart",
+  "iconColor": "#DC2626",
+  "iconBg": "#FEE2E2",
+  "heroImage": "https://images.unsplash.com/photo-1588979355313-6711a095465f?q=80&w=972&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "benefits": [
+    "Understand the root causes of your depression",
+    "Develop effective coping strategies and mood management skills",
+    "Challenge negative thought patterns and cognitive distortions",
+    "Build resilience and emotional strength",
+    "Improve sleep quality and overall well-being",
+    "Rediscover joy, purpose, and meaning in life",
+    "Enhance relationships and social connections",
+    "Create a personalized depression management plan"
+  ],
+  "specificServices": [
+    {
+      "title": "Major Depressive Disorder",
+      "description": "Comprehensive treatment for persistent and severe depression.",
+      "details": [
+        "Understanding the symptoms and impact of major depression",
+        "Developing comprehensive treatment and management strategies",
+        "Addressing suicidal thoughts and safety planning"
+      ],
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2",
+      "imageUri": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Persistent Depressive Disorder",
+      "description": "Support for long-term, low-grade depression (dysthymia).",
+      "details": [
+        "Managing chronic low mood and persistent sadness",
+        "Building motivation and engagement in life",
+        "Developing long-term coping and resilience strategies"
+      ],
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2",
+      "imageUri": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Seasonal Affective Disorder",
+      "description": "Treatment for depression that follows seasonal patterns.",
+      "details": [
+        "Understanding seasonal patterns and triggers",
+        "Developing strategies for seasonal mood changes",
+        "Light therapy and lifestyle modifications"
+      ],
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2",
+      "imageUri": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Postpartum Depression",
+      "description": "Specialized support for depression during and after pregnancy.",
+      "details": [
+        "Understanding postpartum depression and its impact",
+        "Supporting new mothers and families",
+        "Addressing the unique challenges of parenthood"
+      ],
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2",
+      "imageUri": "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Depression and Grief",
+      "description": "Support for depression related to loss and bereavement.",
+      "details": [
+        "Processing grief and loss in healthy ways",
+        "Distinguishing between grief and clinical depression",
+        "Finding meaning and purpose after loss"
+      ],
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2",
+      "imageUri": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Depression and Life Transitions",
+      "description": "Help with depression during major life changes.",
+      "details": [
+        "Navigating depression during career changes, moves, or other transitions",
+        "Building resilience and adaptability",
+        "Finding new purpose and direction"
+      ],
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEE2E2",
+      "imageUri": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "whatToExpected": {
+    "description": "Our compassionate approach helps you understand your depression, develop effective management strategies, and rebuild hope and joy in your life.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Assessment & Understanding",
+        "description": "We'll explore your depression symptoms, triggers, and impact on daily life to develop a comprehensive understanding of your unique experience."
+      },
+      {
+        "step": 2,
+        "title": "Treatment Planning",
+        "description": "Create a personalized treatment plan that addresses your specific depression type, co-occurring issues, and personal goals for recovery."
+      },
+      {
+        "step": 3,
+        "title": "Recovery & Growth",
+        "description": "Learn practical skills for managing depression, building resilience, and creating a life filled with meaning, purpose, and joy."
+      }
+    ]
+  },
+  "approaches": [
+    {
+      "name": "Cognitive Behavioral Therapy (CBT)",
+      "description": "Identifies and challenges negative thought patterns that contribute to depression while developing healthier thinking habits."
+    },
+    {
+      "name": "Interpersonal Therapy (IPT)",
+      "description": "Focuses on improving relationships and social support as a way to reduce depression symptoms."
+    },
+    {
+      "name": "Mindfulness-Based Cognitive Therapy",
+      "description": "Combines mindfulness practices with cognitive therapy to prevent depression relapse."
+    },
+    {
+      "name": "Behavioral Activation",
+      "description": "Increases engagement in positive activities to improve mood and reduce depression symptoms."
+    },
+    {
+      "name": "Acceptance and Commitment Therapy",
+      "description": "Helps you accept difficult thoughts and feelings while committing to actions that align with your values."
+    },
+    {
+      "name": "Lifestyle and Wellness Coaching",
+      "description": "Addresses sleep, nutrition, exercise, and other lifestyle factors that impact depression."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How long does depression treatment typically take?",
+      "answer": "The duration varies depending on the severity and type of depression. Many people see significant improvements within 8-16 sessions, though some may benefit from longer-term support. We'll work with you to create a personalized treatment plan."
+    },
+    {
+      "question": "What if I have thoughts of suicide?",
+      "answer": "If you're having thoughts of suicide, please reach out for immediate help. We take suicidal thoughts seriously and will work with you to develop a safety plan and connect you with appropriate crisis resources."
+    },
+    {
+      "question": "Do you offer medication management?",
+      "answer": "While we don't prescribe medication, we can work collaboratively with your doctor or psychiatrist if medication is part of your treatment plan."
+    },
+    {
+      "question": "Can depression be treated without medication?",
+      "answer": "Yes! While medication can be helpful for some people, there are many effective non-medication approaches including therapy, lifestyle changes, and behavioral strategies."
+    },
+    {
+      "question": "What if I've tried treatment before and it didn't work?",
+      "answer": "Depression treatment is highly individual, and what works for one person may not work for another. We'll work with you to find the right approach for your unique situation."
+    },
+    {
+      "question": "How do I know if I have depression or just feel sad?",
+      "answer": "Depression is more than just feeling sad – it involves persistent symptoms that affect your daily life. We can help you understand the difference and determine if you need treatment."
+    },
+    {
+      "question": "Can you help with postpartum depression?",
+      "answer": "Absolutely. Postpartum depression is a serious condition that affects many new mothers. We provide specialized support for postpartum depression and related challenges."
+    }
+  ],
+  "relatedServices": ["Anxiety Support", "Trauma Counselling", "Grief and Loss", "Individual Therapy"],
+  "therapists": [
+    {
+      "name": "Sasha Campbell",
+      "image": "https://lh3.googleusercontent.com/a-/ALV-UjXZXlLBf5VB42HWHjPCG-bwmLyeoE0aKcpZCa2s2qaotFMWoy0_=s558-p-k-rw-no",
+      "specialization": "Depression & Mood Disorders",
+      "experience": "15+ years specializing in depression treatment and mood disorders"
+    },
+    {
+      "name": "Tianna Steel",
+      "image": "https://i0.wp.com/allegrocounselling.com/wp-content/uploads/2024/09/Tianna1-2.jpg?resize=1462%2C1536&ssl=1",
+      "specialization": "Depression & Life Transitions",
+      "experience": "8+ years in depression counseling and life transition support"
+    }
+  ],
+  "philosophy": {
+    "title": "Is Depression Support Right For You?",
+    "sections": [
+      {
+        "title": "Understanding Depression as a Treatable Condition",
+        "description": "We believe that depression is a treatable condition, not a personal failing. Our approach focuses on understanding the biological, psychological, and social factors that contribute to depression while developing comprehensive strategies for recovery and prevention."
+      },
+      {
+        "title": "Compassionate Validation and Support",
+        "description": "We provide a safe, non-judgmental space where your feelings are validated and understood. Depression can be isolating, but you don't have to face it alone. Our compassionate approach helps you feel seen, heard, and supported throughout your healing journey."
+      },
+      {
+        "title": "Evidence-Based Treatment Approaches",
+        "description": "We combine proven therapeutic techniques including cognitive-behavioral therapy, interpersonal therapy, and mindfulness-based approaches. Our goal is to help you develop practical coping skills, challenge negative thought patterns, and build resilience."
+      },
+      {
+        "title": "Holistic Recovery and Prevention",
+        "description": "We take a holistic approach to depression treatment, addressing not just symptoms but underlying causes and risk factors. We work with you to develop sustainable strategies for managing depression and preventing relapse, supporting your long-term mental health and well-being."
+      }
+    ]
+  },
+  "pricing": {
+    "individual": "$180 per 50-minute session",
+    "couples": "$200 per 50-minute session"
+  }
+} 

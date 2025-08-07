@@ -3,7 +3,8 @@
 import { Badge } from "@/components/ui/badge"
 import { Star } from "lucide-react"
 import Image from "next/image"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import sharedContent from "@/data/shared-content.json"
 
 export default function HeroSection3() {
   const testimonials = [
@@ -57,57 +58,19 @@ export default function HeroSection3() {
       author: "Lisa T.",
       rating: 5,
     },
-    {
-      quote: "Allegro Counselling provided me with a safe space to navigate difficult times. Highly recommended.",
-      author: "Sarah M.",
-      rating: 5,
-    },
-    {
-      quote: "The therapists' expertise and care helped me find inner peace and develop stronger coping skills.",
-      author: "Michael R.",
-      rating: 5,
-    },
-    {
-      quote: "Grateful for the transformative experience. Their tailored approach empowered me to overcome challenges.",
-      author: "Jennifer L.",
-      rating: 5,
-    },
-    {
-      quote: "Professional, compassionate, and effective. I've seen remarkable progress in my mental health journey.",
-      author: "David K.",
-      rating: 5,
-    },
-    {
-      quote: "The safe environment and personalized treatment made all the difference in my healing process.",
-      author: "Lisa T.",
-      rating: 5,
-    },
-    {
-      quote: "Allegro Counselling provided me with a safe space to navigate difficult times. Highly recommended.",
-      author: "Sarah M.",
-      rating: 5,
-    },
-    {
-      quote: "The therapists' expertise and care helped me find inner peace and develop stronger coping skills.",
-      author: "Michael R.",
-      rating: 5,
-    },
-    {
-      quote: "Grateful for the transformative experience. Their tailored approach empowered me to overcome challenges.",
-      author: "Jennifer L.",
-      rating: 5,
-    },
-    {
-      quote: "Professional, compassionate, and effective. I've seen remarkable progress in my mental health journey.",
-      author: "David K.",
-      rating: 5,
-    },
-    {
-      quote: "The safe environment and personalized treatment made all the difference in my healing process.",
-      author: "Lisa T.",
-      rating: 5,
-    },
   ]
+
+  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonialIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
+    }, 4000)
+
+    return () => clearInterval(interval)
+  }, [testimonials.length])
+
+  const currentTestimonial = testimonials[currentTestimonialIndex]
 
   useEffect(() => {
     const scrollContainer = document.querySelector(".testimonials-scroll-container")
@@ -178,7 +141,7 @@ export default function HeroSection3() {
                   className="hover:bg-red-100/50 inline-flex backdrop-blur-md border border-white/30"
                   style={{ backgroundColor: "rgba(248, 230, 231, 0.7)", color: "#A83E41" }}
                 >
-                  Embrace Your Healing Journey
+                  {sharedContent.hero.badge}
                 </Badge>
               </div>
 
@@ -189,7 +152,7 @@ export default function HeroSection3() {
                 </span>
               </h1>
               <p className="text-base sm:text-xl text-gray-700 leading-relaxed">
-                We offer a warm, non-judgmental space to help you heal from the weight you've been carrying.
+                {sharedContent.hero.subtitle}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -198,18 +161,10 @@ export default function HeroSection3() {
                   <button
                     className="relative rounded-full text-base sm:text-lg px-6 sm:px-8 py-3 font-medium text-white shadow-lg backdrop-blur-sm w-full sm:w-auto bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-500 hover:to-pink-500 transition-all duration-300 hover:shadow-pink-500/50 hover:scale-105 hover:-translate-y-1"
                     onClick={() => {
-                      const targetElement = document.getElementById("contact")
-                      if (targetElement) {
-                        const headerHeight = 80
-                        const targetPosition = targetElement.offsetTop - headerHeight
-                        window.scrollTo({
-                          top: targetPosition,
-                          behavior: "smooth",
-                        })
-                      }
+                      window.open(sharedContent.hero.ctaUrl, "_blank")
                     }}
                   >
-                    Start Your Healing Journey
+                    {sharedContent.hero.ctaButton}
                   </button>
                 </div>
               </div>

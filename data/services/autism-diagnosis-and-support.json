@@ -1,0 +1,251 @@
+{
+  "title": "Autism Diagnosis and Support",
+  "subtitle": "Specialized Assessment and Supportive Therapy for Individuals on the Autism Spectrum",
+  "description": "Autism is a unique way of experiencing and interacting with the world. Our specialized team provides comprehensive assessment, diagnosis, and supportive therapy to help individuals on the autism spectrum thrive and reach their full potential.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive autism assessment and support approach can transform your life and help you thrive with your unique neurodivergent brain",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our Autism Support Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based Autism Methods",
+            "description": "Proven therapeutic techniques specifically designed for autism assessment and support"
+          },
+          {
+            "title": "Personalized Autism Care",
+            "description": "Tailored treatment plans that honor your unique neurodivergent strengths and challenges"
+          },
+          {
+            "title": "Safe Autism Environment",
+            "description": "Understanding space for embracing your autistic identity and neurodivergent ways of being"
+          },
+          {
+            "title": "Experienced Autism Team",
+            "description": "Registered Licensed professionals with years of autism expertise and neurodivergent understanding"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our Autism Support Impact",
+        "stats": [
+          { "value": "200+", "label": "Autism Assessments" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.9", "label": "Client Rating" }
+        ]
+      }
+    }
+  },
+  "icon": "Brain",
+  "iconColor": "#6366F1",
+  "iconBg": "#E0E7FF",
+  "heroImage": "https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?w=800&auto=format&fit=crop&q=80&ixlib=rb-4.1.0",
+  "benefits": [
+    "Receive comprehensive autism assessment and diagnosis",
+    "Develop personalized strategies for daily challenges",
+    "Improve social communication and relationship skills",
+    "Learn to manage sensory sensitivities and overload",
+    "Build self-advocacy and self-acceptance",
+    "Address co-occurring conditions like anxiety and depression",
+    "Support for families and caregivers",
+    "Embrace and celebrate neurodivergent identity"
+  ],
+  "specificServices": [
+    {
+      "title": "Autism Assessment & Diagnosis",
+      "description": "Comprehensive evaluation for children, adolescents, and adults.",
+      "details": [
+        "Thorough clinical assessment using standardized tools",
+        "Evaluation of social communication and interaction",
+        "Assessment of restricted interests and repetitive behaviors"
+      ],
+      "icon": "Brain",
+      "iconColor": "#6366F1",
+      "iconBg": "#E0E7FF",
+      "imageUri": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Social Skills Development",
+      "description": "Support for social communication and relationship building.",
+      "details": [
+        "Understanding social cues and nonverbal communication",
+        "Developing conversation and friendship skills",
+        "Building confidence in social situations"
+      ],
+      "icon": "Brain",
+      "iconColor": "#6366F1",
+      "iconBg": "#E0E7FF",
+      "imageUri": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Sensory Processing Support",
+      "description": "Help with sensory sensitivities and sensory integration.",
+      "details": [
+        "Identifying and managing sensory triggers",
+        "Developing sensory regulation strategies",
+        "Creating sensory-friendly environments"
+      ],
+      "icon": "Brain",
+      "iconColor": "#6366F1",
+      "iconBg": "#E0E7FF",
+      "imageUri": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Executive Functioning Skills",
+      "description": "Support for organization, planning, and daily living skills.",
+      "details": [
+        "Developing organizational systems and routines",
+        "Improving time management and planning",
+        "Building independent living skills"
+      ],
+      "icon": "Brain",
+      "iconColor": "#6366F1",
+      "iconBg": "#E0E7FF",
+      "imageUri": "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Emotional Regulation",
+      "description": "Help with managing emotions and building resilience.",
+      "details": [
+        "Understanding and expressing emotions",
+        "Developing coping strategies for stress and anxiety",
+        "Building emotional awareness and self-regulation"
+      ],
+      "icon": "Brain",
+      "iconColor": "#6366F1",
+      "iconBg": "#E0E7FF",
+      "imageUri": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Family Support and Education",
+      "description": "Support for families navigating autism together.",
+      "details": [
+        "Parent education and support strategies",
+        "Family communication and understanding",
+        "Creating supportive home environments"
+      ],
+      "icon": "Brain",
+      "iconColor": "#6366F1",
+      "iconBg": "#E0E7FF",
+      "imageUri": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "whatToExpected": {
+    "description": "Our comprehensive approach helps you understand autism, develop effective strategies, and build confidence in your unique strengths and abilities.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Assessment & Understanding",
+        "description": "We'll conduct a thorough evaluation to understand your autistic traits, strengths, and challenges, providing you with a clear diagnosis and understanding of your neurodivergent brain."
+      },
+      {
+        "step": 2,
+        "title": "Strategy Development",
+        "description": "Create personalized strategies and systems that work with your autistic brain, focusing on social skills, sensory regulation, and daily living skills."
+      },
+      {
+        "step": 3,
+        "title": "Implementation & Support",
+        "description": "Practice and refine your strategies in real-life situations, building confidence and developing a toolkit for ongoing success and self-advocacy."
+      }
+    ]
+  },
+  "approaches": [
+    {
+      "name": "Applied Behavior Analysis (ABA)",
+      "description": "Uses positive reinforcement to teach new skills and reduce challenging behaviors."
+    },
+    {
+      "name": "Social Skills Training",
+      "description": "Teaches specific social communication skills through structured learning and practice."
+    },
+    {
+      "name": "Sensory Integration Therapy",
+      "description": "Helps individuals process and respond to sensory information more effectively."
+    },
+    {
+      "name": "Cognitive Behavioral Therapy (CBT)",
+      "description": "Addresses anxiety, depression, and other co-occurring conditions common in autism."
+    },
+    {
+      "name": "Mindfulness-Based Approaches",
+      "description": "Improves emotional regulation and reduces stress through mindfulness practices."
+    },
+    {
+      "name": "Family Systems Therapy",
+      "description": "Supports families in understanding autism and creating supportive environments."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can adults be diagnosed with autism?",
+      "answer": "Absolutely! Many adults are diagnosed with autism later in life. Adult diagnosis can provide clarity and access to support services."
+    },
+    {
+      "question": "How long does the assessment process take?",
+      "answer": "A comprehensive autism assessment typically takes 2-3 sessions, including clinical interviews, standardized questionnaires, and behavioral observations."
+    },
+    {
+      "question": "Do you work with children and adolescents?",
+      "answer": "Yes, we provide autism assessment and support for children, adolescents, and adults. We work closely with families and schools."
+    },
+    {
+      "question": "What if my child has autism and other conditions?",
+      "answer": "Autism often co-occurs with ADHD, anxiety, depression, and other conditions. We provide integrated treatment that addresses all aspects."
+    },
+    {
+      "question": "Do you provide ABA therapy?",
+      "answer": "Yes, we offer ABA therapy and other evidence-based approaches for autism support, tailored to individual needs and preferences."
+    },
+    {
+      "question": "How can I support my autistic child?",
+      "answer": "We provide parent education and support to help you understand your child's autism, develop effective strategies, and create a supportive environment."
+    },
+    {
+      "question": "Do you help with sensory processing issues?",
+      "answer": "Yes, we provide support for sensory processing challenges, helping individuals develop strategies to manage sensory sensitivities and overload."
+    }
+  ],
+  "relatedServices": ["ADHD Diagnosis and Support", "Anxiety Support", "Depression Support", "Individual Therapy"],
+  "therapists": [
+    {
+      "name": "Sasha Campbell",
+      "image": "https://lh3.googleusercontent.com/a-/ALV-UjXZXlLBf5VB42HWHjPCG-bwmLyeoE0aKcpZCa2s2qaotFMWoy0_=s558-p-k-rw-no",
+      "specialization": "Autism Assessment & Support",
+      "experience": "15+ years specializing in autism diagnosis and neurodivergent support"
+    },
+    {
+      "name": "Tianna Steel",
+      "image": "https://i0.wp.com/allegrocounselling.com/wp-content/uploads/2024/09/Tianna1-2.jpg?resize=1462%2C1536&ssl=1",
+      "specialization": "Autism & Social Skills",
+      "experience": "8+ years in autism support and social skills development"
+    }
+  ],
+  "philosophy": {
+    "title": "Is Autism Diagnosis and Support Right For You?",
+    "sections": [
+      {
+        "title": "Understanding Autism as Neurodiversity",
+        "description": "We view autism as a natural variation in human neurology, not a disorder to be fixed. Our approach celebrates neurodiversity and focuses on understanding your unique autistic traits, strengths, and challenges while supporting your authentic self-expression."
+      },
+      {
+        "title": "Sensory-Aware and Accommodating Environment",
+        "description": "We create a sensory-friendly therapeutic environment that respects your sensory preferences and needs. Our approach accommodates different communication styles, processing speeds, and sensory sensitivities to ensure you feel comfortable and understood."
+      },
+      {
+        "title": "Strengths-Based and Person-Centered Support",
+        "description": "We focus on your unique strengths, interests, and abilities while helping you develop strategies for areas where you need support. Our goal is to help you build confidence, self-advocacy skills, and a positive autistic identity."
+      },
+      {
+        "title": "Comprehensive Life Skills and Social Support",
+        "description": "We provide support across all areas of life including social skills, executive functioning, emotional regulation, and daily living skills. We work with you to develop practical strategies that help you navigate the world while honoring your autistic neurology."
+      }
+    ]
+  },
+  "pricing": {
+    "individual": "$180 per 50-minute session",
+    "couples": "$200 per 50-minute session"
+  }
+} 

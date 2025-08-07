@@ -1,0 +1,251 @@
+{
+  "title": "ADHD Diagnosis and Support",
+  "subtitle": "Comprehensive Assessment and Personalized Strategies for Managing ADHD",
+  "description": "Living with ADHD can feel like navigating life with a brain that works differently. Our specialized team understands the unique challenges of ADHD and provides comprehensive assessment, diagnosis, and evidence-based support to help you thrive with your neurodivergent brain.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive ADHD assessment and support approach can transform your life and help you thrive with your unique brain",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our ADHD Support Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based ADHD Methods",
+            "description": "Proven therapeutic techniques specifically designed for ADHD assessment and support"
+          },
+          {
+            "title": "Personalized ADHD Care",
+            "description": "Tailored treatment plans for your unique ADHD challenges and strengths"
+          },
+          {
+            "title": "Safe ADHD Environment",
+            "description": "Understanding space for embracing your neurodivergent brain"
+          },
+          {
+            "title": "Experienced ADHD Team",
+            "description": "Registered Licensed professionals with years of ADHD expertise"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our ADHD Support Impact",
+        "stats": [
+          { "value": "300+", "label": "ADHD Assessments" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.9", "label": "Client Rating" }
+        ]
+      }
+    }
+  },
+  "icon": "Brain",
+  "iconColor": "#059669",
+  "iconBg": "#D1FAE5",
+  "heroImage": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&auto=format&fit=crop&q=80&ixlib=rb-4.1.0",
+  "benefits": [
+    "Receive comprehensive ADHD assessment and diagnosis",
+    "Develop personalized strategies for managing ADHD symptoms",
+    "Improve focus, organization, and time management skills",
+    "Learn to harness ADHD strengths and creativity",
+    "Address co-occurring conditions like anxiety and depression",
+    "Build confidence and self-acceptance",
+    "Improve relationships and communication",
+    "Enhance work and academic performance"
+  ],
+  "specificServices": [
+    {
+      "title": "ADHD Assessment & Diagnosis",
+      "description": "Comprehensive evaluation for children, adolescents, and adults.",
+      "details": [
+        "Thorough clinical assessment using standardized tools",
+        "Evaluation of attention, hyperactivity, and impulsivity",
+        "Assessment of executive functioning and cognitive abilities"
+      ],
+      "icon": "Brain",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Executive Functioning Skills",
+      "description": "Develop strategies for organization, planning, and time management.",
+      "details": [
+        "Creating effective organizational systems and routines",
+        "Developing time management and prioritization skills",
+        "Building planning and problem-solving abilities"
+      ],
+      "icon": "Brain",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Focus and Attention Training",
+      "description": "Learn techniques to improve concentration and reduce distractibility.",
+      "details": [
+        "Mindfulness and attention training exercises",
+        "Environmental modifications for better focus",
+        "Strategies for managing internal and external distractions"
+      ],
+      "icon": "Brain",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Emotional Regulation",
+      "description": "Develop skills to manage impulsivity and emotional responses.",
+      "details": [
+        "Understanding and managing emotional reactivity",
+        "Developing impulse control and self-regulation",
+        "Building emotional awareness and coping strategies"
+      ],
+      "icon": "Brain",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Academic and Work Support",
+      "description": "Strategies for success in educational and professional settings.",
+      "details": [
+        "Study skills and academic accommodations",
+        "Workplace strategies and career development",
+        "Communication and relationship skills"
+      ],
+      "icon": "Brain",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Family Support and Education",
+      "description": "Support for families navigating ADHD together.",
+      "details": [
+        "Parent education and support strategies",
+        "Family communication and relationship building",
+        "Creating supportive home environments"
+      ],
+      "icon": "Brain",
+      "iconColor": "#059669",
+      "iconBg": "#D1FAE5",
+      "imageUri": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "whatToExpected": {
+    "description": "Our comprehensive approach helps you understand your ADHD, develop effective management strategies, and build confidence in your unique strengths and abilities.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Assessment & Diagnosis",
+        "description": "We'll conduct a thorough evaluation to understand your ADHD symptoms, strengths, and challenges, providing you with a clear diagnosis and understanding of your neurodivergent brain."
+      },
+      {
+        "step": 2,
+        "title": "Strategy Development",
+        "description": "Create personalized strategies and systems that work with your ADHD brain, focusing on organization, time management, focus, and emotional regulation."
+      },
+      {
+        "step": 3,
+        "title": "Implementation & Support",
+        "description": "Practice and refine your strategies in real-life situations, building confidence and developing a toolkit for ongoing success and self-advocacy."
+      }
+    ]
+  },
+  "approaches": [
+    {
+      "name": "Cognitive Behavioral Therapy (CBT)",
+      "description": "Identifies and changes negative thought patterns while developing practical strategies for managing ADHD symptoms."
+    },
+    {
+      "name": "Executive Functioning Training",
+      "description": "Teaches specific skills for organization, planning, time management, and problem-solving."
+    },
+    {
+      "name": "Mindfulness-Based Approaches",
+      "description": "Improves attention, emotional regulation, and stress management through mindfulness practices."
+    },
+    {
+      "name": "Behavioral Interventions",
+      "description": "Uses positive reinforcement and structured approaches to build new habits and behaviors."
+    },
+    {
+      "name": "Environmental Modifications",
+      "description": "Creates supportive environments that work with ADHD rather than against it."
+    },
+    {
+      "name": "Family Systems Therapy",
+      "description": "Supports families in understanding ADHD and creating supportive home environments."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can adults be diagnosed with ADHD?",
+      "answer": "Absolutely! Many adults are diagnosed with ADHD later in life. Adult ADHD can manifest differently than childhood ADHD, often involving difficulties with organization, time management, and maintaining focus in work or relationships."
+    },
+    {
+      "question": "How long does the assessment process take?",
+      "answer": "A comprehensive ADHD assessment typically takes 2-3 sessions, including clinical interviews, standardized questionnaires, and cognitive testing. We'll provide you with a detailed report and recommendations."
+    },
+    {
+      "question": "Do you work with children and adolescents?",
+      "answer": "Yes, we provide ADHD assessment and support for children, adolescents, and adults. We work closely with families and schools to ensure comprehensive support."
+    },
+    {
+      "question": "What if I have ADHD and other mental health conditions?",
+      "answer": "ADHD often co-occurs with anxiety, depression, and other conditions. We provide integrated treatment that addresses all aspects of your mental health."
+    },
+    {
+      "question": "Do you provide medication management?",
+      "answer": "While we don't prescribe medication, we can work collaboratively with your doctor or psychiatrist if medication is part of your treatment plan."
+    },
+    {
+      "question": "Can ADHD be treated without medication?",
+      "answer": "Yes! While medication can be helpful for some people, there are many effective non-medication approaches including therapy, behavioral strategies, and lifestyle modifications."
+    },
+    {
+      "question": "How can I support my child with ADHD?",
+      "answer": "We provide parent education and support to help you understand your child's ADHD, develop effective parenting strategies, and create a supportive home environment."
+    }
+  ],
+  "relatedServices": ["Anxiety Support", "Depression Support", "Learning Disabilities", "Individual Therapy"],
+  "therapists": [
+    {
+      "name": "Sasha Campbell",
+      "image": "https://lh3.googleusercontent.com/a-/ALV-UjXZXlLBf5VB42HWHjPCG-bwmLyeoE0aKcpZCa2s2qaotFMWoy0_=s558-p-k-rw-no",
+      "specialization": "ADHD Assessment & Support",
+      "experience": "15+ years specializing in ADHD diagnosis and neurodivergent support"
+    },
+    {
+      "name": "Tianna Steel",
+      "image": "https://i0.wp.com/allegrocounselling.com/wp-content/uploads/2024/09/Tianna1-2.jpg?resize=1462%2C1536&ssl=1",
+      "specialization": "ADHD & Executive Functioning",
+      "experience": "8+ years in ADHD assessment and executive functioning training"
+    }
+  ],
+  "philosophy": {
+    "title": "Is ADHD Diagnosis and Support Right For You?",
+    "sections": [
+      {
+        "title": "Understanding ADHD as a Neurodevelopmental Difference",
+        "description": "We view ADHD as a neurodevelopmental difference that affects attention, impulse control, and executive functioning. Our approach focuses on understanding your unique ADHD profile and developing strategies that work with your brain, not against it."
+      },
+      {
+        "title": "Strengths-Based Support and Empowerment",
+        "description": "We believe that ADHD comes with unique strengths and talents. Our approach helps you identify and leverage these strengths while developing practical strategies to manage challenges. We focus on building confidence and self-acceptance."
+      },
+      {
+        "title": "Evidence-Based ADHD Management",
+        "description": "We combine proven therapeutic approaches including cognitive-behavioral therapy, executive function coaching, and mindfulness techniques. Our goal is to help you develop practical skills for managing ADHD symptoms and creating systems that support your success."
+      },
+      {
+        "title": "Comprehensive Life Integration",
+        "description": "We take a holistic approach to ADHD support, addressing academic, work, relationship, and daily life challenges. We work with you to create sustainable strategies that help you thrive in all areas of your life while embracing your unique ADHD traits."
+      }
+    ]
+  },
+  "pricing": {
+    "individual": "$180 per 50-minute session",
+    "couples": "$200 per 50-minute session"
+  }
+} 
