@@ -2,11 +2,46 @@
   "title": "Trauma Counselling",
   "subtitle": "Healing from Trauma with Compassionate, Evidence-Based Care",
   "description": "Professional trauma counselling services in Calgary. Our trauma-informed therapists provide specialized support for healing from complex trauma, PTSD, childhood trauma, and more.",
-  "fullDescription": "Our trauma counselling program offers comprehensive support for individuals who have experienced various forms of trauma, including childhood trauma, sexual assault, domestic violence, accidents, and other traumatic events. We use evidence-based approaches to help you process trauma, reduce symptoms, and reclaim your life with safety and dignity.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive trauma counselling approach can transform your life and help you heal from trauma with safety and dignity",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our Trauma Counselling Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based Trauma Methods",
+            "description": "Proven therapeutic techniques specifically designed for trauma processing and healing"
+          },
+          {
+            "title": "Personalized Trauma Care",
+            "description": "Tailored treatment plans for your unique trauma experience and healing journey"
+          },
+          {
+            "title": "Safe Trauma Environment",
+            "description": "Secure space for processing trauma and reclaiming your life with dignity"
+          },
+          {
+            "title": "Experienced Trauma Team",
+            "description": "Registered Licensed professionals with years of trauma counselling expertise"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our Trauma Counselling Impact",
+        "stats": [
+          { "value": "450+", "label": "Trauma Clients Helped" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.9", "label": "Client Rating" }
+        ]
+      }
+    }
+  },
   "icon": "Shield",
   "iconColor": "#7C3AED",
   "iconBg": "#F3E8FF",
-  "heroImage": "https://images.unsplash.com/photo-1539141086657-b9cc8d93ad3c?q=80&w=2154&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "heroImage": "https://images.unsplash.com/photo-1578161456171-a346107c3dcf?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   
   "benefits": [
     "Process and heal from traumatic experiences",
@@ -190,22 +225,22 @@
     }
   ],
   "philosophy": {
-    "title": "Our Trauma Counselling Philosophy & Approach",
+    "title": "Is Trauma Counselling Right For You?",
     "sections": [
       {
-        "title": "Understanding Trauma's Impact on the Brain and Body",
+        "title": "Do you struggle with flashbacks or intrusive thoughts?",
         "description": "We understand that trauma affects both the brain and body, creating patterns that can persist long after the traumatic event. Our approach focuses on helping you understand how trauma has shaped your responses and developing strategies for healing and recovery."
       },
       {
-        "title": "Safety-First Trauma-Informed Care",
+        "title": "Are you holding on to an incident that continues to upset you?",
         "description": "We prioritize your safety and comfort throughout the healing process. Our trauma-informed approach ensures that you always feel in control, respected, and supported. We work at your pace, creating a safe space where healing can occur naturally."
       },
       {
-        "title": "Evidence-Based Trauma Processing",
+        "title": "Are you feeling easily triggered?",
         "description": "We use proven therapeutic approaches including trauma-focused cognitive behavioral therapy, somatic experiencing, and other trauma-specific modalities. Our goal is to help you process traumatic memories safely while building resilience and coping skills."
       },
       {
-        "title": "Holistic Recovery and Post-Traumatic Growth",
+        "title": "Do you believe that your relationships are struggling becuase of your trauma?",
         "description": "We support your journey toward not just recovery, but post-traumatic growth. We help you integrate your experiences, develop new meaning, and build a stronger, more resilient sense of self that honors both your past and your future."
       }
     ]

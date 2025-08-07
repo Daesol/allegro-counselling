@@ -8,13 +8,35 @@ export interface ServiceData {
   title: string
   subtitle: string
   description: string
-  fullDescription?: string
+  fullDescription?: {
+    title: string
+    subtitle: string
+    sections: {
+      whyChooseUs: {
+        title: string
+        points: Array<{
+          title: string
+          description: string
+        }>
+      }
+      impact: {
+        title: string
+        stats: Array<{
+          value: string
+          label: string
+        }>
+      }
+    }
+  }
   heroImage: string
   benefits: string[]
   specificServices?: {
     title: string
     description: string
     details: string[]
+    icon?: string
+    iconColor?: string
+    iconBg?: string
     imageUri?: string
   }[]
   whatToExpected: {
@@ -60,27 +82,6 @@ export interface SharedData {
     subtitle: string
     ctaButton: string
     ctaUrl: string
-  }
-  fullDescription: {
-    title: string
-    subtitle: string
-    sections: {
-      whyChooseUs: {
-        title: string
-        points: Array<{
-          title: string
-          description: string
-        }>
-      }
-      impact: {
-        title: string
-        stats: Array<{
-          value: string
-          label: string
-        }>
-      }
-
-    }
   }
   acknowledgingPain: {
     title: string

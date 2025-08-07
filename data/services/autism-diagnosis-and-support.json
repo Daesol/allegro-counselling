@@ -2,7 +2,42 @@
   "title": "Autism Diagnosis and Support",
   "subtitle": "Specialized Assessment and Supportive Therapy for Individuals on the Autism Spectrum",
   "description": "Autism is a unique way of experiencing and interacting with the world. Our specialized team provides comprehensive assessment, diagnosis, and supportive therapy to help individuals on the autism spectrum thrive and reach their full potential.",
-  "fullDescription": "Autism Spectrum Disorder (ASD) is a neurodevelopmental condition that affects how individuals communicate, interact, and process information. At Allegro Counselling, we recognize that autism is not a disorder to be cured, but a different way of being that comes with unique strengths and challenges.\n\nOur comprehensive autism services include thorough assessment and diagnosis for children, adolescents, and adults, followed by personalized support that honors neurodivergent ways of thinking and being. We understand that each individual on the spectrum is unique, with their own strengths, challenges, and support needs.\n\nWhether you're seeking diagnosis for yourself or your child, looking for support with social communication, sensory processing, or executive functioning, or wanting to better understand and embrace your autistic identity, our experienced team is here to help. We believe in a strengths-based approach that celebrates neurodivergence while providing practical support for daily challenges.\n\nOur approach combines evidence-based therapeutic techniques with a deep understanding of autism, helping you develop strategies that work with your unique brain rather than trying to make you fit into neurotypical expectations. From improving social skills and communication to managing sensory sensitivities and building self-advocacy, we're committed to supporting your journey toward greater confidence and fulfillment.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive autism assessment and support approach can transform your life and help you thrive with your unique neurodivergent brain",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our Autism Support Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based Autism Methods",
+            "description": "Proven therapeutic techniques specifically designed for autism assessment and support"
+          },
+          {
+            "title": "Personalized Autism Care",
+            "description": "Tailored treatment plans that honor your unique neurodivergent strengths and challenges"
+          },
+          {
+            "title": "Safe Autism Environment",
+            "description": "Understanding space for embracing your autistic identity and neurodivergent ways of being"
+          },
+          {
+            "title": "Experienced Autism Team",
+            "description": "Registered Licensed professionals with years of autism expertise and neurodivergent understanding"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our Autism Support Impact",
+        "stats": [
+          { "value": "200+", "label": "Autism Assessments" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.9", "label": "Client Rating" }
+        ]
+      }
+    }
+  },
   "icon": "Brain",
   "iconColor": "#6366F1",
   "iconBg": "#E0E7FF",
@@ -189,7 +224,7 @@
     }
   ],
   "philosophy": {
-    "title": "Our Autism Support Philosophy & Approach",
+    "title": "Is Autism Diagnosis and Support Right For You?",
     "sections": [
       {
         "title": "Understanding Autism as Neurodiversity",

@@ -2,7 +2,42 @@
   "title": "Inner Child Work",
   "subtitle": "Reconnect with and Nurture Your Inner Child to Heal Unresolved Childhood Wounds",
   "description": "Your inner child carries the memories, emotions, and experiences from your early years. Our compassionate therapists help you reconnect with and heal your inner child, resolving childhood wounds and creating a more loving relationship with yourself.",
-  "fullDescription": "Inner child work is a powerful therapeutic approach that helps you connect with and heal the wounded parts of yourself that developed during childhood. At Allegro Counselling, we understand that many of our adult struggles, patterns, and emotional responses are rooted in early experiences that shaped how we see ourselves and the world.\n\nOur inner child work services help you identify and heal childhood wounds, develop self-compassion, and create a more loving relationship with yourself. Whether you experienced trauma, neglect, criticism, or simply didn't receive the emotional support you needed, inner child work can help you heal these wounds and develop greater self-acceptance.\n\nThrough gentle, compassionate therapeutic techniques, we help you reconnect with your inner child, understand their needs and emotions, and provide the love, validation, and support they may have missed. This process often leads to profound healing, increased self-esteem, and the ability to break free from limiting patterns that developed in childhood.\n\nOur approach is gentle, respectful, and always honors your pace and comfort level. We believe that healing your inner child is one of the most powerful ways to create lasting change and build a more fulfilling, authentic life.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive inner child work approach can transform your life and help you heal childhood wounds and reconnect with yourself",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our Inner Child Work Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based Inner Child Methods",
+            "description": "Proven therapeutic techniques specifically designed for inner child healing and reconnection"
+          },
+          {
+            "title": "Personalized Inner Child Care",
+            "description": "Tailored treatment plans for your unique childhood experiences and healing journey"
+          },
+          {
+            "title": "Safe Inner Child Environment",
+            "description": "Nurturing space for reconnecting with and healing your inner child"
+          },
+          {
+            "title": "Experienced Inner Child Team",
+            "description": "Registered Licensed professionals with years of inner child work expertise"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our Inner Child Work Impact",
+        "stats": [
+          { "value": "350+", "label": "Inner Child Clients Helped" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.9", "label": "Client Rating" }
+        ]
+      }
+    }
+  },
   "icon": "Heart",
   "iconColor": "#DC2626",
   "iconBg": "#FEE2E2",
@@ -19,12 +54,14 @@
   ],
   "specificServices": [
     {
-      "title": "Inner Child Reconnection",
-      "description": "Learn to connect with and understand your inner child.",
+      "title": "Emotional Healing & Processing",
+      "description": "Identify and process unresolved emotions from childhood including anger, sadness, fear, and shame.",
       "details": [
-        "Identifying and meeting your inner child",
-        "Understanding their needs and emotions",
-        "Building a loving relationship with yourself"
+        "Unexpressed childhood emotions",
+        "Emotional validation and acknowledgment",
+        "Safe expression of suppressed feelings",
+        "Healing emotional wounds",
+        "Developing emotional intelligence"
       ],
       "icon": "Heart",
       "iconColor": "#DC2626",
@@ -32,68 +69,78 @@
       "imageUri": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      "title": "Childhood Wound Healing",
-      "description": "Process and heal unresolved childhood experiences.",
+      "title": "Pattern Breaking & Behavioral Change",
+      "description": "Recognize and break free from negative patterns established in childhood to develop healthier coping mechanisms.",
       "details": [
-        "Identifying childhood wounds and their impact",
-        "Processing painful memories and emotions",
-        "Creating new, positive beliefs about yourself"
+        "Identifying destructive behavioral patterns",
+        "Understanding pattern origins",
+        "Developing new healthy responses",
+        "Creating positive coping strategies",
+        "Building resilience and adaptability"
       ],
-      "icon": "Heart",
-      "iconColor": "#DC2626",
-      "iconBg": "#FEE2E2",
+      "icon": "Brain",
+      "iconColor": "#8B5CF6",
+      "iconBg": "#EDE9FE",
       "imageUri": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      "title": "Self-Compassion Development",
-      "description": "Learn to be kind and nurturing toward yourself.",
+      "title": "Self-Esteem & Self-Worth Rebuilding",
+      "description": "Rebuild and strengthen self-esteem by offering compassion and nurturing to your wounded inner child.",
       "details": [
-        "Developing self-compassion and self-care",
-        "Practicing self-forgiveness and acceptance",
-        "Building a supportive inner dialogue"
+        "Healing negative self-perception",
+        "Building self-compassion",
+        "Developing healthy self-talk",
+        "Strengthening personal boundaries",
+        "Cultivating self-acceptance"
       ],
       "icon": "Heart",
-      "iconColor": "#DC2626",
-      "iconBg": "#FEE2E2",
+      "iconColor": "#10B981",
+      "iconBg": "#D1FAE5",
       "imageUri": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      "title": "Pattern Recognition and Change",
-      "description": "Identify and transform limiting childhood patterns.",
+      "title": "Relationship Healing",
+      "description": "Address root causes of relationship difficulties and foster healthier communication and connection patterns.",
       "details": [
-        "Recognizing patterns that developed in childhood",
-        "Understanding their origins and purpose",
-        "Creating new, healthier ways of being"
+        "Understanding relationship patterns",
+        "Healing attachment wounds",
+        "Improving communication skills",
+        "Building trust and intimacy",
+        "Creating healthy boundaries"
       ],
-      "icon": "Heart",
-      "iconColor": "#DC2626",
-      "iconBg": "#FEE2E2",
+      "icon": "Users",
+      "iconColor": "#3B82F6",
+      "iconBg": "#DBEAFE",
       "imageUri": "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      "title": "Emotional Regulation",
-      "description": "Learn to manage emotions with compassion and wisdom.",
+      "title": "Trauma Recovery",
+      "description": "Process traumatic childhood experiences in a safe therapeutic context to reduce their lasting impact.",
       "details": [
-        "Understanding emotional triggers from childhood",
-        "Developing healthy emotional regulation",
-        "Building emotional resilience and wisdom"
+        "Trauma-informed healing approaches",
+        "Safe processing of traumatic memories",
+        "EMDR and somatic techniques",
+        "Building post-traumatic resilience",
+        "Reclaiming personal power"
       ],
-      "icon": "Heart",
+      "icon": "Shield",
       "iconColor": "#DC2626",
       "iconBg": "#FEE2E2",
       "imageUri": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      "title": "Inner Parent Development",
-      "description": "Develop a loving, supportive inner parent voice.",
+      "title": "Subconscious Release",
+      "description": "Access and release deeply held subconscious patterns, beliefs, and emotional blocks that may be limiting your growth and healing.",
       "details": [
-        "Creating a nurturing inner parent",
-        "Learning to parent yourself with love",
-        "Building internal safety and security"
+        "Identifying subconscious patterns and blocks",
+        "Releasing limiting beliefs and fears",
+        "Accessing deeper levels of awareness",
+        "Integrating subconscious insights",
+        "Creating new neural pathways"
       ],
-      "icon": "Heart",
-      "iconColor": "#DC2626",
-      "iconBg": "#FEE2E2",
+      "icon": "Brain",
+      "iconColor": "#F59E0B",
+      "iconBg": "#FEF3C7",
       "imageUri": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ],
@@ -119,58 +166,62 @@
   },
   "approaches": [
     {
-      "name": "Inner Child Dialogue",
-      "description": "Facilitates direct communication with your inner child to understand their needs and provide healing."
-    },
-    {
-      "name": "Reparenting Techniques",
-      "description": "Teaches you to provide the love, support, and guidance your inner child needs."
-    },
-    {
-      "name": "Creative Expression",
-      "description": "Uses art, writing, and other creative modalities to connect with and heal your inner child."
+      "name": "Visualization Techniques",
+      "description": "Use guided imagery and visualization exercises to access and heal inner child experiences in a safe, creative way."
     },
     {
       "name": "Somatic Experiencing",
-      "description": "Works with body sensations and memories to process childhood trauma and emotions."
+      "description": "Address trauma stored in the body through gentle, body-based healing techniques."
     },
     {
-      "name": "Self-Compassion Practices",
-      "description": "Develops kindness, understanding, and acceptance toward yourself and your inner child."
+      "name": "Narrative Therapy",
+      "description": "Rewrite your life story by separating yourself from childhood problems and reclaiming your identity."
+    },
+    {
+      "name": "Subconscious Release",
+      "description": "Processing trauma on a deeper level and heal from childhood experiences."
+    },
+    {
+      "name": "Mindfulness-Based Therapy",
+      "description": "Develop present-moment awareness and self-compassion to nurture your inner child."
     },
     {
       "name": "Attachment-Based Therapy",
-      "description": "Addresses early attachment patterns and helps develop secure internal relationships."
+      "description": "Heal early attachment wounds and develop secure, healthy relationship patterns."
     }
   ],
   "faqs": [
     {
-      "question": "What is inner child work?",
-      "answer": "Inner child work is a therapeutic approach that helps you connect with and heal the wounded parts of yourself that developed during childhood. It involves understanding, validating, and nurturing your inner child."
+      "question": "What exactly is inner child work and how does it help?",
+      "answer": "Inner child work is a therapeutic approach that helps you reconnect with and heal the younger, more vulnerable aspects of yourself. It addresses unresolved childhood emotions, traumas, and patterns that continue to impact your adult life. By nurturing your inner child, you can heal old wounds, break negative patterns, and create more authentic, fulfilling relationships and life experiences."
     },
     {
-      "question": "How long does inner child work take?",
-      "answer": "The duration varies depending on the depth of childhood wounds and your comfort level. Many people see significant progress within 8-16 sessions, though some may benefit from longer-term work."
+      "question": "Do I need to have experienced trauma to benefit from inner child work?",
+      "answer": "No, you don't need to have experienced severe trauma to benefit from inner child work. Everyone has an inner child that may carry unresolved emotions, unmet needs, or limiting beliefs from childhood. Even seemingly minor childhood experiences can impact our adult lives. Inner child work can help anyone seeking greater self-understanding, emotional healing, and personal growth."
     },
     {
-      "question": "Do I need to have had a traumatic childhood?",
-      "answer": "No, inner child work can benefit anyone. Even if you had a relatively good childhood, there may be unmet needs or experiences that continue to affect you as an adult."
+      "question": "How long does inner child work typically take?",
+      "answer": "The duration of inner child work varies greatly depending on individual needs, the depth of healing required, and personal goals. Some people experience significant shifts in a few months, while others may engage in this work for a year or more. The process is highly individual, and we work at your pace to ensure safe, sustainable healing."
     },
     {
-      "question": "Is inner child work safe?",
-      "answer": "Yes, our approach is gentle and always respects your pace and comfort level. We create a safe, supportive environment for this healing work."
+      "question": "Is inner child work emotionally difficult or overwhelming?",
+      "answer": "Inner child work can bring up strong emotions as you process childhood experiences, but it's conducted in a safe, supportive environment with proper therapeutic guidance. We use gentle, trauma-informed approaches and ensure you have adequate coping skills before exploring deeper material. The goal is healing, not re-traumatization."
     },
     {
-      "question": "What if I don't remember my childhood?",
-      "answer": "That's common and completely normal. Inner child work doesn't require detailed memories. We can work with emotions, patterns, and current experiences to access and heal your inner child."
+      "question": "What techniques are used in inner child work?",
+      "answer": "We use various approaches including visualization, dialogue with your inner child, creative expression, somatic techniques, mindfulness practices, and gentle trauma processing methods. The specific techniques used depend on your comfort level, preferences, and therapeutic needs. We tailor the approach to what works best for you."
     },
     {
-      "question": "Can inner child work help with current relationships?",
-      "answer": "Absolutely! Healing your inner child often leads to healthier adult relationships, as you develop better self-esteem, boundaries, and emotional regulation."
+      "question": "Can inner child work help with current relationship problems?",
+      "answer": "Yes, inner child work can significantly improve current relationships. Many relationship patterns stem from childhood experiences and attachment styles. By healing your inner child, you can develop healthier communication patterns, stronger boundaries, increased self-worth, and more secure attachment styles, all of which enhance your relationships."
     },
     {
-      "question": "What if I feel silly or embarrassed?",
-      "answer": "Those feelings are normal and valid. Inner child work can feel vulnerable, but our therapists create a safe, non-judgmental space where all feelings are welcome."
+      "question": "Will I need to confront my parents or family members?",
+      "answer": "Inner child work focuses on your internal healing process, not on confronting family members. While understanding family dynamics is important, the primary goal is healing your relationship with yourself and developing healthier patterns. Any decisions about family relationships are entirely yours and made when you feel ready and empowered."
+    },
+    {
+      "question": "How do I know if I'm ready for inner child work?",
+      "answer": "You may be ready for inner child work if you're experiencing recurring relationship patterns, emotional reactions that seem disproportionate to current situations, feelings of emptiness or disconnection, or a sense that childhood experiences are impacting your adult life. A willingness to explore your inner world with curiosity and compassion is the most important prerequisite."
     }
   ],
   "relatedServices": ["Trauma Counselling", "Self-Esteem Work", "Attachment Therapy", "Individual Therapy"],
@@ -189,22 +240,22 @@
     }
   ],
   "philosophy": {
-    "title": "Our Inner Child Work Philosophy & Approach",
+    "title": "Is Inner Child Work Right For You?",
     "sections": [
       {
-        "title": "Understanding the Inner Child's Impact",
+        "title": "Do you notice certain habits repeating in your life?",
         "description": "We believe that our early experiences shape who we become as adults, and that healing our inner child can transform our present relationships and emotional well-being. Our approach helps you connect with and heal the wounded parts of yourself from childhood."
       },
       {
-        "title": "Compassionate Inner Child Connection",
+        "title": "Are you tired of feeling stuck in relationships?",
         "description": "We create a safe, nurturing space where you can reconnect with your inner child with love and compassion. Our approach helps you develop a caring relationship with your younger self, providing the understanding and support that may have been missing."
       },
       {
-        "title": "Evidence-Based Inner Child Healing",
+        "title": "Did you experience significant complex trauma CTPSD while growing up?",
         "description": "We combine proven therapeutic approaches including inner child work, parts therapy, and trauma-informed care. Our goal is to help you process childhood wounds, develop self-compassion, and create new, healthier patterns in your adult life."
       },
       {
-        "title": "Integration and Adult Self-Development",
+        "title": "Are you ready to unpack why certain things are so triggering to you?",
         "description": "We help you integrate your healed inner child with your adult self, creating wholeness and authenticity. This process supports emotional healing, improved relationships, and a deeper sense of self-worth and inner peace."
       }
     ]

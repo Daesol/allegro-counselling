@@ -2,7 +2,42 @@
   "title": "Anxiety Support",
   "subtitle": "Find Peace, Build Resilience, and Regain Control of Your Life",
   "description": "Anxiety can feel overwhelming and all-consuming, but you don't have to face it alone. Our compassionate team of anxiety specialists understand the complex nature of anxiety disorders and are here to provide you with evidence-based support and practical tools to manage your symptoms.",
-  "fullDescription": "Anxiety affects millions of people worldwide, manifesting in various forms from generalized anxiety disorder to panic attacks, social anxiety, and specific phobias. At Allegro Counselling, we recognize that anxiety is not just about feeling worried – it's a complex interplay of thoughts, emotions, and physical sensations that can significantly impact your daily life.\n\nOur anxiety support services are designed to help you understand the root causes of your anxiety, develop effective coping strategies, and build resilience for long-term mental health. We work with you to identify triggers, challenge negative thought patterns, and create a personalized treatment plan that addresses your unique needs and goals.\n\nThrough a combination of cognitive-behavioral therapy, mindfulness techniques, and other evidence-based approaches, we help you develop the skills and confidence to manage anxiety symptoms and live a more fulfilling life. You deserve to feel calm, confident, and in control of your thoughts and emotions.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive anxiety support approach can transform your life and help you find peace and resilience",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our Anxiety Support Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based Anxiety Methods",
+            "description": "Proven therapeutic techniques specifically designed for anxiety management"
+          },
+          {
+            "title": "Personalized Anxiety Care",
+            "description": "Tailored treatment plans for your unique anxiety challenges and triggers"
+          },
+          {
+            "title": "Safe Anxiety Environment",
+            "description": "Calming space for learning to manage anxiety and build resilience"
+          },
+          {
+            "title": "Experienced Anxiety Team",
+            "description": "Registered Licensed professionals with years of anxiety treatment expertise"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our Anxiety Support Impact",
+        "stats": [
+          { "value": "800+", "label": "Anxiety Clients Helped" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.9", "label": "Client Rating" }
+        ]
+      }
+    }
+  },
   "icon": "Brain",
   "iconColor": "#189799",
   "iconBg": "#E6F7F7",
@@ -146,7 +181,7 @@
     }
   ],
   "philosophy": {
-    "title": "Our Anxiety Support Philosophy & Approach",
+    "title": "Is Anxiety Support Right For You?",
     "sections": [
       {
         "title": "Understanding Anxiety as a Natural Response",

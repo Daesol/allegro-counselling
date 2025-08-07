@@ -2,7 +2,42 @@
   "title": "Relationship Counselling",
   "subtitle": "Strengthen Your Connection, Rebuild Trust, and Rediscover Love",
   "description": "We believe in the transformative power of connection. Our dedicated team of experienced relationship counsellors are committed to guiding individuals and couples through the intricate dance of relationships. At Allegro, we understand that every relationship is unique, facing its own set of challenges.",
-  "fullDescription": "Our relationship counseling services are designed to provide a safe and confidential space for individuals and couples to explore their feelings, communicate openly, and develop a deeper understanding of themselves and their partners. Whether you're navigating the complexities of a romantic relationship, grappling with family dynamics, or seeking to improve communication within your connections, our skilled therapists are here to support you.\n\nAllegro Counselling employs evidence-based therapeutic approaches, fostering an environment of empathy, respect, and growth. Our goal is to empower individuals and couples to build stronger, more resilient connections. Through personalized counseling sessions, we address a wide range of issues, from communication breakdowns and trust issues to intimacy concerns and life transitions.\n\nIf you're ready to harmonize your relationships and create a more fulfilling connection, Allegro Counselling is here to guide you on your journey. Discover the joy of meaningful connections and the harmony that comes from understanding and supporting each other. Take the first step towards a more harmonious and satisfying relationship with Allegro Counselling.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive relationship counseling approach can transform your connections and emotional well-being",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our Relationship Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based Relationship Methods",
+            "description": "Proven therapeutic techniques specifically designed for relationship healing"
+          },
+          {
+            "title": "Personalized Couples Care",
+            "description": "Tailored treatment plans for your unique relationship dynamics"
+          },
+          {
+            "title": "Safe Relationship Environment",
+            "description": "Confidential space for couples to heal and grow together"
+          },
+          {
+            "title": "Experienced Relationship Team",
+            "description": "Registered Licensed professionals with years of relationship counseling expertise"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our Relationship Impact",
+        "stats": [
+          { "value": "500+", "label": "Couples Helped" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.9", "label": "Client Rating" }
+        ]
+      }
+    }
+  },
   "icon": "Heart",
   "iconColor": "#DC2626",
   "iconBg": "#FEE2E2",
@@ -215,7 +250,7 @@
     }
   ],
   "philosophy": {
-    "title": "Our Relationship Counselling Philosophy & Approach",
+    "title": "Is Relationship Counselling Right For You?",
     "sections": [
       {
         "title": "Understanding Relationships as Dynamic Systems",

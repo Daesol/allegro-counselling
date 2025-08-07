@@ -5,42 +5,7 @@
     "ctaButton": "Book A Free Consultation",
     "ctaUrl": "https://calendly.com/allegroadmin/30min"
   },
-  "fullDescription": {
-    "title": "Understanding",
-    "subtitle": "Our comprehensive approach can transform your relationships and emotional well-being",
-    "sections": {
-      "whyChooseUs": {
-        "title": "Why Choose Our Approach?",
-        "points": [
-          {
-            "title": "Evidence-Based Methods",
-            "description": "Proven therapeutic techniques backed by research"
-          },
-          {
-            "title": "Personalized Care",
-            "description": "Tailored treatment plans for your unique situation"
-          },
-          {
-            "title": "Safe Environment",
-            "description": "Confidential space for healing and growth"
-          },
-          {
-            "title": "Experienced Team",
-            "description": "Registered Licensed professionals with years of expertise"
-          }
-        ]
-      },
-      "impact": {
-        "title": "Our Impact",
-        "stats": [
-          { "value": "1000+", "label": "Clients Helped" },
-          { "value": "15+", "label": "Years Experience" },
-          { "value": "100%", "label": "Client Centered" },
-          { "value": "5.0", "label": "Client Rating" }
-        ]
-      }
-    }
-  },
+
   "acknowledgingPain": {
     "title": "We See Your Pain",
     "description": "Healing begins with being seen and heard. We understand that reaching out for help can be difficult, and that your pain is real and valid. Our team is here to walk alongside you, offering compassion, expertise, and a safe space for your healing journey. You are not alone.",
@@ -50,7 +15,7 @@
   "specificServices": {
     "title": "Our",
     "highlightedTitle": "Specialized Services",
-    "subtitle": "Comprehensive therapy services tailored to your unique needs and circumstances",
+    "subtitle": "Comprehensive therapy services tailored to your unique needs.",
     "ctaButton": "Learn More About"
   },
   "whatToExpected": {

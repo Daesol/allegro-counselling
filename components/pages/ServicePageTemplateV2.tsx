@@ -14,7 +14,7 @@ interface ServicePageProps {
 }
 
 export default function ServicePageTemplateV2({ serviceData }: ServicePageProps) {
-  const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
+  const [expandedFaqs, setExpandedFaqs] = useState<Set<number>>(new Set())
 
   // Get service key from the serviceData title
   const getServiceKey = (title: string) => {
@@ -50,7 +50,15 @@ export default function ServicePageTemplateV2({ serviceData }: ServicePageProps)
   const IconComponent = getIconComponent(iconConfig.icon)
 
   const toggleFaq = (index: number) => {
-    setExpandedFaq(expandedFaq === index ? null : index)
+    setExpandedFaqs(prev => {
+      const newSet = new Set(prev)
+      if (newSet.has(index)) {
+        newSet.delete(index)
+      } else {
+        newSet.add(index)
+      }
+      return newSet
+    })
   }
 
   // Function to get therapist booking URL
@@ -161,16 +169,16 @@ export default function ServicePageTemplateV2({ serviceData }: ServicePageProps)
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full mb-8 shadow-xl">
                 {IconComponent && <IconComponent className="h-10 w-10 text-white" />}
               </div>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                {sharedContent.fullDescription.title}{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                  {serviceData.title}
-                </span>
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto mb-6"></div>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                {sharedContent.fullDescription.subtitle}
-              </p>
+                             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                 {serviceData.fullDescription?.title || "Understanding"}{" "}
+                 <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                   {serviceData.title}
+                 </span>
+               </h2>
+               <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto mb-6"></div>
+               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                 {serviceData.fullDescription?.subtitle || "Our comprehensive approach can transform your relationships and emotional well-being"}
+               </p>
             </div>
 
             {/* Main Content Grid */}
@@ -178,12 +186,17 @@ export default function ServicePageTemplateV2({ serviceData }: ServicePageProps)
               {/* Left Column - Key Points */}
               <div className="lg:col-span-1 space-y-8">
                 <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/50">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                                                       <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                     <div className="w-3 h-8 bg-gradient-to-b from-blue-500 to-indigo-500 rounded-full mr-4"></div>
-                    {sharedContent.fullDescription.sections.whyChooseUs.title}
+                    {serviceData.fullDescription?.sections?.whyChooseUs?.title || "Why Choose Our Approach?"}
                   </h3>
                   <div className="space-y-4">
-                    {sharedContent.fullDescription.sections.whyChooseUs.points.map((point, index) => (
+                    {(serviceData.fullDescription?.sections?.whyChooseUs?.points || [
+                      { title: "Evidence-Based Methods", description: "Proven therapeutic techniques backed by research" },
+                      { title: "Personalized Care", description: "Tailored treatment plans for your unique situation" },
+                      { title: "Safe Environment", description: "Confidential space for healing and growth" },
+                      { title: "Experienced Team", description: "Registered Licensed professionals with years of expertise" }
+                    ]).map((point, index) => (
                       <div key={index} className="flex items-start space-x-3">
                         <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                           <CheckCircle className="h-4 w-4 text-green-600" />
@@ -198,10 +211,15 @@ export default function ServicePageTemplateV2({ serviceData }: ServicePageProps)
                 </div>
 
                 {/* Quick Stats */}
-                <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-3xl p-8 text-white shadow-xl">
-                  <h3 className="text-xl font-bold mb-6">{sharedContent.fullDescription.sections.impact.title}</h3>
+                                                 <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-3xl p-8 text-white shadow-xl">
+                  <h3 className="text-xl font-bold mb-6">{serviceData.fullDescription?.sections?.impact?.title || "Our Impact"}</h3>
                   <div className="grid grid-cols-2 gap-6">
-                    {sharedContent.fullDescription.sections.impact.stats.map((stat, index) => (
+                    {(serviceData.fullDescription?.sections?.impact?.stats || [
+                      { value: "1000+", label: "Clients Helped" },
+                      { value: "15+", label: "Years Experience" },
+                      { value: "100%", label: "Client Centered" },
+                      { value: "5.0", label: "Client Rating" }
+                    ]).map((stat, index) => (
                       <div key={index} className="text-center">
                         <div className="text-3xl font-bold mb-2">{stat.value}</div>
                         <div className="text-blue-100 text-sm">{stat.label}</div>
@@ -215,27 +233,49 @@ export default function ServicePageTemplateV2({ serviceData }: ServicePageProps)
               <div className="lg:col-span-2">
                 <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-10 shadow-xl border border-white/50">
                   <div className="prose prose-lg max-w-none">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Philosophy & Approach</h3>
+                    {serviceData.philosophy && (
+                      <>
+                        <h3 className="text-2xl font-bold text-gray-900 mb-6">{serviceData.philosophy.title}</h3>
 
-                    <div className="space-y-8">
-                      {serviceData.philosophy && serviceData.philosophy.sections ? (
-                        serviceData.philosophy.sections.map((section, index) => (
-                          <div key={index}>
-                            <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                              <Heart className="h-5 w-5 text-red-500 mr-3" />
-                              {section.title}
-                            </h4>
-                            <p className="text-gray-700 leading-relaxed mb-4">
-                              {section.description}
-                            </p>
-                          </div>
-                        ))
-                      ) : (
-                        <div className="text-gray-600 text-center py-8">
-                          <p>Philosophy content will be added for this service.</p>
+                        <div className="space-y-8">
+                          {serviceData.philosophy.sections ? (
+                            serviceData.philosophy.sections.map((section, index) => {
+                              // Map different icons to each philosophy section
+                              const getPhilosophyIcon = (index: number) => {
+                                const icons = [
+                                  { component: Heart, color: "text-red-500" },
+                                  { component: Users, color: "text-blue-500" },
+                                  { component: Star, color: "text-yellow-500" },
+                                  { component: Sparkles, color: "text-purple-500" },
+                                  { component: Brain, color: "text-teal-500" },
+                                  { component: Shield, color: "text-green-500" }
+                                ]
+                                return icons[index % icons.length]
+                              }
+                              
+                              const iconConfig = getPhilosophyIcon(index)
+                              const IconComponent = iconConfig.component
+                              
+                              return (
+                                <div key={index}>
+                                  <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                                    <IconComponent className={`h-5 w-5 ${iconConfig.color} mr-3`} />
+                                    {section.title}
+                                  </h4>
+                                  <p className="text-gray-700 leading-relaxed mb-4">
+                                    {section.description}
+                                  </p>
+                                </div>
+                              )
+                            })
+                          ) : (
+                            <div className="text-gray-600 text-center py-8">
+                              <p>Philosophy content will be added for this service.</p>
+                            </div>
+                          )}
                         </div>
-                      )}
-                    </div>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
@@ -293,47 +333,84 @@ export default function ServicePageTemplateV2({ serviceData }: ServicePageProps)
 
       {/* Specific Services Section */}
       {serviceData.specificServices && serviceData.specificServices.length > 0 && (
-        <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-gray-50 to-slate-50">
-          <div className="container mx-auto px-4 max-w-7xl">
+        <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
+          <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                {sharedContent.specificServices.title}{" "}
-                <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                  {sharedContent.specificServices.highlightedTitle}
+                Our{" "}
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  Specialized Services
                 </span>
               </h2>
               <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-                {sharedContent.specificServices.subtitle}
+                Comprehensive relationship counselling services tailored to your unique needs and circumstances
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {serviceData.specificServices.map((specificService, index) => (
-                <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                  <CardContent className="p-6">
-                    <div className="relative mb-4">
-                      <Image
-                        src={specificService.imageUri || "/placeholder.svg"}
-                        alt={specificService.title}
-                        width={400}
-                        height={250}
-                        className="w-full h-48 object-cover rounded-lg"
-                      />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">{specificService.title}</h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed">{specificService.description}</p>
-                    <ul className="space-y-2 mb-6">
-                      {specificService.details.map((detail, detailIndex) => (
-                        <li key={detailIndex} className="flex items-start space-x-2">
-                          <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0 mt-1" />
-                          <span className="text-sm text-gray-600">{detail}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="grid md:grid-cols-2 gap-8">
+              {serviceData.specificServices.map((specificService, index) => {
+                const IconComponent = getIconComponent(specificService.icon || "Heart")
+                return (
+                  <Card
+                    key={index}
+                    className="bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
+                  >
+                    <CardContent className="p-0">
+                      {/* Image Section */}
+                      <div className="relative h-48 overflow-hidden">
+                        <Image
+                          src={
+                            specificService.imageUri
+                              ? specificService.imageUri.includes("unsplash.com")
+                                ? specificService.imageUri.replace("w=1000", "w=400").replace("q=60", "q=80")
+                                : specificService.imageUri
+                              : `/placeholder.svg?height=200&width=400&query=${encodeURIComponent(specificService.title)}`
+                          }
+                          alt={`${specificService.title} therapy session`}
+                          width={400}
+                          height={200}
+                          loading="lazy"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+                        {/* Service Icon Overlay */}
+                        <div
+                          className="absolute top-4 right-4 w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"
+                          style={{ backgroundColor: specificService.iconBg || "#FEE2E2" }}
+                        >
+                          <IconComponent className="h-6 w-6" style={{ color: specificService.iconColor || "#DC2626" }} />
+                        </div>
+
+                        {/* Title Overlay */}
+                        <div className="absolute bottom-4 left-4 text-white">
+                          <h3 className="text-xl font-bold mb-1">{specificService.title}</h3>
+                        </div>
+                      </div>
+
+                      {/* Content Section */}
+                      <div className="p-6">
+                        <p className="text-gray-600 mb-4">{specificService.description}</p>
+
+                        <div className="space-y-3">
+                          <h4 className="font-semibold text-gray-900 text-sm">What We Address:</h4>
+                          <ul className="space-y-2">
+                            {specificService.details.map((detail, detailIndex) => (
+                              <li key={detailIndex} className="flex items-start space-x-2">
+                                <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
+                                <span className="text-sm text-gray-600">{detail}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+
+                      </div>
+                    </CardContent>
+                  </Card>
+                )
+              })}
             </div>
           </div>
         </section>
@@ -382,22 +459,61 @@ export default function ServicePageTemplateV2({ serviceData }: ServicePageProps)
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {serviceData.approaches.map((approach, index) => (
-              <Card
-                key={index}
-                className="bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-              >
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
-                    <Brain className="h-6 w-6 text-teal-600" />
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">{approach.name}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{approach.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+             {serviceData.approaches.map((approach, index) => {
+               // Select different icons based on approach name or index
+               const getApproachIcon = (name: string, index: number) => {
+                 const iconMap: { [key: string]: any } = {
+                   'emdr': Brain,
+                   'cbt': Shield,
+                   'dbt': Heart,
+                   'mindfulness': Sparkles,
+                   'trauma': Shield,
+                   'attachment': Users,
+                   'narrative': Sparkles,
+                   'gestalt': Brain,
+                   'somatic': Heart,
+                   'inner child': Heart,
+                   'visualization': Sparkles,
+                   'subconscious': Brain,
+                   'standard': Shield,
+                   'adaptive': Brain,
+                   'bilateral': Sparkles,
+                   'resource': Heart,
+                   'safe place': Shield,
+                   'future': Sparkles
+                 }
+                 
+                 const lowerName = name.toLowerCase()
+                 for (const [key, icon] of Object.entries(iconMap)) {
+                   if (lowerName.includes(key)) {
+                     return icon
+                   }
+                 }
+                 
+                 // Fallback to different icons based on index
+                 const fallbackIcons = [Brain, Shield, Heart, Sparkles, Users, Star]
+                 return fallbackIcons[index % fallbackIcons.length]
+               }
+               
+               const ApproachIcon = getApproachIcon(approach.name, index)
+               
+               return (
+                 <Card
+                   key={index}
+                   className="bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                 >
+                   <CardContent className="p-6">
+                     <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                       <ApproachIcon className="h-6 w-6 text-teal-600" />
+                     </div>
+                     <h3 className="text-lg font-bold text-gray-900 mb-3">{approach.name}</h3>
+                     <p className="text-gray-600 text-sm leading-relaxed">{approach.description}</p>
+                   </CardContent>
+                 </Card>
+               )
+             })}
+           </div>
         </div>
       </section>
 
@@ -423,13 +539,13 @@ export default function ServicePageTemplateV2({ serviceData }: ServicePageProps)
                     className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
                   >
                     <h3 className="text-lg font-semibold text-gray-900">{faq.question}</h3>
-                    <div className={`transform transition-transform duration-200 ${expandedFaq === index ? 'rotate-180' : ''}`}>
-                      <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </div>
-                  </button>
-                  {expandedFaq === index && (
+                                         <div className={`transform transition-transform duration-200 ${expandedFaqs.has(index) ? 'rotate-180' : ''}`}>
+                       <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                       </svg>
+                     </div>
+                   </button>
+                   {expandedFaqs.has(index) && (
                     <div className="px-6 pb-6">
                       <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                     </div>

@@ -2,7 +2,42 @@
   "title": "Depression Support",
   "subtitle": "Find Hope, Rebuild Joy, and Rediscover Your Light",
   "description": "Depression can feel like a heavy cloud that never lifts, but you don't have to face it alone. Our compassionate team of depression specialists understand the deep pain of depression and are here to provide evidence-based support to help you find hope and rebuild a life worth living.",
-  "fullDescription": "Depression is more than just feeling sad – it's a complex mental health condition that affects millions of people worldwide, impacting thoughts, emotions, behaviors, and physical well-being. At Allegro Counselling, we recognize that depression manifests differently for each person, and we're committed to providing personalized care that addresses your unique experience.\n\nOur comprehensive depression support services are designed to help you understand the root causes of your depression, develop effective coping strategies, and build resilience for long-term mental health. We work with you to identify triggers, challenge negative thought patterns, and create a personalized treatment plan that addresses your specific needs and goals.\n\nWhether you're experiencing mild, moderate, or severe depression, our experienced therapists create a safe, non-judgmental space where you can openly explore your feelings without fear of criticism or misunderstanding. We believe that healing happens in relationship, and we're honored to walk alongside you on your journey toward greater hope and well-being.\n\nThrough a combination of evidence-based therapeutic approaches, we help you develop the skills and confidence to manage depression symptoms and live a more fulfilling life. You deserve to feel joy, purpose, and connection – and we're here to help you rediscover these essential elements of life.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive depression support approach can transform your life and help you find hope and rediscover joy",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our Depression Support Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based Depression Methods",
+            "description": "Proven therapeutic techniques specifically designed for depression treatment"
+          },
+          {
+            "title": "Personalized Depression Care",
+            "description": "Tailored treatment plans for your unique depression experience and needs"
+          },
+          {
+            "title": "Safe Depression Environment",
+            "description": "Compassionate space for healing and rediscovering hope and joy"
+          },
+          {
+            "title": "Experienced Depression Team",
+            "description": "Registered Licensed professionals with years of depression treatment expertise"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our Depression Support Impact",
+        "stats": [
+          { "value": "600+", "label": "Depression Clients Helped" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.8", "label": "Client Rating" }
+        ]
+      }
+    }
+  },
   "icon": "Heart",
   "iconColor": "#DC2626",
   "iconBg": "#FEE2E2",
@@ -189,7 +224,7 @@
     }
   ],
   "philosophy": {
-    "title": "Our Depression Support Philosophy & Approach",
+    "title": "Is Depression Support Right For You?",
     "sections": [
       {
         "title": "Understanding Depression as a Treatable Condition",

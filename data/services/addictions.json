@@ -2,7 +2,42 @@
   "title": "Addictions",
   "subtitle": "Break Free from Addiction and Reclaim Your Life",
   "description": "Addiction can feel like an impossible cycle to break, but recovery is possible. Our compassionate team of addiction specialists understand the complex nature of substance and behavioral addictions, and we're here to provide evidence-based support to help you break free and build a healthier, more fulfilling life.",
-  "fullDescription": "Addiction affects millions of people worldwide, impacting not just the individual but their families, relationships, and communities. At Allegro Counselling, we recognize that addiction is not a moral failing or lack of willpower – it's a complex health condition that requires specialized treatment and support.\n\nOur comprehensive addiction recovery services are designed to address the root causes of addiction, develop healthy coping mechanisms, and support long-term recovery. We work with individuals struggling with substance addictions (alcohol, drugs, prescription medications) as well as behavioral addictions (gambling, gaming, shopping, food, etc.).\n\nWe believe in a holistic approach to recovery that addresses the physical, emotional, psychological, and social aspects of addiction. Our experienced therapists create a safe, non-judgmental environment where you can explore the underlying issues that contribute to addictive behaviors and develop the skills needed for lasting change.\n\nRecovery is a journey, and we're here to walk alongside you every step of the way. Whether you're just beginning to consider change or you're actively working on maintaining sobriety, our team is committed to supporting your recovery goals and helping you build a life that's meaningful and fulfilling.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive addiction recovery approach can transform your life and break the cycle of addiction",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our Addiction Recovery Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based Recovery Methods",
+            "description": "Proven therapeutic techniques specifically designed for addiction treatment"
+          },
+          {
+            "title": "Personalized Recovery Care",
+            "description": "Tailored treatment plans for your unique addiction and recovery journey"
+          },
+          {
+            "title": "Safe Recovery Environment",
+            "description": "Non-judgmental space for healing and breaking free from addiction"
+          },
+          {
+            "title": "Experienced Addiction Team",
+            "description": "Registered Licensed professionals with years of addiction recovery expertise"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our Recovery Impact",
+        "stats": [
+          { "value": "500+", "label": "Recovery Successes" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.8", "label": "Recovery Rating" }
+        ]
+      }
+    }
+  },
   "icon": "Shield",
   "iconColor": "#059669",
   "iconBg": "#D1FAE5",
@@ -189,7 +224,7 @@
     }
   ],
   "philosophy": {
-    "title": "Our Addictions Recovery Philosophy & Approach",
+    "title": "Is Addiction Recovery Right For You?",
     "sections": [
       {
         "title": "Understanding Addiction as a Complex Condition",

@@ -2,7 +2,42 @@
   "title": "ADHD Diagnosis and Support",
   "subtitle": "Comprehensive Assessment and Personalized Strategies for Managing ADHD",
   "description": "Living with ADHD can feel like navigating life with a brain that works differently. Our specialized team understands the unique challenges of ADHD and provides comprehensive assessment, diagnosis, and evidence-based support to help you thrive with your neurodivergent brain.",
-  "fullDescription": "Attention Deficit Hyperactivity Disorder (ADHD) affects millions of people worldwide, yet many adults and children go undiagnosed or misunderstood. At Allegro Counselling, we recognize that ADHD is not a deficit of attention, but rather a difference in how the brain processes information and manages executive functions.\n\nOur comprehensive ADHD services include thorough assessment and diagnosis for children, adolescents, and adults, followed by personalized treatment plans that address the specific challenges you face. We understand that ADHD often co-occurs with other conditions like anxiety, depression, and learning differences, and we provide integrated care that addresses all aspects of your mental health.\n\nWhether you're seeking diagnosis for yourself or your child, struggling with organization and time management, or looking to improve relationships and work performance, our experienced team is here to help. We believe that with the right support and strategies, individuals with ADHD can not only manage their symptoms but also harness their unique strengths and creativity.\n\nOur approach combines evidence-based therapeutic techniques with practical life skills training, helping you develop strategies that work with your brain rather than against it. From improving focus and organization to managing impulsivity and emotional regulation, we're committed to supporting your journey toward greater confidence and success.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive ADHD assessment and support approach can transform your life and help you thrive with your unique brain",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our ADHD Support Approach?",
+        "points": [
+          {
+            "title": "Evidence-Based ADHD Methods",
+            "description": "Proven therapeutic techniques specifically designed for ADHD assessment and support"
+          },
+          {
+            "title": "Personalized ADHD Care",
+            "description": "Tailored treatment plans for your unique ADHD challenges and strengths"
+          },
+          {
+            "title": "Safe ADHD Environment",
+            "description": "Understanding space for embracing your neurodivergent brain"
+          },
+          {
+            "title": "Experienced ADHD Team",
+            "description": "Registered Licensed professionals with years of ADHD expertise"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our ADHD Support Impact",
+        "stats": [
+          { "value": "300+", "label": "ADHD Assessments" },
+          { "value": "15+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.9", "label": "Client Rating" }
+        ]
+      }
+    }
+  },
   "icon": "Brain",
   "iconColor": "#059669",
   "iconBg": "#D1FAE5",
@@ -189,7 +224,7 @@
     }
   ],
   "philosophy": {
-    "title": "Our ADHD Support Philosophy & Approach",
+    "title": "Is ADHD Diagnosis and Support Right For You?",
     "sections": [
       {
         "title": "Understanding ADHD as a Neurodevelopmental Difference",
