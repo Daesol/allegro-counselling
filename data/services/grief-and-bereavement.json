@@ -1,0 +1,254 @@
+{
+  "title": "Grief and Bereavement",
+  "subtitle": "Navigating Loss with Compassion, Understanding, and Healing Support",
+  "description": "Losing a loved one is one of the most challenging and emotionally complex experiences. Our compassionate grief counsellors provide specialized support to help you navigate the profound journey of loss, process your emotions, and find meaning in your healing.",
+  "fullDescription": {
+    "title": "Understanding",
+    "subtitle": "Our comprehensive grief and bereavement approach can help you navigate loss with dignity and find your path to healing",
+    "sections": {
+      "whyChooseUs": {
+        "title": "Why Choose Our Grief and Bereavement Approach?",
+        "points": [
+          {
+            "title": "Compassionate Grief Support",
+            "description": "Understanding and empathetic care that honors your unique grieving process"
+          },
+          {
+            "title": "Individualized Bereavement Care",
+            "description": "Personalized support that respects your relationship with the person you've lost"
+          },
+          {
+            "title": "Safe Grieving Environment",
+            "description": "Non-judgmental space where all emotions and experiences are welcome"
+          },
+          {
+            "title": "Experienced Grief Team",
+            "description": "Registered professionals with specialized training in grief and bereavement counselling"
+          }
+        ]
+      },
+      "impact": {
+        "title": "Our Grief and Bereavement Impact",
+        "stats": [
+          { "value": "300+", "label": "Grieving Clients Supported" },
+          { "value": "12+", "label": "Years Experience" },
+          { "value": "100%", "label": "Client Centered" },
+          { "value": "4.9", "label": "Client Rating" }
+        ]
+      }
+    }
+  },
+  "icon": "Heart",
+  "iconColor": "#DC2626",
+  "iconBg": "#FEF2F2",
+  "heroImage": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  
+  "benefits": [
+    "Process complex emotions of grief and loss",
+    "Navigate the unpredictable grieving journey",
+    "Honor and preserve memories of your loved one",
+    "Develop healthy coping mechanisms",
+    "Find meaning and purpose after loss",
+    "Rebuild relationships and social connections",
+    "Address physical symptoms of grief",
+    "Create a personalized healing plan"
+  ],
+  "specificServices": [
+    {
+      "title": "Anticipatory Grief Support",
+      "description": "Support for those facing the impending loss of a loved one, helping you prepare emotionally and practically.",
+      "details": [
+        "Process emotions before the loss occurs",
+        "Prepare for practical aspects of loss",
+        "Maintain hope while accepting reality",
+        "Support family communication"
+      ],
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEF2F2",
+      "imageUri": "https://images.unsplash.com/photo-1604881991720-f91add269bed?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Sudden Loss Counselling",
+      "description": "Specialized support for those dealing with unexpected or traumatic loss, including accidents, suicide, or sudden illness.",
+      "details": [
+        "Process shock and disbelief",
+        "Address trauma associated with sudden loss",
+        "Navigate complex emotions",
+        "Develop coping strategies for unexpected grief"
+      ],
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEF2F2",
+      "imageUri": "https://images.unsplash.com/photo-1536013009411-25930e88d3c7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Complicated Grief Therapy",
+      "description": "Support for those experiencing prolonged or complicated grief that interferes with daily functioning.",
+      "details": [
+        "Address persistent grief symptoms",
+        "Process unresolved emotions",
+        "Develop healthy attachment patterns",
+        "Create new meaning and purpose"
+      ],
+      "icon": "Heart",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEF2F2",
+      "imageUri": "https://images.unsplash.com/photo-1604881991664-593b31b88488?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Family Grief Counselling",
+      "description": "Support for families navigating loss together, helping each member process grief while maintaining family bonds.",
+      "details": [
+        "Support individual family members",
+        "Maintain family communication",
+        "Address different grieving styles",
+        "Create family healing rituals"
+      ],
+      "icon": "Users",
+      "iconColor": "#DC2626",
+      "iconBg": "#FEF2F2",
+      "imageUri": "https://images.unsplash.com/photo-1505455184862-554165e5f6ba?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhlbHB8ZW58MHx8MHx8fDA%3D"
+    }
+  ],
+  "whatToExpected": {
+    "title": "What to Expect in Grief and Bereavement Counselling",
+    "description": "A compassionate, non-judgmental approach to grief that honors your unique journey and provides ongoing support through the healing process.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Initial Assessment",
+        "description": "Understanding your relationship with the person you've lost and your current grieving experience."
+      },
+      {
+        "step": 2,
+        "title": "Emotional Processing",
+        "description": "Safe space to express and process the complex emotions that accompany grief and loss."
+      },
+      {
+        "step": 3,
+        "title": "Memory Work",
+        "description": "Honoring and preserving memories while finding ways to integrate loss into your life story."
+      },
+      {
+        "step": 4,
+        "title": "Identity Reconstruction",
+        "description": "Supporting you as you redefine your identity and purpose after the loss of a loved one."
+      },
+      {
+        "step": 5,
+        "title": "Meaning Making",
+        "description": "Finding new meaning and purpose in life while honoring the memory of your loved one."
+      },
+      {
+        "step": 6,
+        "title": "Integration",
+        "description": "Learning to live with loss while building a meaningful life that honors both your past and future."
+      }
+    ]
+  },
+  "approaches": [
+    {
+      "name": "Grief Counselling",
+      "description": "Traditional grief counselling that provides a safe space to process emotions and memories.",
+      "icon": "Heart"
+    },
+    {
+      "name": "Narrative Therapy",
+      "description": "Help you rewrite your story and find new meaning in your relationship with loss.",
+      "icon": "Brain"
+    },
+    {
+      "name": "Compassion-Focused Therapy",
+      "description": "Develop self-compassion and kindness toward yourself during the grieving process.",
+      "icon": "Heart"
+    },
+    {
+      "name": "Mindfulness-Based Grief Therapy",
+      "description": "Present-moment awareness to help you stay grounded during emotional waves of grief.",
+      "icon": "Brain"
+    },
+    {
+      "name": "Family Systems Therapy",
+      "description": "Support families in grieving together while respecting individual grieving styles.",
+      "icon": "Users"
+    },
+    {
+      "name": "Creative Expression Therapy",
+      "description": "Use art, writing, or other creative outlets to process and express grief.",
+      "icon": "Heart"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How long does grief counselling take?",
+      "answer": "Grief has no timeline, and everyone's journey is unique. Some people find significant relief in 3-6 months, while others may need 1-2 years or longer. We work at your pace and understand that grief is not something you 'get over' but something you learn to live with."
+    },
+    {
+      "question": "Is it normal to feel guilty after someone dies?",
+      "answer": "Yes, guilt is a very common emotion in grief. You might feel guilty about things you did or didn't do, about feeling relief if the person was suffering, or about moving forward with your life. These feelings are normal and we can help you process them."
+    },
+    {
+      "question": "What if I'm not crying or showing emotions?",
+      "answer": "Everyone grieves differently. Some people cry openly, others process grief more internally. There's no 'right' way to grieve. We support whatever emotional expression feels natural and authentic to you."
+    },
+    {
+      "question": "When will I start feeling better?",
+      "answer": "Grief is not linear - you may have good days and difficult days, sometimes unexpectedly. Healing happens gradually, and it's normal to have setbacks. We help you understand that this is part of the natural grieving process."
+    },
+    {
+      "question": "What if I'm grieving but others expect me to 'move on'?",
+      "answer": "Society often has unrealistic expectations about grief timelines. We help you honor your own grieving process and communicate your needs to others. Your grief is valid regardless of how much time has passed."
+    },
+    {
+      "question": "Can grief counselling help with physical symptoms?",
+      "answer": "Yes. Grief can manifest physically through fatigue, changes in appetite, sleep problems, and other symptoms. We address both the emotional and physical aspects of grief to support your overall well-being."
+    }
+  ],
+  "relatedServices": [
+    "Trauma Counselling",
+    "Depression Support",
+    "Anxiety Support",
+    "Relationship Counselling",
+    "Inner Child Work"
+  ],
+  "therapists": [
+    {
+      "name": "Sasha Campbell",
+      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "specialization": "Grief & Bereavement Counselling",
+      "experience": "12+ years specializing in grief and loss support"
+    },
+    {
+      "name": "Tianna Smith",
+      "image": "https://images.unsplash.com/photo-1594824475545-9d0c7c4951c1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "specialization": "Compassionate Grief Support",
+      "experience": "8+ years working with grieving individuals and families"
+    }
+  ],
+  "philosophy": {
+    "title": "Is Grief and Bereavement Counselling Right For You?",
+    "sections": [
+      {
+        "title": "Are you struggling with the loss of a loved one?",
+        "description": "We understand that losing someone you love is one of the most profound and challenging experiences in life. Our approach honors the complexity of grief and provides compassionate support as you navigate this difficult journey."
+      },
+      {
+        "title": "Do you feel overwhelmed by emotions you can't control?",
+        "description": "Grief brings intense emotions that can feel overwhelming and unpredictable. We provide a safe space where all emotions are welcome and help you develop healthy ways to process and express your feelings."
+      },
+      {
+        "title": "Are you struggling to find meaning after your loss?",
+        "description": "Loss can shake our sense of purpose and meaning in life. We help you explore how to honor your loved one's memory while finding new meaning and purpose in your own life."
+      },
+      {
+        "title": "Do you feel isolated in your grief?",
+        "description": "Grief can be incredibly isolating, especially when others don't understand your experience. We provide connection and understanding, helping you feel less alone in your grieving process."
+      }
+    ]
+  },
+  "pricing": {
+    "individual": "$180 per 50-minute session",
+    "family": "$200 per 50-minute session"
+  }
+} 

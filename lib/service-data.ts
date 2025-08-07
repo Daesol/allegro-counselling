@@ -170,7 +170,8 @@ export function getAvailableServices(): string[] {
   // Add new services to this list when you create new JSON files
   return [
     'relationship-counselling',
-    'anxiety-support'
+    'anxiety-support',
+    'grief-and-bereavement'
     // Add more services here as you create their JSON files
   ]
 }
