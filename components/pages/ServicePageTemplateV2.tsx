@@ -93,16 +93,15 @@ export default function ServicePageTemplateV2({ serviceData }: ServicePageProps)
             <div className="space-y-6">
               <Badge
                 className="inline-flex backdrop-blur-md border border-white/30"
-                style={{ backgroundColor: "rgba(248, 230, 231, 0.7)", color: "#A83E41" }}
+                style={{ backgroundColor: "rgba(39, 171, 183, 0.1)", color: "#27ABB7" }}
               >
-                {sharedContent.hero.badge}
+                Professional Therapy Services Online in Alberta
               </Badge>
 
               <div className="space-y-4">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   {serviceData.title}
                 </h1>
-                <p className="text-xl sm:text-2xl text-gray-600 leading-relaxed">{sharedContent.hero.subtitle}</p>
               </div>
 
               {/* Key Benefits */}
