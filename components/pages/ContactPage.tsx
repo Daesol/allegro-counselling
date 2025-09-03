@@ -150,14 +150,14 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-red-50 via-orange-50 to-teal-50"></div>
-        <div className="absolute top-10 left-10 w-20 h-20 bg-red-200 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute top-10 left-10 w-20 h-20 rounded-full opacity-20 animate-pulse" style={{backgroundColor: '#D95E61'}}></div>
         <div className="absolute bottom-10 right-10 w-32 h-32 bg-teal-200 rounded-full opacity-20 animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-orange-200 rounded-full opacity-20 animate-pulse delay-500"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
-              Get in <span className="text-red-600">Touch</span>
+              Get in <span style={{color: '#D95E61'}}>Touch</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Ready to take the first step? We're here to support you on your journey to better mental health and
@@ -165,14 +165,16 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button
-                className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+                className="text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+                style={{backgroundColor: '#D95E61'}}
                 onClick={() => window.open("https://calendly.com/allegroadmin/30min", "_blank")}
               >
                 Book Consultation
               </Button>
               <Button
                 variant="outline"
-                className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-3 rounded-full transition-all duration-300"
+                className="px-8 py-3 rounded-full transition-all duration-300"
+                style={{borderColor: '#D95E61', color: '#D95E61'}}
                 onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
               >
                 Send Message
@@ -184,7 +186,7 @@ export default function ContactPage() {
 
       {/* Contact Form and Map */}
       <section className="py-20 bg-gradient-to-br from-red-50 via-orange-50 to-teal-50 relative overflow-hidden">
-        <div className="absolute top-10 right-10 w-24 h-24 bg-red-200 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute top-10 right-10 w-24 h-24 rounded-full opacity-20 animate-pulse" style={{backgroundColor: '#D95E61'}}></div>
         <div className="absolute bottom-10 left-10 w-32 h-32 bg-teal-200 rounded-full opacity-20 animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 right-1/4 w-20 h-20 bg-orange-200 rounded-full opacity-20 animate-pulse delay-500"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -193,10 +195,10 @@ export default function ContactPage() {
               {/* Contact Form */}
               <div id="contact-form" className="lg:col-span-2">
                 <div className="transform hover:scale-[1.02] transition-transform duration-300">
-                  <Card className="px-4 py-8 sm:px-6 md:px-8 lg:px-10 bg-gradient-to-br from-white via-red-50 to-orange-50 border-2 border-red-200 shadow-2xl">
+                  <Card className="px-4 py-8 sm:px-6 md:px-8 lg:px-10 bg-gradient-to-br from-white via-red-50 to-orange-50 border-2 shadow-2xl" style={{borderColor: '#D95E61'}}>
                     <CardContent className="pt-0 px-2 sm:px-4 md:px-6 lg:px-8">
                       <div className="text-center mb-8">
-                        <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{background: `linear-gradient(to bottom right, #D95E61, #D95E61)`}}>
                           <Send className="h-8 w-8 text-white" />
                         </div>
                         <h3 className="text-3xl font-bold text-gray-800 mb-2">Send Us a Message</h3>
@@ -208,13 +210,13 @@ export default function ContactPage() {
                         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                           {/* Intake Form Instructions */}
                           <div className="mb-6 text-sm text-gray-600">
-                            <p><span className="text-red-600 font-bold">*</span> indicates required fields</p>
+                            <p><span className="font-bold" style={{color: '#D95E61'}}>*</span> indicates required fields</p>
                             <p className="mt-2">The information you provide here is important for selecting the most suitable counsellor. Please note that we cannot promise the fulfillment of all your preferences, as numerous factors are considered when matching counsellors with clients. However, we will align the chosen counsellor as closely as possible to your preferences.</p>
                           </div>
 
                           {/* Session Type */}
                           <div>
-                            <label className="block font-medium mb-2">Session Type <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2">Session Type <span style={{color: '#D95E61'}}>*</span></label>
                             <p className="text-sm mb-2">We are a digital counselling agency and do not provide in person sessions. Are you able to attend sessions online?</p>
                             <div className="flex items-center space-x-4">
                               <input type="checkbox" id="sessionTypeOnline" name="session_type_online" required className="mr-2" />
@@ -224,7 +226,7 @@ export default function ContactPage() {
 
                           {/* Type of Counselling */}
                           <div>
-                            <label className="block font-medium mb-2">Type of Counselling <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2">Type of Counselling <span style={{color: '#D95E61'}}>*</span></label>
                             <p className="text-sm mb-2">Please let us know what type of counselling you're seeking, and for whom you are seeking that counselling.</p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                               <label className="flex items-center"><input type="checkbox" name="counselling_type[]" value="Individual for myself" required className="mr-2" />Individual for myself</label>
@@ -236,13 +238,13 @@ export default function ContactPage() {
 
                           {/* Reason for Seeking Services */}
                           <div>
-                            <label className="block font-medium mb-2">Reason for Seeking Services <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2">Reason for Seeking Services <span style={{color: '#D95E61'}}>*</span></label>
                             <Textarea name="reason_for_services" required placeholder="Please describe your reason for seeking services..." rows={4} />
                           </div>
 
                           {/* Where Did You Hear About Us? */}
                           <div>
-                            <label className="block font-medium mb-2">Where Did You Hear About Us? <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2">Where Did You Hear About Us? <span style={{color: '#D95E61'}}>*</span></label>
                             <select name="referral_source" required className="w-full border rounded-md px-3 py-2">
                               <option value="">Select an option</option>
                               <option value="Counselling Professional">Counselling Professional (Counsellor, Social Worker, Support Worker etc.)</option>
@@ -264,33 +266,33 @@ export default function ContactPage() {
                           {/* Contact Information */}
                           <div className="grid md:grid-cols-2 gap-4">
                             <div>
-                              <label className="block font-medium mb-2">First Name <span className="text-red-600">*</span></label>
+                              <label className="block font-medium mb-2">First Name <span style={{color: '#D95E61'}}>*</span></label>
                               <Input name="first_name" required placeholder="First Name" />
                             </div>
                             <div>
-                              <label className="block font-medium mb-2">Last Name or Initial <span className="text-red-600">*</span></label>
+                              <label className="block font-medium mb-2">Last Name or Initial <span style={{color: '#D95E61'}}>*</span></label>
                               <Input name="last_name" required placeholder="Last Name or Initial" />
                             </div>
                             <div>
-                              <label className="block font-medium mb-2">Email Address <span className="text-red-600">*</span></label>
+                              <label className="block font-medium mb-2">Email Address <span style={{color: '#D95E61'}}>*</span></label>
                               <Input name="email" type="email" required placeholder="Email Address" />
                             </div>
                             <div>
-                              <label className="block font-medium mb-2">Phone Number <span className="text-red-600">*</span></label>
+                              <label className="block font-medium mb-2">Phone Number <span style={{color: '#D95E61'}}>*</span></label>
                               <Input name="phone" type="tel" required placeholder="Phone Number" />
                             </div>
                           </div>
 
                           {/* Consent to Receive Messages */}
                           <div>
-                            <label className="block font-medium mb-2">Consent to Receive Messages <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2">Consent to Receive Messages <span style={{color: '#D95E61'}}>*</span></label>
                             <p className="text-sm mb-2">The messages you will receive via email and text will be specific to your client file with us and will contain only relevant information. We will not send any advertising or promotional material. You can unsubscribe at any time.</p>
                             <label className="flex items-center"><input type="checkbox" name="consent_messages" required className="mr-2" />Yes, I agree</label>
                           </div>
 
                           {/* Preferred Counselling Approach */}
                           <div>
-                            <label className="block font-medium mb-2">Preferred Counselling Approach <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2">Preferred Counselling Approach <span style={{color: '#D95E61'}}>*</span></label>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                               <label className="flex items-center"><input type="checkbox" name="counselling_approach[]" value="Softer approach" required className="mr-2" />Softer approach</label>
                               <label className="flex items-center"><input type="checkbox" name="counselling_approach[]" value="Firmer approach" className="mr-2" />Firmer approach</label>
@@ -301,7 +303,7 @@ export default function ContactPage() {
 
                           {/* Gender Preference */}
                           <div>
-                            <label className="block font-medium mb-2">Gender Preference <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2">Gender Preference <span style={{color: '#D95E61'}}>*</span></label>
                             <p className="text-sm mb-2">Please select the gender(s) you are comfortable working with (check all that apply):</p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                               <label className="flex items-center"><input type="checkbox" name="gender_preference[]" value="Male" required className="mr-2" />Male</label>
@@ -314,12 +316,12 @@ export default function ContactPage() {
 
                           {/* Willingness to Work with Specific Counsellor Types */}
                           <div>
-                            <label className="block font-medium mb-2">Are you willing to work with a novice counsellor for a decreased fee? <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2">Are you willing to work with a novice counsellor for a decreased fee? <span style={{color: '#D95E61'}}>*</span></label>
                             <div className="flex items-center space-x-4 mb-2">
                               <label className="flex items-center"><input type="radio" name="novice_counsellor" value="Yes" required className="mr-2" />Yes</label>
                               <label className="flex items-center"><input type="radio" name="novice_counsellor" value="No" className="mr-2" />No</label>
                             </div>
-                            <label className="block font-medium mb-2 mt-4">Are you willing to work with a student counsellor? <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2 mt-4">Are you willing to work with a student counsellor? <span style={{color: '#D95E61'}}>*</span></label>
                             <div className="flex items-center space-x-4">
                               <label className="flex items-center"><input type="radio" name="student_counsellor" value="Yes" required className="mr-2" />Yes</label>
                               <label className="flex items-center"><input type="radio" name="student_counsellor" value="No" className="mr-2" />No</label>
@@ -328,7 +330,7 @@ export default function ContactPage() {
 
                           {/* Specific Counsellor Preference */}
                           <div>
-                            <label className="block font-medium mb-2">Do you have a preference of which counsellor on the team you would like to work with? <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2">Do you have a preference of which counsellor on the team you would like to work with? <span style={{color: '#D95E61'}}>*</span></label>
                             <p className="text-sm mb-2">You can find our counsellor profiles at <a href="https://strengthcounselling.ca/about/our-team/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Our Team</a>.</p>
                             <div className="flex items-center space-x-4">
                               <label className="flex items-center"><input type="radio" name="specific_counsellor_preference" value="Yes" required className="mr-2" />Yes</label>
@@ -338,20 +340,21 @@ export default function ContactPage() {
 
                           {/* Preferred Appointment Day(s) and Time(s) */}
                           <div>
-                            <label className="block font-medium mb-2">Preferred Appointment Day(s) and Time(s) <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2">Preferred Appointment Day(s) and Time(s) <span style={{color: '#D95E61'}}>*</span></label>
                             <Textarea name="preferred_appointment_times" required placeholder="Please specify your preferred days and times for appointments..." rows={3} />
                           </div>
 
                           {/* Client Relationship Disclosure */}
                           <div>
-                            <label className="block font-medium mb-2">Do you know anyone who is a current, or was a past, client of ours? <span className="text-red-600">*</span></label>
+                            <label className="block font-medium mb-2">Do you know anyone who is a current, or was a past, client of ours? <span style={{color: '#D95E61'}}>*</span></label>
                             <div className="flex items-center space-x-4">
                               <label className="flex items-center"><input type="radio" name="client_relationship_disclosure" value="Yes" required className="mr-2" />Yes</label>
                               <label className="flex items-center"><input type="radio" name="client_relationship_disclosure" value="No" className="mr-2" />No</label>
                             </div>
                           </div>
 
-                          <Button type="submit" className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-full font-semibold text-lg transition-all duration-300">
+                          <Button type="submit" className="w-full hover:opacity-90 text-white py-3 rounded-full font-semibold text-lg transition-all duration-300"
+              style={{backgroundColor: '#D95E61'}}>
                             Submit Intake Form
                           </Button>
                         </form>
@@ -415,12 +418,12 @@ export default function ContactPage() {
                       <div className="border-t pt-4 mt-4">
                         <div className="space-y-4">
                           <div className="flex items-center space-x-3">
-                            <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center">
+                            <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{background: `linear-gradient(to bottom right, #D95E61, #D95E61)`}}>
                               <Phone className="h-4 w-4 text-white" />
                             </div>
                             <div>
                               <p className="font-medium text-gray-800 mb-1">Phone</p>
-                              <p className="text-red-600 font-semibold text-sm">(825) 605-4453</p>
+                              <p className="style={{color: '#D95E61'}} font-semibold text-sm">(825) 605-4453</p>
                             </div>
                           </div>
 
@@ -445,21 +448,21 @@ export default function ContactPage() {
                     <h4 className="font-semibold text-gray-800 mb-4">Why Choose Allegro Counselling?</h4>
                     <div className="space-y-4">
                       <div className="flex items-start">
-                        <Award className="h-5 w-5 text-red-600 mt-1 mr-3 flex-shrink-0" />
+                        <Award className="h-5 w-5 style={{color: '#D95E61'}} mt-1 mr-3 flex-shrink-0" />
                         <div>
                           <p className="font-medium text-gray-800">Licensed Professionals</p>
                           <p className="text-sm text-gray-600">All our therapists are licensed and experienced</p>
                         </div>
                       </div>
                       <div className="flex items-start">
-                        <Heart className="h-5 w-5 text-red-600 mt-1 mr-3 flex-shrink-0" />
+                        <Heart className="h-5 w-5 style={{color: '#D95E61'}} mt-1 mr-3 flex-shrink-0" />
                         <div>
                           <p className="font-medium text-gray-800">Compassionate Care</p>
                           <p className="text-sm text-gray-600">We provide a safe, non-judgmental environment</p>
                         </div>
                       </div>
                       <div className="flex items-start">
-                        <Shield className="h-5 w-5 text-red-600 mt-1 mr-3 flex-shrink-0" />
+                        <Shield className="h-5 w-5 style={{color: '#D95E61'}} mt-1 mr-3 flex-shrink-0" />
                         <div>
                           <p className="font-medium text-gray-800">Confidential & Secure</p>
                           <p className="text-sm text-gray-600">Your privacy and confidentiality are our priority</p>
@@ -489,13 +492,13 @@ export default function ContactPage() {
       </section>
 
       {/* Emergency Resources */}
-      <section className="py-12 bg-red-50">
+      <section className="py-12" style={{backgroundColor: '#D95E61'}}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="border-red-200 bg-white">
+            <Card className="bg-white" style={{borderColor: '#D95E61'}}>
               <CardContent className="p-6">
                 <div className="flex items-start">
-                  <AlertTriangle className="h-6 w-6 text-red-600 mt-1 mr-4 flex-shrink-0" />
+                  <AlertTriangle className="h-6 w-6 style={{color: '#D95E61'}} mt-1 mr-4 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-3">Crisis Support Resources</h3>
                     <p className="text-gray-600 mb-4">
@@ -535,7 +538,8 @@ export default function ContactPage() {
             {/* Phone Button */}
             <a
               href="tel:(825) 605-4453"
-              className="flex items-center space-x-1 sm:space-x-2 bg-gradient-to-r from-red-500 to-red-600 text-white px-2 sm:px-4 py-2 rounded-full hover:from-red-600 hover:to-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="flex items-center space-x-1 sm:space-x-2 text-white px-2 sm:px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+              style={{background: `linear-gradient(to right, #D95E61, #D95E61)`}}
             >
               <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
               <span className="font-semibold text-xs sm:text-sm whitespace-nowrap">(825) 605-4453</span>
